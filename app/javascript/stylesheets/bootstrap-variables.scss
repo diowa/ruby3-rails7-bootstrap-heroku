@@ -1,0 +1,9 @@
+// New variables
+
+$rails-red: #e00000 !default;
+
+// Overrides
+
+$primary: $rails-red !default;
+
+@import "bootstrap/scss/variables";

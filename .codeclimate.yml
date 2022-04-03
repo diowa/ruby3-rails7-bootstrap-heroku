@@ -1,0 +1,8 @@
+version: '2'
+exclude_patterns:
+  - 'config/'
+  - 'db/'
+  - '**/node_modules/'
+  - '**/spec/'
+  - '**/vendor/'
+  - 'postcss.config.js'
