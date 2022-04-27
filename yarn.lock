@@ -1096,10 +1096,10 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.5.tgz#db5a11bf66bdab39569719555b0f76e138d7bd64"
   integrity sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==
 
-"@rails/actioncable@7.0.2-3":
-  version "7.0.2-3"
-  resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-7.0.2-3.tgz#d083480b8fb9edf4e525c2626e3db2599258da31"
-  integrity sha512-7F2o7oTsinv2qHY/13RFJbQAtCNj94sxKqfEFBOQlMv6QvB+qsHjhuViaY5pvvUK/Eel2hdtHq5fFIgSM2IRLw==
+"@rails/actioncable@7.0.2-4":
+  version "7.0.2-4"
+  resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-7.0.2-4.tgz#24a31bde761ee7652b2567d267699c17c7e725a6"
+  integrity sha512-EPTZ0U/KBlaJKPAyLuvPBSZMojyHVgCqwMDkwTfm4TDPyp5f0hTBsOsolQxqeOJmoTafK+7pJi7hO9eCjBEhTA==
 
 "@rails/actioncable@^7.0":
   version "7.0.2"
