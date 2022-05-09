@@ -35,5 +35,8 @@ module Ruby3Rails7BootstrapHeroku
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # SQL schema is required by Chronomodel
+    config.active_record.schema_format = :sql
   end
 end

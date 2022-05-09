@@ -1,6 +1,6 @@
 class CreateBoxes < ActiveRecord::Migration[7.0]
   def change
-    create_table :boxes do |t|
+    create_table :boxes, temporal: true do |t|
       t.string :name
 
       t.timestamps

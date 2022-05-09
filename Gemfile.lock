@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/ifad/chronomodel.git
+  revision: e7c3645fdcc587070c5b98ff0e402d8258eeee03
+  specs:
+    chrono_model (1.2.2)
+      activerecord (>= 5.0)
+      multi_json
+      pg (> 1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -128,6 +137,7 @@ GEM
     mini_portile2 (2.8.0)
     minitest (5.15.0)
     msgpack (1.5.2)
+    multi_json (1.15.0)
     net-imap (0.2.3)
       digest
       net-protocol
@@ -295,6 +305,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   capybara (~> 3.37)
+  chrono_model!
   debug
   email_spec (~> 2.2)
   factory_bot_rails (~> 6.2)
