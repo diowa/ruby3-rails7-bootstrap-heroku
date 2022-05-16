@@ -52,7 +52,7 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 
   gem 'factory_bot_rails', '~> 6.2'
-  gem 'faker', '~> 2.20'
+  gem 'faker', '~> 2.21'
   gem 'rspec-rails', '~> 5.1'
   gem 'rubocop', '~> 1.29', require: false
   gem 'rubocop-performance', '~> 1.13', require: false
