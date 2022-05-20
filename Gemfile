@@ -36,7 +36,7 @@ gem 'bootsnap', require: false
 # gem "image_processing", "~> 1.2"
 
 # Transpile app-like JavaScript. Read more: https://github.com/shakacode/shakapacker
-gem 'shakapacker', '~> 6.2'
+gem 'shakapacker', '~> 6.3'
 
 # Turbo makes navigating your web application faster. Read more: https://github.com/hotwired/turbo-rails
 gem 'turbo-rails', '~> 1.0'
