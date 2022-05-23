@@ -39,7 +39,7 @@ gem 'bootsnap', require: false
 gem 'shakapacker', '6.3.0'
 
 # Turbo makes navigating your web application faster. Read more: https://github.com/hotwired/turbo-rails
-gem 'turbo-rails', '~> 1.0'
+gem 'turbo-rails', '~> 1.1'
 
 # Template Engine
 gem 'slim-rails', '~> 3.5'
