@@ -5598,10 +5598,10 @@ stylelint-config-standard@^25.0.0:
   dependencies:
     stylelint-config-recommended "^7.0.0"
 
-stylelint-config-twbs-bootstrap@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-twbs-bootstrap/-/stylelint-config-twbs-bootstrap-3.1.0.tgz#10dd1b8086a17ab64b48c613dbcc146a2ef492e3"
-  integrity sha512-UgmMLqLPIdkPQM4ATLM3hVzH9mfKIYZVrMaogcxkHosN4oCMzja9aRX/ay4LIJTd5//g37FKigwiaEfCPhTodw==
+stylelint-config-twbs-bootstrap@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/stylelint-config-twbs-bootstrap/-/stylelint-config-twbs-bootstrap-3.2.1.tgz#4dc5be8d7efd2a7a113a56e30e5d945a642ab557"
+  integrity sha512-lfVEx+tW2SHMTYoifXIdB086FgQdQarQGt1vDqkEiuGYEtKeGjf41hovotEijw4t1RSyWuhkfxF8GzUZajTXjQ==
   dependencies:
     stylelint-config-recess-order "^3.0.0"
     stylelint-config-standard "^25.0.0"
