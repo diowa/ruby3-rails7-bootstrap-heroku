@@ -815,6 +815,37 @@ COMMENT ON VIEW public.countries IS '{"temporal":true,"chronomodel":"1.2.2"}';
 
 
 --
+-- Name: foos; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.foos (
+    id bigint NOT NULL,
+    name character varying,
+    created_at timestamp(6) without time zone NOT NULL,
+    updated_at timestamp(6) without time zone NOT NULL
+);
+
+
+--
+-- Name: foos_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.foos_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: foos_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.foos_id_seq OWNED BY public.foos.id;
+
+
+--
 -- Name: schema_migrations; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -1029,6 +1060,13 @@ ALTER TABLE ONLY history.students ALTER COLUMN hid SET DEFAULT nextval('history.
 
 
 --
+-- Name: foos id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.foos ALTER COLUMN id SET DEFAULT nextval('public.foos_id_seq'::regclass);
+
+
+--
 -- Name: boxes id; Type: DEFAULT; Schema: temporal; Owner: -
 --
 
@@ -1149,6 +1187,14 @@ ALTER TABLE ONLY history.students
 
 ALTER TABLE ONLY public.ar_internal_metadata
     ADD CONSTRAINT ar_internal_metadata_pkey PRIMARY KEY (key);
+
+
+--
+-- Name: foos foos_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.foos
+    ADD CONSTRAINT foos_pkey PRIMARY KEY (id);
 
 
 --
@@ -1543,6 +1589,7 @@ SET search_path TO "$user", public;
 
 INSERT INTO "schema_migrations" (version) VALUES
 ('20220509130857'),
-('20220519102012');
+('20220519102012'),
+('20220522153556');
 
 
