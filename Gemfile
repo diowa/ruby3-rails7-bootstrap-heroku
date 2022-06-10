@@ -82,5 +82,5 @@ group :test do
 end
 
 group :staging, :production do
-  gem 'rack-timeout', '~> 0.6.2'
+  gem 'rack-timeout', '~> 0.6.3'
 end
