@@ -17,3 +17,15 @@ ul.list-inline.lead
   li.list-inline-item
     | Font Awesome (SVG)
     small.text-muted< 6.1.1
+
+ol
+  li
+    a.btn.btn-primary data-controller='tooltip' data-bs-toggle='tooltip' title="Hello, I'm a tooltip"
+      | Hover me
+  li
+    ' Navigate to
+    = link_to 'Hello World', hello_world_path
+  li
+    | Go back with the browser button
+  li
+    | Hover again on the button, the tooltip does not display on BS >= 5.2.0.beta and main
