@@ -1,0 +1,63 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --#{$prefix}white: #{$black};
+    --#{$prefix}gray: #{$gray-400};
+    --#{$prefix}gray-dark: #{$gray-200};
+    --#{$prefix}gray-100: #{$gray-900};
+    --#{$prefix}gray-200: #{$gray-800};
+    --#{$prefix}gray-300: #{$gray-700};
+    --#{$prefix}gray-400: #{$gray-600};
+    --#{$prefix}gray-600: #{$gray-400};
+    --#{$prefix}gray-700: #{$gray-300};
+    --#{$prefix}gray-800: #{$gray-200};
+    --#{$prefix}gray-900: #{$gray-100};
+    --#{$prefix}light: #{$dark};
+    --#{$prefix}light-rgb: #{to-rgb($dark)};
+    --#{$prefix}dark: #{$light};
+    --#{$prefix}dark-rgb: #{to-rgb($light)};
+    --#{$prefix}white-rgb: #{to-rgb($black)};
+    --#{$prefix}black-rgb: #{to-rgb($white)};
+    --#{$prefix}body-color-rgb: #{to-rgb($white)};
+    --#{$prefix}body-bg-rgb: #{to-rgb($black)};
+    --#{$prefix}gradient: linear-gradient(180deg, rgba(#{to-rgb($black)}, .15), rgba(#{to-rgb($black)}, 0));
+    --#{$prefix}body-color: #{$white};
+    --#{$prefix}body-bg: #{$black};
+  }
+
+  .breadcrumb {
+    --#{$prefix}breadcrumb-bg: #{$gray-900};
+  }
+
+  .dropdown-menu {
+    --#{$prefix}dropdown-color: var(--bs-body-color);
+    --#{$prefix}dropdown-bg: var(--bs-body-bg);
+    --#{$prefix}dropdown-border-color: var(--bs-border-color-translucent);
+    --#{$prefix}dropdown-box-shadow: 0 .5rem 1rem rgba(#{to-rgb($white)}, .15);
+    --#{$prefix}dropdown-link-color: #{$gray-100};
+    --#{$prefix}dropdown-link-hover-color: shade-color(#{$gray-100}, 10%);
+    --#{$prefix}dropdown-link-hover-bg: #{$gray-800};
+    --#{$prefix}dropdown-link-active-color: #{$black};
+    --#{$prefix}dropdown-header-color: #{$gray-400};
+  }
+
+  .navbar {
+    --#{$prefix}navbar-color: #{$navbar-dark-color};
+    --#{$prefix}navbar-hover-color: #{$navbar-dark-hover-color};
+    --#{$prefix}navbar-disabled-color: #{$navbar-dark-disabled-color};
+    --#{$prefix}navbar-active-color: #{$navbar-dark-active-color};
+    --#{$prefix}navbar-brand-color: #{$navbar-dark-brand-color};
+    --#{$prefix}navbar-brand-hover-color: #{$navbar-dark-brand-hover-color};
+    --#{$prefix}navbar-toggler-icon-bg: #{escape-svg($navbar-dark-toggler-icon-bg)};
+    --#{$prefix}navbar-toggler-border-color: #{$navbar-dark-toggler-border-color};
+  }
+
+  .table {
+    --#{$prefix}table-striped-bg: rgba(#{to-rgb($white)}, .05);
+    --#{$prefix}table-active-bg: rgba(#{to-rgb($white)}, .1);
+    --#{$prefix}table-hover-bg: rgba(#{to-rgb($white)}, .075);
+  }
+
+  .text-muted {
+    color: $gray-400 !important; // stylelint-disable-line declaration-no-important
+  }
+}
