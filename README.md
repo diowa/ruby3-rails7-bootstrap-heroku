@@ -15,7 +15,7 @@ This is an opinionated starter web application based on the following technology
 * [PostgreSQL][4]
 * [Redis][18]
 * [RSpec][5]
-* [Bootstrap 5.2.1][8]
+* [Bootstrap 5.2.2][8]
 * [Autoprefixer][9]
 * [Font Awesome 6.2.0 SVG][10]
 * [Slim][11]
