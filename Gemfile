@@ -45,7 +45,7 @@ gem 'turbo-rails', '~> 1.3'
 gem 'slim-rails', '~> 3.5'
 
 # App monitoring
-gem 'newrelic_rpm', '~> 8.10'
+gem 'newrelic_rpm', '~> 8.11'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
