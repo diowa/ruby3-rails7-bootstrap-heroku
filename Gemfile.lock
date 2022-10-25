@@ -1,3 +1,11 @@
+PATH
+  remote: ../ifad/chronomodel
+  specs:
+    chrono_model (1.2.2)
+      activerecord (>= 5.0)
+      multi_json
+      pg (> 1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -129,6 +137,7 @@ GEM
     mini_portile2 (2.8.4)
     minitest (5.20.0)
     msgpack (1.7.2)
+    multi_json (1.15.0)
     net-imap (0.3.7)
       date
       net-protocol
@@ -312,6 +321,7 @@ DEPENDENCIES
   bootsnap
   byebug
   capybara
+  chrono_model!
   email_spec
   factory_bot_rails
   faker
