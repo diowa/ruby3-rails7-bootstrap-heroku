@@ -7,6 +7,8 @@ ruby '3.3.0'
 
 gem 'rails', '7.1.3.2'
 
+gem 'chrono_model', path: '~/dev/ifad/chronomodel'
+
 gem 'bootsnap', require: false
 gem 'newrelic_rpm', '~> 9.7'
 gem 'pg', '~> 1.5'
