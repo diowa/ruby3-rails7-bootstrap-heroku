@@ -36,7 +36,7 @@ gem 'bootsnap', require: false
 # gem "image_processing", "~> 1.2"
 
 # Transpile app-like JavaScript. Read more: https://github.com/shakacode/shakapacker
-gem 'shakapacker', '6.5.3'
+gem 'shakapacker', '6.5.4'
 
 # Turbo makes navigating your web application faster. Read more: https://github.com/hotwired/turbo-rails
 gem 'turbo-rails', '~> 1.3'
@@ -73,9 +73,9 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 3.37'
+  gem 'capybara', '~> 3.38'
   gem 'email_spec', '~> 2.2'
-  gem 'selenium-webdriver', '~> 4.5'
+  gem 'selenium-webdriver', '~> 4.6'
   gem 'simplecov', '~> 0.21.2', require: false
   gem 'simplecov-lcov', '~> 0.8.0', require: false
   gem 'webmock', '~> 3.18', require: false
