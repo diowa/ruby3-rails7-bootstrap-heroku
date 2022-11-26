@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.1.2'
+ruby '3.1.3'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '7.0.4'
@@ -48,11 +48,12 @@ gem 'slim-rails', '~> 3.5'
 gem 'newrelic_rpm', '~> 8.13'
 
 group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
-
+  gem 'byebug', '~> 11.1', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 6.2'
   gem 'faker', '~> 3.0'
+  gem 'pry', '~> 0.14.1'
+  gem 'pry-byebug', '~> 3.10'
+  gem 'pry-rails', '~> 0.3.9'
   gem 'rspec-rails', '~> 6.0'
   gem 'rubocop', '~> 1.39', require: false
   gem 'rubocop-performance', '~> 1.15', require: false
