@@ -366,11 +366,11 @@ CREATE FUNCTION public.chronomodel_schools_insert() RETURNS trigger
             NEW.id := nextval('temporal.schools_id_seq');
         END IF;
 
-        INSERT INTO temporal.schools ( id, "city_id", "name", "created_at", "updated_at" )
-        VALUES ( NEW.id, NEW."city_id", NEW."name", NEW."created_at", NEW."updated_at" );
+        INSERT INTO temporal.schools ( id, "city_id", "name", "created_at", "updated_at", "school_position_id" )
+        VALUES ( NEW.id, NEW."city_id", NEW."name", NEW."created_at", NEW."updated_at", NEW."school_position_id" );
 
-        INSERT INTO history.schools ( id, "city_id", "name", "created_at", "updated_at", validity )
-        VALUES ( NEW.id, NEW."city_id", NEW."name", NEW."created_at", NEW."updated_at", tsrange(timezone('UTC', now()), NULL) );
+        INSERT INTO history.schools ( id, "city_id", "name", "created_at", "updated_at", "school_position_id", validity )
+        VALUES ( NEW.id, NEW."city_id", NEW."name", NEW."created_at", NEW."updated_at", NEW."school_position_id", tsrange(timezone('UTC', now()), NULL) );
 
         RETURN NEW;
     END;
@@ -394,11 +394,11 @@ CREATE FUNCTION public.chronomodel_schools_update() RETURNS trigger
             RETURN NULL;
         END IF;
 
-        _old := row(OLD."city_id", OLD."name", OLD."created_at");
-        _new := row(NEW."city_id", NEW."name", NEW."created_at");
+        _old := row(OLD."city_id", OLD."name", OLD."created_at", OLD."school_position_id");
+        _new := row(NEW."city_id", NEW."name", NEW."created_at", NEW."school_position_id");
 
         IF _old IS NOT DISTINCT FROM _new THEN
-            UPDATE ONLY temporal.schools SET ( "city_id", "name", "created_at", "updated_at" ) = ( NEW."city_id", NEW."name", NEW."created_at", NEW."updated_at" ) WHERE id = OLD.id;
+            UPDATE ONLY temporal.schools SET ( "city_id", "name", "created_at", "updated_at", "school_position_id" ) = ( NEW."city_id", NEW."name", NEW."created_at", NEW."updated_at", NEW."school_position_id" ) WHERE id = OLD.id;
             RETURN NEW;
         END IF;
 
@@ -408,16 +408,16 @@ CREATE FUNCTION public.chronomodel_schools_update() RETURNS trigger
         SELECT hid INTO _hid FROM history.schools WHERE id = OLD.id AND lower(validity) = _now;
 
         IF _hid IS NOT NULL THEN
-            UPDATE history.schools SET ( "city_id", "name", "created_at", "updated_at" ) = ( NEW."city_id", NEW."name", NEW."created_at", NEW."updated_at" ) WHERE hid = _hid;
+            UPDATE history.schools SET ( "city_id", "name", "created_at", "updated_at", "school_position_id" ) = ( NEW."city_id", NEW."name", NEW."created_at", NEW."updated_at", NEW."school_position_id" ) WHERE hid = _hid;
         ELSE
             UPDATE history.schools SET validity = tsrange(lower(validity), _now)
             WHERE id = OLD.id AND upper_inf(validity);
 
-            INSERT INTO history.schools ( id, "city_id", "name", "created_at", "updated_at", validity )
-                VALUES ( OLD.id, NEW."city_id", NEW."name", NEW."created_at", NEW."updated_at", tsrange(_now, NULL) );
+            INSERT INTO history.schools ( id, "city_id", "name", "created_at", "updated_at", "school_position_id", validity )
+                VALUES ( OLD.id, NEW."city_id", NEW."name", NEW."created_at", NEW."updated_at", NEW."school_position_id", tsrange(_now, NULL) );
         END IF;
 
-        UPDATE ONLY temporal.schools SET ( "city_id", "name", "created_at", "updated_at" ) = ( NEW."city_id", NEW."name", NEW."created_at", NEW."updated_at" ) WHERE id = OLD.id;
+        UPDATE ONLY temporal.schools SET ( "city_id", "name", "created_at", "updated_at", "school_position_id" ) = ( NEW."city_id", NEW."name", NEW."created_at", NEW."updated_at", NEW."school_position_id" ) WHERE id = OLD.id;
 
         RETURN NEW;
     END;
@@ -663,7 +663,8 @@ CREATE TABLE temporal.schools (
     city_id bigint,
     name character varying,
     created_at timestamp(6) without time zone NOT NULL,
-    updated_at timestamp(6) without time zone NOT NULL
+    updated_at timestamp(6) without time zone NOT NULL,
+    school_position_id bigint
 );
 
 
@@ -851,6 +852,37 @@ CREATE TABLE public.schema_migrations (
 
 
 --
+-- Name: school_positions; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.school_positions (
+    id bigint NOT NULL,
+    "position" integer,
+    created_at timestamp(6) without time zone NOT NULL,
+    updated_at timestamp(6) without time zone NOT NULL
+);
+
+
+--
+-- Name: school_positions_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.school_positions_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: school_positions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.school_positions_id_seq OWNED BY public.school_positions.id;
+
+
+--
 -- Name: schools; Type: VIEW; Schema: public; Owner: -
 --
 
@@ -859,7 +891,8 @@ CREATE VIEW public.schools AS
     schools.city_id,
     schools.name,
     schools.created_at,
-    schools.updated_at
+    schools.updated_at,
+    schools.school_position_id
    FROM ONLY temporal.schools;
 
 
@@ -1063,6 +1096,13 @@ ALTER TABLE ONLY public.foos ALTER COLUMN id SET DEFAULT nextval('public.foos_id
 
 
 --
+-- Name: school_positions id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.school_positions ALTER COLUMN id SET DEFAULT nextval('public.school_positions_id_seq'::regclass);
+
+
+--
 -- Name: boxes id; Type: DEFAULT; Schema: temporal; Owner: -
 --
 
@@ -1199,6 +1239,14 @@ ALTER TABLE ONLY public.foos
 
 ALTER TABLE ONLY public.schema_migrations
     ADD CONSTRAINT schema_migrations_pkey PRIMARY KEY (version);
+
+
+--
+-- Name: school_positions school_positions_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.school_positions
+    ADD CONSTRAINT school_positions_pkey PRIMARY KEY (id);
 
 
 --
@@ -1587,6 +1635,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20220509120857'),
 ('20220509130857'),
 ('20220519102012'),
-('20220522153556');
+('20220522153556'),
+('20221219152401');
 
 

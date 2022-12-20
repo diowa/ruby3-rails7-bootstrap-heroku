@@ -7,5 +7,5 @@ class City < ApplicationRecord
 
   belongs_to :country
 
-  has_many :schools, dependent: :destroy
+  has_many :schools, -> { sorted }, dependent: :destroy
 end
