@@ -35,3 +35,5 @@ en:
   shared:
     navbar:
       toggle_navigation: "Toggle Navigation"
+  routes:
+    hello_world: 'hello-world'
