@@ -1,0 +1,8 @@
+it:
+  app_name: "Rails 7 Starter App"
+  meta_description: "Un'applicazione basilare basata su Ruby 3.1, Rails 7.0, Webpack 5, Yarn, e Bootstrap 5"
+  shared:
+    navbar:
+      toggle_navigation: "Attiva/Disattiva navigazione"
+  routes:
+    hello_world: 'ciao-mondo'

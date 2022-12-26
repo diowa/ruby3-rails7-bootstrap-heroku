@@ -4,5 +4,8 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   root 'pages#home'
-  get :hello_world, to: 'pages#hello_world'
+
+  localized do
+    get :hello_world, to: 'pages#hello_world', as: :hello_world
+  end
 end
