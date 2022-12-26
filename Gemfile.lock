@@ -88,14 +88,14 @@ GEM
     crack (0.4.5)
       rexml
     crass (1.0.6)
-    date (3.3.2)
+    date (3.3.3)
     diff-lcs (1.5.0)
     docile (1.4.0)
     email_spec (2.2.1)
       htmlentities (~> 4.3.3)
       launchy (~> 2.1)
       mail (~> 2.7)
-    erubi (1.11.0)
+    erubi (1.12.0)
     factory_bot (6.2.1)
       activesupport (>= 5.0.0)
     factory_bot_rails (6.2.0)
@@ -124,10 +124,10 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.0)
+    mini_portile2 (2.8.1)
     minitest (5.16.3)
     msgpack (1.6.0)
-    net-imap (0.3.2)
+    net-imap (0.3.4)
       date
       net-protocol
     net-pop (0.1.2)
@@ -156,7 +156,7 @@ GEM
     public_suffix (5.0.1)
     puma (6.0.1)
       nio4r (~> 2.0)
-    racc (1.6.1)
+    racc (1.6.2)
     rack (2.2.4)
     rack-proxy (0.7.4)
       rack
