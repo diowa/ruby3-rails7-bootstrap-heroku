@@ -7,6 +7,3 @@ import '@hotwired/turbo-rails'
 
 import 'src/bootstrap.js'
 import 'src/fontawesome.js'
-
-require('@rails/activestorage').start()
-require('channels')
