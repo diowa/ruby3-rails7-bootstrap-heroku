@@ -7,3 +7,4 @@ import '@hotwired/turbo-rails'
 
 import 'src/bootstrap.js'
 import 'src/fontawesome.js'
+import './controllers'
