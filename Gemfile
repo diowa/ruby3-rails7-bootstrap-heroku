@@ -42,7 +42,7 @@ gem 'shakapacker', '6.5.6'
 gem 'turbo-rails', '~> 1.3'
 
 # Template Engine
-gem 'slim-rails', '~> 3.5'
+gem 'slim-rails', '~> 3.6'
 
 # App monitoring
 gem 'newrelic_rpm', '~> 8.16'
