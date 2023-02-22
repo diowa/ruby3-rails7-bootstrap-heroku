@@ -45,7 +45,7 @@ gem 'turbo-rails', '~> 1.3'
 gem 'slim-rails', '~> 3.5'
 
 # App monitoring
-gem 'newrelic_rpm', '~> 8.16'
+gem 'newrelic_rpm', '~> 9.0'
 
 group :development, :test do
   gem 'byebug', '~> 11.1', platforms: %i[mri mingw x64_mingw]
