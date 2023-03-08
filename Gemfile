@@ -59,7 +59,7 @@ group :development, :test do
   gem 'rubocop-capybara', '~> 2.17', require: false
   gem 'rubocop-performance', '~> 1.16', require: false
   gem 'rubocop-rails', '~> 2.18', require: false
-  gem 'rubocop-rspec', '~> 2.18', require: false
+  gem 'rubocop-rspec', '~> 2.19', require: false
   gem 'slim_lint', '~> 0.24.0', require: false
 end
 
