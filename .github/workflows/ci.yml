@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      DATABASE_URL: postgres://postgres:postgres@localhost/ruby3_rails6_bootstrap_heroku_test
+      DATABASE_URL: postgres://postgres:postgres@localhost/ruby3_rails7_bootstrap_heroku_test
       RAILS_ENV: test
 
     services:
