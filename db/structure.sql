@@ -75,11 +75,11 @@ CREATE FUNCTION public.chronomodel_boos_insert() RETURNS trigger
             NEW.id := nextval('temporal.boos_id_seq');
         END IF;
 
-        INSERT INTO temporal.boos ( id, "goo_id", "created_at", "updated_at" )
-        VALUES ( NEW.id, NEW."goo_id", NEW."created_at", NEW."updated_at" );
+        INSERT INTO temporal.boos ( id, "name", "goo_id", "created_at", "updated_at" )
+        VALUES ( NEW.id, NEW."name", NEW."goo_id", NEW."created_at", NEW."updated_at" );
 
-        INSERT INTO history.boos ( id, "goo_id", "created_at", "updated_at", validity )
-        VALUES ( NEW.id, NEW."goo_id", NEW."created_at", NEW."updated_at", tsrange(timezone('UTC', now()), NULL) );
+        INSERT INTO history.boos ( id, "name", "goo_id", "created_at", "updated_at", validity )
+        VALUES ( NEW.id, NEW."name", NEW."goo_id", NEW."created_at", NEW."updated_at", tsrange(timezone('UTC', now()), NULL) );
 
         RETURN NEW;
     END;
@@ -103,11 +103,11 @@ CREATE FUNCTION public.chronomodel_boos_update() RETURNS trigger
             RETURN NULL;
         END IF;
 
-        _old := row(OLD."goo_id", OLD."created_at");
-        _new := row(NEW."goo_id", NEW."created_at");
+        _old := row(OLD."name", OLD."goo_id", OLD."created_at");
+        _new := row(NEW."name", NEW."goo_id", NEW."created_at");
 
         IF _old IS NOT DISTINCT FROM _new THEN
-            UPDATE ONLY temporal.boos SET ( "goo_id", "created_at", "updated_at" ) = ( NEW."goo_id", NEW."created_at", NEW."updated_at" ) WHERE id = OLD.id;
+            UPDATE ONLY temporal.boos SET ( "name", "goo_id", "created_at", "updated_at" ) = ( NEW."name", NEW."goo_id", NEW."created_at", NEW."updated_at" ) WHERE id = OLD.id;
             RETURN NEW;
         END IF;
 
@@ -117,16 +117,16 @@ CREATE FUNCTION public.chronomodel_boos_update() RETURNS trigger
         SELECT hid INTO _hid FROM history.boos WHERE id = OLD.id AND lower(validity) = _now;
 
         IF _hid IS NOT NULL THEN
-            UPDATE history.boos SET ( "goo_id", "created_at", "updated_at" ) = ( NEW."goo_id", NEW."created_at", NEW."updated_at" ) WHERE hid = _hid;
+            UPDATE history.boos SET ( "name", "goo_id", "created_at", "updated_at" ) = ( NEW."name", NEW."goo_id", NEW."created_at", NEW."updated_at" ) WHERE hid = _hid;
         ELSE
             UPDATE history.boos SET validity = tsrange(lower(validity), _now)
             WHERE id = OLD.id AND upper_inf(validity);
 
-            INSERT INTO history.boos ( id, "goo_id", "created_at", "updated_at", validity )
-                VALUES ( OLD.id, NEW."goo_id", NEW."created_at", NEW."updated_at", tsrange(_now, NULL) );
+            INSERT INTO history.boos ( id, "name", "goo_id", "created_at", "updated_at", validity )
+                VALUES ( OLD.id, NEW."name", NEW."goo_id", NEW."created_at", NEW."updated_at", tsrange(_now, NULL) );
         END IF;
 
-        UPDATE ONLY temporal.boos SET ( "goo_id", "created_at", "updated_at" ) = ( NEW."goo_id", NEW."created_at", NEW."updated_at" ) WHERE id = OLD.id;
+        UPDATE ONLY temporal.boos SET ( "name", "goo_id", "created_at", "updated_at" ) = ( NEW."name", NEW."goo_id", NEW."created_at", NEW."updated_at" ) WHERE id = OLD.id;
 
         RETURN NEW;
     END;
@@ -463,11 +463,11 @@ CREATE FUNCTION public.chronomodel_goos_insert() RETURNS trigger
             NEW.id := nextval('temporal.goos_id_seq');
         END IF;
 
-        INSERT INTO temporal.goos ( id, "created_at", "updated_at" )
-        VALUES ( NEW.id, NEW."created_at", NEW."updated_at" );
+        INSERT INTO temporal.goos ( id, "name", "created_at", "updated_at" )
+        VALUES ( NEW.id, NEW."name", NEW."created_at", NEW."updated_at" );
 
-        INSERT INTO history.goos ( id, "created_at", "updated_at", validity )
-        VALUES ( NEW.id, NEW."created_at", NEW."updated_at", tsrange(timezone('UTC', now()), NULL) );
+        INSERT INTO history.goos ( id, "name", "created_at", "updated_at", validity )
+        VALUES ( NEW.id, NEW."name", NEW."created_at", NEW."updated_at", tsrange(timezone('UTC', now()), NULL) );
 
         RETURN NEW;
     END;
@@ -491,11 +491,11 @@ CREATE FUNCTION public.chronomodel_goos_update() RETURNS trigger
             RETURN NULL;
         END IF;
 
-        _old := row(OLD."created_at");
-        _new := row(NEW."created_at");
+        _old := row(OLD."name", OLD."created_at");
+        _new := row(NEW."name", NEW."created_at");
 
         IF _old IS NOT DISTINCT FROM _new THEN
-            UPDATE ONLY temporal.goos SET ( "created_at", "updated_at" ) = ( NEW."created_at", NEW."updated_at" ) WHERE id = OLD.id;
+            UPDATE ONLY temporal.goos SET ( "name", "created_at", "updated_at" ) = ( NEW."name", NEW."created_at", NEW."updated_at" ) WHERE id = OLD.id;
             RETURN NEW;
         END IF;
 
@@ -505,16 +505,16 @@ CREATE FUNCTION public.chronomodel_goos_update() RETURNS trigger
         SELECT hid INTO _hid FROM history.goos WHERE id = OLD.id AND lower(validity) = _now;
 
         IF _hid IS NOT NULL THEN
-            UPDATE history.goos SET ( "created_at", "updated_at" ) = ( NEW."created_at", NEW."updated_at" ) WHERE hid = _hid;
+            UPDATE history.goos SET ( "name", "created_at", "updated_at" ) = ( NEW."name", NEW."created_at", NEW."updated_at" ) WHERE hid = _hid;
         ELSE
             UPDATE history.goos SET validity = tsrange(lower(validity), _now)
             WHERE id = OLD.id AND upper_inf(validity);
 
-            INSERT INTO history.goos ( id, "created_at", "updated_at", validity )
-                VALUES ( OLD.id, NEW."created_at", NEW."updated_at", tsrange(_now, NULL) );
+            INSERT INTO history.goos ( id, "name", "created_at", "updated_at", validity )
+                VALUES ( OLD.id, NEW."name", NEW."created_at", NEW."updated_at", tsrange(_now, NULL) );
         END IF;
 
-        UPDATE ONLY temporal.goos SET ( "created_at", "updated_at" ) = ( NEW."created_at", NEW."updated_at" ) WHERE id = OLD.id;
+        UPDATE ONLY temporal.goos SET ( "name", "created_at", "updated_at" ) = ( NEW."name", NEW."created_at", NEW."updated_at" ) WHERE id = OLD.id;
 
         RETURN NEW;
     END;
@@ -726,6 +726,7 @@ SET default_table_access_method = heap;
 
 CREATE TABLE temporal.boos (
     id bigint NOT NULL,
+    name character varying NOT NULL,
     goo_id bigint,
     created_at timestamp(6) without time zone NOT NULL,
     updated_at timestamp(6) without time zone NOT NULL
@@ -897,6 +898,7 @@ ALTER SEQUENCE history.countries_hid_seq OWNED BY history.countries.hid;
 
 CREATE TABLE temporal.goos (
     id bigint NOT NULL,
+    name character varying NOT NULL,
     created_at timestamp(6) without time zone NOT NULL,
     updated_at timestamp(6) without time zone NOT NULL
 );
@@ -1040,6 +1042,7 @@ CREATE TABLE public.ar_internal_metadata (
 
 CREATE VIEW public.boos AS
  SELECT boos.id,
+    boos.name,
     boos.goo_id,
     boos.created_at,
     boos.updated_at
@@ -1146,6 +1149,7 @@ ALTER SEQUENCE public.foos_id_seq OWNED BY public.foos.id;
 
 CREATE VIEW public.goos AS
  SELECT goos.id,
+    goos.name,
     goos.created_at,
     goos.updated_at
    FROM ONLY temporal.goos;
