@@ -47,6 +47,8 @@ gem 'slim-rails', '~> 3.6'
 # App monitoring
 gem 'newrelic_rpm', '~> 9.1'
 
+gem 'pundit'
+
 group :development, :test do
   gem 'byebug', '~> 11.1', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 6.2'
@@ -76,6 +78,7 @@ end
 group :test do
   gem 'capybara', '~> 3.38'
   gem 'email_spec', '~> 2.2'
+  gem 'pundit-matchers'
   gem 'selenium-webdriver', '~> 4.8'
   gem 'simplecov', '~> 0.22.0', require: false
   gem 'simplecov-lcov', '~> 0.8.0', require: false
