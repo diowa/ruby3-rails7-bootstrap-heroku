@@ -47,6 +47,9 @@ gem 'slim-rails', '~> 3.6'
 # App monitoring
 gem 'newrelic_rpm', '~> 9.2'
 
+gem 'caxlsx'
+gem 'caxlsx_rails'
+
 group :development, :test do
   gem 'byebug', '~> 11.1', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 6.2'
