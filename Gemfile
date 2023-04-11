@@ -47,7 +47,7 @@ gem 'slim-rails', '~> 3.6'
 # App monitoring
 gem 'newrelic_rpm', '~> 9.2'
 
-gem 'caxlsx'
+gem 'caxlsx', path: '~/dev/caxlsx'
 gem 'caxlsx_rails'
 
 group :development, :test do
