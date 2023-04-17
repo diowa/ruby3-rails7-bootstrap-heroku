@@ -4,12 +4,12 @@ rows = [
   #"=cmd|'/C calc'!A0", # Ok
   # "@SUM(1+1)*cmd|' /C calc'!A0", # no
   # "+thespanishinquisition(cmd|'/c calc.exe'!A", # no
-  "=cmd|'/C calc'!A0",
-  # "{=cmd|'/C calc'!A0}", # Not ok
+  #"=cmd|'/C calc'!A0",
+  "{=cmd|'/C calc'!A0}", # Not ok
   # "+10+20+cmd|' /C calc'!A0", # Ok on macOS
 ].freeze
 
-# xlsx_package.use_shared_strings = true
+xlsx_package.use_shared_strings = true
 
 wb = xlsx_package.workbook
 

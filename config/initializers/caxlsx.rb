@@ -29,12 +29,10 @@ module Axlsx
     end
 
     def is_array_formula?
-      return false if escape_formulas
-
       type == :string && @value.to_s.start_with?('{=') && @value.to_s.end_with?('}')
     end
   end
 end
 
 Axlsx::Worksheet.prepend Axlsx::WorksheetEscapeFormulasPatch
-# Axlsx::Cell.prepend Axlsx::CellEscapeFormulasPatch
+Axlsx::Cell.prepend Axlsx::CellEscapeFormulasPatch
