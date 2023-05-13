@@ -313,7 +313,7 @@ DEPENDENCIES
   rack-timeout (~> 0.6.3)
   rails (= 7.0.4.3)
   rspec-rails (~> 6.0)
-  rubocop (~> 1.50)
+  rubocop (~> 1.51)
   rubocop-performance (~> 1.17)
   rubocop-rails (~> 2.19)
   rubocop-rspec (~> 2.22)
