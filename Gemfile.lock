@@ -317,7 +317,7 @@ DEPENDENCIES
   rspec-rails (~> 6.0)
   rubocop (~> 1.52)
   rubocop-performance (~> 1.18)
-  rubocop-rails (~> 2.19)
+  rubocop-rails (~> 2.20)
   rubocop-rspec (~> 2.22)
   selenium-webdriver (~> 4.10)
   shakapacker (= 6.6.0)
