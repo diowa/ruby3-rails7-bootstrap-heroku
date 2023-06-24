@@ -1,2 +1,2 @@
 web: bundle exec bin/rails server -p 3000
-webpacker: bundle exec bin/webpacker-dev-server
+shakapacker: bundle exec bin/shakapacker-dev-server
