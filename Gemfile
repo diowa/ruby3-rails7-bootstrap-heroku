@@ -6,7 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.2.2'
 
 gem 'bootsnap', require: false
-gem 'newrelic_rpm', '~> 9.2'
+gem 'newrelic_rpm', '~> 9.3'
 gem 'pg', '~> 1.5'
 gem 'puma', '~> 6.3'
 gem 'rails', '7.0.5'
