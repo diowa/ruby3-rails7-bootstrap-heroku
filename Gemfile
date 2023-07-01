@@ -5,11 +5,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.2.2'
 
+gem 'rails', '7.0.6'
+
 gem 'bootsnap', require: false
 gem 'newrelic_rpm', '~> 9.3'
 gem 'pg', '~> 1.5'
 gem 'puma', '~> 6.3'
-gem 'rails', '7.0.6'
 gem 'shakapacker', '7.0.1'
 gem 'slim-rails', '~> 3.6'
 gem 'turbo-rails', '~> 1.4'
