@@ -11,7 +11,7 @@ gem 'bootsnap', require: false
 gem 'newrelic_rpm', '~> 9.3'
 gem 'pg', '~> 1.5'
 gem 'puma', '~> 6.3'
-gem 'shakapacker', '7.0.2'
+gem 'shakapacker', '7.0.3'
 gem 'slim-rails', '~> 3.6'
 gem 'turbo-rails', '~> 1.4'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
