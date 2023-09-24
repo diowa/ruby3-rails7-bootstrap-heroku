@@ -18,7 +18,7 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', github: 'thoughtbot/factory_bot_rails', ref: 'b965bb8f6430947f841b2aac3a1a956ea8cdfd0a'
   gem 'faker'
   gem 'pry'
   gem 'pry-byebug'

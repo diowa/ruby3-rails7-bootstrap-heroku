@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/thoughtbot/factory_bot_rails.git
+  revision: b965bb8f6430947f841b2aac3a1a956ea8cdfd0a
+  ref: b965bb8f6430947f841b2aac3a1a956ea8cdfd0a
+  specs:
+    factory_bot_rails (6.2.0)
+      factory_bot (~> 6.3.0)
+      railties (>= 5.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -97,11 +106,8 @@ GEM
       launchy (~> 2.1)
       mail (~> 2.7)
     erubi (1.12.0)
-    factory_bot (6.2.1)
+    factory_bot (6.3.0)
       activesupport (>= 5.0.0)
-    factory_bot_rails (6.2.0)
-      factory_bot (~> 6.2.0)
-      railties (>= 5.0.0)
     faker (3.2.1)
       i18n (>= 1.8.11, < 2)
     globalid (1.2.1)
@@ -313,7 +319,7 @@ DEPENDENCIES
   byebug
   capybara
   email_spec
-  factory_bot_rails
+  factory_bot_rails!
   faker
   newrelic_rpm (~> 9.5)
   pg (~> 1.5)
