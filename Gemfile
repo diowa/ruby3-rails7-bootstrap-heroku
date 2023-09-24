@@ -38,6 +38,7 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'database_cleaner-active_record'
   gem 'email_spec'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
