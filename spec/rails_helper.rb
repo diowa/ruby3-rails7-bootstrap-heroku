@@ -8,6 +8,7 @@ require_relative '../config/environment'
 abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
+require 'active_storage_validations/matchers'
 require 'capybara/rspec'
 require 'webmock/rspec'
 
@@ -38,6 +39,9 @@ end
 RSpec.configure do |config|
   # Allow to use `t` instead of `I18n.t` in specs
   config.include AbstractController::Translation
+
+  # Allow to use ActiveStorageValidations matchers
+  config.include ActiveStorageValidations::Matchers
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = Rails.root.join('spec/fixtures')
