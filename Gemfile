@@ -7,7 +7,7 @@ ruby '3.2.2'
 
 gem 'rails', '7.1.1'
 
-gem 'active_storage_validations', '1.0.4'
+gem 'active_storage_validations', '1.1.0'
 
 gem 'bootsnap', require: false
 gem 'newrelic_rpm', '~> 9.5'
