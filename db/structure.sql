@@ -1224,6 +1224,36 @@ COMMENT ON VIEW public.schools IS '{"temporal":true,"_uses_legacy_table_name":tr
 
 
 --
+-- Name: somethings; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.somethings (
+    id bigint NOT NULL,
+    created_at timestamp(6) without time zone NOT NULL,
+    updated_at timestamp(6) without time zone NOT NULL
+);
+
+
+--
+-- Name: somethings_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.somethings_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: somethings_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.somethings_id_seq OWNED BY public.somethings.id;
+
+
+--
 -- Name: students; Type: VIEW; Schema: public; Owner: -
 --
 
@@ -1489,6 +1519,13 @@ ALTER TABLE ONLY public.school_positions ALTER COLUMN id SET DEFAULT nextval('pu
 
 
 --
+-- Name: somethings id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.somethings ALTER COLUMN id SET DEFAULT nextval('public.somethings_id_seq'::regclass);
+
+
+--
 -- Name: boos id; Type: DEFAULT; Schema: temporal; Owner: -
 --
 
@@ -1679,6 +1716,14 @@ ALTER TABLE ONLY public.schema_migrations
 
 ALTER TABLE ONLY public.school_positions
     ADD CONSTRAINT school_positions_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: somethings somethings_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.somethings
+    ADD CONSTRAINT somethings_pkey PRIMARY KEY (id);
 
 
 --
@@ -2213,6 +2258,7 @@ CREATE TRIGGER chronomodel_update INSTEAD OF UPDATE ON public.students FOR EACH 
 SET search_path TO "$user", public;
 
 INSERT INTO "schema_migrations" (version) VALUES
+('20231104181507'),
 ('20231005152838'),
 ('20231005152837'),
 ('20231005152836'),
