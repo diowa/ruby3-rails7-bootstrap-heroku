@@ -110,7 +110,7 @@ GEM
       launchy (~> 2.1)
       mail (~> 2.7)
     erubi (1.12.0)
-    factory_bot (6.4.0)
+    factory_bot (6.4.1)
       activesupport (>= 5.0.0)
     factory_bot_rails (6.4.0)
       factory_bot (~> 6.4)
@@ -124,7 +124,7 @@ GEM
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
-    irb (1.9.0)
+    irb (1.9.1)
       rdoc
       reline (>= 0.3.8)
     json (2.6.3)
@@ -158,7 +158,7 @@ GEM
       net-protocol
     newrelic_rpm (9.6.0)
       base64
-    nio4r (2.6.0)
+    nio4r (2.6.1)
     nokogiri (1.15.5)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
@@ -239,7 +239,7 @@ GEM
     rspec-mocks (3.12.6)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
-    rspec-rails (6.0.3)
+    rspec-rails (6.1.0)
       actionpack (>= 6.1)
       activesupport (>= 6.1)
       railties (>= 6.1)
