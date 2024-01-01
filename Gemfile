@@ -16,6 +16,8 @@ gem 'slim-rails', '~> 3.6'
 gem 'turbo-rails', '~> 2.0'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
+gem 'route_translator'
+
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails'
