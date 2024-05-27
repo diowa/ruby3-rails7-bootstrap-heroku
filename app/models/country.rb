@@ -8,4 +8,7 @@ class Country < ApplicationRecord
   has_many :students, through: :schools
 
   validates :name, presence: true
+
+  has_one :council
+  has_one :first_member, through: :council
 end
