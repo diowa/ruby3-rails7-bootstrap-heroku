@@ -3,12 +3,12 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.3.1'
+ruby '3.3.2'
 
 gem 'rails', '7.1.3.3'
 
 gem 'bootsnap', require: false
-gem 'newrelic_rpm', '~> 9.9'
+gem 'newrelic_rpm', '~> 9.10'
 gem 'pg', '~> 1.5'
 gem 'puma', '~> 6.4'
 gem 'shakapacker', '7.2.3'

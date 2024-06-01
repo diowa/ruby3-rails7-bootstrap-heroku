@@ -7,15 +7,15 @@
 
 This is an opinionated starter web application based on the following technology stack:
 
-* [Ruby 3.3.1][:ruby-url]
-* [Rails 7.1.3.2][:ruby-on-rails-url]
+* [Ruby 3.3.2][:ruby-url]
+* [Rails 7.1.3.3][:ruby-on-rails-url]
 * [Webpack 5][:webpack-url] (via [Shakapacker][:shakapacker-url])
 * [Yarn][:yarn-url]
 * [Puma][:puma-url]
 * [PostgreSQL][:postgresql-url]
 * [Redis][:redis-url]
 * [RSpec][:rspec-url]
-* [Bootstrap 5.3.2][:bootstrap-url]
+* [Bootstrap 5.3.3][:bootstrap-url]
 * [Autoprefixer][:autoprefixer-url]
 * [Font Awesome 6.5.2 SVG][:fontawesome-url]
 * [Slim][:slim-url]
