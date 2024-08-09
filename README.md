@@ -8,7 +8,7 @@
 This is an opinionated starter web application based on the following technology stack:
 
 * [Ruby 3.3.4][:ruby-url]
-* [Rails 7.1.3.4][:ruby-on-rails-url]
+* [Rails 7.2.0][:ruby-on-rails-url]
 * [Webpack 5][:webpack-url] (via [Shakapacker][:shakapacker-url])
 * [Yarn][:yarn-url]
 * [Puma][:puma-url]
@@ -17,7 +17,7 @@ This is an opinionated starter web application based on the following technology
 * [RSpec][:rspec-url]
 * [Bootstrap 5.3.3][:bootstrap-url]
 * [Autoprefixer][:autoprefixer-url]
-* [Font Awesome 6.5.2 SVG][:fontawesome-url]
+* [Font Awesome 6.6.0 SVG][:fontawesome-url]
 * [Slim][:slim-url]
 * [RuboCop][:rubocop-url]
 * [RuboCop RSpec][:rubocop-rspec-url]
