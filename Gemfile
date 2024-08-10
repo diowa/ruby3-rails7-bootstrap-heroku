@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.3.4'
 
-gem 'rails', '7.1.3.4'
+gem 'rails', '7.2.0'
 
 gem 'bootsnap', require: false
 gem 'newrelic_rpm', '~> 9.12'
@@ -17,6 +17,7 @@ gem 'turbo-rails', '~> 2.0'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
+  gem 'brakeman', require: false
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails'
   gem 'faker'
