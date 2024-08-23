@@ -1535,15 +1535,15 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
-"@rails/actioncable@7.2.0", "@rails/actioncable@^7.0":
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-7.2.0.tgz#dee66d21bc125a9819dc8080ce896eac78d8c63f"
-  integrity sha512-crcsPF3skrqJkFZLxesZoyUEt8ol25XtTuOAUMdLa5qQKWTZpL8eLVW71bDCwKDQLbV2z5sBZ/XGEC0i+ZZa+A==
+"@rails/actioncable@7.2.100", "@rails/actioncable@^7.0":
+  version "7.2.100"
+  resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-7.2.100.tgz#86ec1c2e00c357cef1e421fd63863d5c34339ce8"
+  integrity sha512-7xtIENf0Yw59AFDM3+xqxPCZxev3QVAqjPmUzmgsB9eL8S/zTpB0IU9srNc7XknzJI4e09XKNnCaJRx3gfYzXA==
 
-"@rails/activestorage@7.2.0":
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/@rails/activestorage/-/activestorage-7.2.0.tgz#bc03b52a687ba2bb9d2e6381f25795cda037494e"
-  integrity sha512-jXK9tKDZn/j+ZeJuFdrtyrLNLWjzYRyp+mejWTfSp+egAp1okXsdfFNe8jqqgwcP8gytqJSPwo0sZwQVdQpuIA==
+"@rails/activestorage@7.2.100":
+  version "7.2.100"
+  resolved "https://registry.yarnpkg.com/@rails/activestorage/-/activestorage-7.2.100.tgz#c1e643d3c35c62c946e6f7c8d812fa567d2ce915"
+  integrity sha512-gohCilm1E10W51Hc9iT960xX9TP11L5TJ4W1ufs9f3h5Ncsw01S/eHgVUfcdfszqw3G+28Z0MFu999+iSpgdTg==
   dependencies:
     spark-md5 "^3.0.1"
 
