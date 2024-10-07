@@ -10,7 +10,7 @@ This is an opinionated starter web application based on the following technology
 * [Ruby 3.3.5][:ruby-url]
 * [Rails 7.2.1][:ruby-on-rails-url]
 * [Webpack 5][:webpack-url] (via [Shakapacker][:shakapacker-url])
-* [Yarn][:yarn-url]
+* [npm][:npm-url]
 * [Puma][:puma-url]
 * [PostgreSQL][:postgresql-url]
 * [Redis][:redis-url]
@@ -27,6 +27,7 @@ This is an opinionated starter web application based on the following technology
 [:autoprefixer-url]: https://github.com/postcss/autoprefixer
 [:bootstrap-url]: https://getbootstrap.com/
 [:fontawesome-url]: https://fontawesome.com/
+[:npm-url]: https://www.npmjs.com/
 [:postgresql-url]: https://www.postgresql.org/
 [:puma-url]: https://puma.io/
 [:redis-url]: https://redis.io/
@@ -40,7 +41,6 @@ This is an opinionated starter web application based on the following technology
 [:slim-url]: http://slim-lang.com/
 [:stylelint-url]: https://stylelint.io/
 [:webpack-url]: https://webpack.js.org/
-[:yarn-url]: https://yarnpkg.com/lang/en/
 
 Starter App is deployable on [Heroku](https://www.heroku.com/). Demo: https://ruby3-rails7-bootstrap-heroku.herokuapp.com/
 
