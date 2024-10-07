@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-namespace :yarn do
+namespace :npx do
   # rubocop:disable Rails/RakeEnvironment
   task :run, %i[command] do |_, args|
     # Install only production deps when for not usual envs.
@@ -11,25 +11,25 @@ namespace :yarn do
 
     system(
       { 'NODE_ENV' => node_env },
-      "yarn #{args[:command]}",
+      "npx #{args[:command]}",
       exception: true
     )
   rescue Errno::ENOENT
-    warn 'bin/yarn was not found.'
+    warn 'npx was not found.'
     exit 1
   end
 
-  desc 'Run `bin/yarn stylelint app/**/*.{scss,css}`'
+  desc 'Run `npx stylelint app/**/*.{scss,css}`'
   task :stylelint do
-    Rake::Task['yarn:run'].execute(command: "stylelint #{Dir.glob('app/**/*.{scss,css}').join(' ')}")
+    Rake::Task['npx:run'].execute(command: "stylelint #{Dir.glob('app/**/*.{scss,css}').join(' ')}")
   end
 
-  desc 'Run `bin/yarn eslint`'
+  desc 'Run `npx eslint`'
   task :eslint do
-    Rake::Task['yarn:run'].execute(command: 'eslint app/**/*.js')
+    Rake::Task['npx:run'].execute(command: 'eslint app/**/*.js')
   end
   # rubocop:enable Rails/RakeEnvironment
 end
 
-task(:lint).sources.push 'yarn:stylelint'
-task(:lint).sources.push 'yarn:eslint'
+task(:lint).sources.push 'npx:stylelint'
+task(:lint).sources.push 'npx:eslint'
