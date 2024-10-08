@@ -10,7 +10,7 @@ This is an opinionated starter web application based on the following technology
 * [Ruby 3.3.5][:ruby-url]
 * [Rails 7.2.1][:ruby-on-rails-url]
 * [Webpack 5][:webpack-url] (via [Shakapacker][:shakapacker-url])
-* [npm][:npm-url]
+* [pnpm][:pnpm-url]
 * [Puma][:puma-url]
 * [PostgreSQL][:postgresql-url]
 * [Redis][:redis-url]
@@ -27,7 +27,7 @@ This is an opinionated starter web application based on the following technology
 [:autoprefixer-url]: https://github.com/postcss/autoprefixer
 [:bootstrap-url]: https://getbootstrap.com/
 [:fontawesome-url]: https://fontawesome.com/
-[:npm-url]: https://www.npmjs.com/
+[:pnpm-url]: https://pnpm.io/
 [:postgresql-url]: https://www.postgresql.org/
 [:puma-url]: https://puma.io/
 [:redis-url]: https://redis.io/
