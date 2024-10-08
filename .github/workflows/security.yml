@@ -40,8 +40,8 @@ jobs:
         gem install bundler-leak
         bundle leak check --update
 
-  yarn_audit:
-    name: Yarn audit
+  npm_audit:
+    name: npm audit
     runs-on: ubuntu-latest
 
     steps:
@@ -50,6 +50,5 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '20'
-    - name: Yarn audit
-      run: |
-        yarn audit
+    - name: npm audit
+      run: npm audit
