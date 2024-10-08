@@ -107,7 +107,7 @@ jobs:
       with:
         node-version: '20'
         cache: 'npm'
-    - uses: xt0rted/stylelint-problem-matcher@b74877121d5a43e7e621cef8e7d64f168ed211a4
+    - uses: xt0rted/stylelint-problem-matcher@v1
     - name: Run npm install
       if: steps.changed-files.outputs.any_changed == 'true'
       run: |
