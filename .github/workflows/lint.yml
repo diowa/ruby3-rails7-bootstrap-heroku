@@ -113,6 +113,7 @@ jobs:
       run: |
         npm install -g npm@10.9.0
         npm install
+        npm install -D stylelint-actions-formatters
     - name: Run Stylelint
       if: steps.changed-files.outputs.any_changed == 'true'
-      run: npx stylelint app/**/*.{scss,css} --no-color
+      run: npx stylelint app/**/*.{scss,css} --custom-formatter=stylelint-actions-formatters --no-color
