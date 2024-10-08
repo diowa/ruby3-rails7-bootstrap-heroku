@@ -73,20 +73,18 @@ jobs:
           .eslintrc.cjs
           .github/workflows/lint.yml
           app/**/*.js
+    - uses: pnpm/action-setup@v4
     - name: Set up Node
       if: steps.changed-files.outputs.any_changed == 'true'
       uses: actions/setup-node@v4
       with:
         node-version: '20'
-        cache: 'npm'
-    - name: Run npm install
-      if: steps.changed-files.outputs.any_changed == 'true'
-      run: |
-        npm install -g npm@10.9.0
-        npm install
+        cache: 'pnpm'
+    - name: Install node dependencies
+      run: pnpm install
     - name: Run ESLint
       if: steps.changed-files.outputs.any_changed == 'true'
-      run: npx eslint app/**/*.js
+      run: pnpm eslint app/**/*.js
 
   stylelint:
     name: Stylelint
@@ -101,17 +99,15 @@ jobs:
           .github/workflows/lint.yml
           .stylelintrc
           app/**/*.{scss,css}
+    - uses: pnpm/action-setup@v4
     - name: Set up Node
       if: steps.changed-files.outputs.any_changed == 'true'
       uses: actions/setup-node@v4
       with:
         node-version: '20'
-        cache: 'npm'
-    - name: Run npm install
-      if: steps.changed-files.outputs.any_changed == 'true'
-      run: |
-        npm install -g npm@10.9.0
-        npm install
+        cache: 'pnpm'
+    - name: Install node dependencies
+      run: pnpm install
     - name: Run Stylelint
       if: steps.changed-files.outputs.any_changed == 'true'
-      run: npx stylelint app/**/*.{scss,css}
+      run: pnpm stylelint app/**/*.{scss,css}
