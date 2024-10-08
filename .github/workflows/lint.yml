@@ -114,4 +114,4 @@ jobs:
         npm install
     - name: Run Stylelint
       if: steps.changed-files.outputs.any_changed == 'true'
-      run: npx stylelint app/**/*.{scss,css}
+      run: npx stylelint app/**/*.{scss,css} --formatter=github
