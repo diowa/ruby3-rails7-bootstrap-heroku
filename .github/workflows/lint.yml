@@ -110,4 +110,4 @@ jobs:
       run: pnpm install
     - name: Run Stylelint
       if: steps.changed-files.outputs.any_changed == 'true'
-      run: pnpm stylelint app/**/*.{scss,css}
+      run: pnpm stylelint app/**/*.{scss,css} --formatter=github
