@@ -16,6 +16,9 @@ gem 'slim-rails', '~> 3.6'
 gem 'turbo-rails', '~> 2.0'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
+gem 'rack', '~> 2.2'
+gem 'rackup', '1.0.0', require: false
+
 group :development, :test do
   gem 'brakeman', require: false
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
