@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe 'Pages' do
+RSpec.describe 'Pages', :js do
   describe 'Home' do
     it 'has application name in title' do
       visit root_path
