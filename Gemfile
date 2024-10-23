@@ -17,7 +17,7 @@ gem 'turbo-rails', '~> 2.0'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'rack', '~> 2.2'
-gem 'rackup', '1.0.0', require: false
+gem 'rackup', '1.0.1', require: false
 
 group :development, :test do
   gem 'brakeman', require: false
