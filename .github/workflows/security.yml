@@ -11,6 +11,11 @@ jobs:
   bundle_audit:
     name: Bundle audit
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    concurrency:
+      group: "${{ github.workflow }} / bundle_audit @ ${{ github.ref }}"
+      cancel-in-progress: true
 
     steps:
     - uses: actions/checkout@v4
@@ -27,6 +32,11 @@ jobs:
   bundle_leak:
     name: Bundle leak
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    concurrency:
+      group: "${{ github.workflow }} / bundle_leak @ ${{ github.ref }}"
+      cancel-in-progress: true
 
     steps:
     - uses: actions/checkout@v4
@@ -40,15 +50,21 @@ jobs:
         gem install bundler-leak
         bundle leak check --update
 
-  npm_audit:
-    name: npm audit
+  pnpm_audit:
+    name: pnpm audit
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    concurrency:
+      group: "${{ github.workflow }} / pnpm_audit @ ${{ github.ref }}"
+      cancel-in-progress: true
 
     steps:
     - uses: actions/checkout@v4
+    - uses: pnpm/action-setup@v4
     - name: Set up Node
       uses: actions/setup-node@v4
       with:
         node-version: '20'
-    - name: npm audit
-      run: npm audit
+    - name: pnpm audit
+      run: pnpm audit
