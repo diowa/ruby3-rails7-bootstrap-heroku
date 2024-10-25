@@ -13,6 +13,11 @@ jobs:
   rubocop:
     name: RuboCop
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    concurrency:
+      group: "${{ github.workflow }} / rubocop @ ${{ github.ref }}"
+      cancel-in-progress: true
 
     steps:
     - uses: actions/checkout@v4
@@ -39,6 +44,11 @@ jobs:
   slimlint:
     name: Slim-Lint
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    concurrency:
+      group: "${{ github.workflow }} / slimlint @ ${{ github.ref }}"
+      cancel-in-progress: true
 
     steps:
     - uses: actions/checkout@v4
@@ -62,6 +72,11 @@ jobs:
   eslint:
     name: ESLint
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    concurrency:
+      group: "${{ github.workflow }} / eslint @ ${{ github.ref }}"
+      cancel-in-progress: true
 
     steps:
     - uses: actions/checkout@v4
@@ -89,6 +104,11 @@ jobs:
   stylelint:
     name: Stylelint
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    concurrency:
+      group: "${{ github.workflow }} / stylelint @ ${{ github.ref }}"
+      cancel-in-progress: true
 
     steps:
     - uses: actions/checkout@v4
