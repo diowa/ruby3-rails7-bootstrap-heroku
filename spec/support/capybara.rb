@@ -1,6 +1,18 @@
 # frozen_string_literal: true
 
 Capybara.register_driver :custom_chrome do |app|
+  # Opt-out for Selenium data collection.
+  #
+  # Note: This is the only available method to disable telemetry at this point.
+  # Configuring the driver here is too late as the manager is already set at
+  # the system level.
+  #
+  # To test that telemetry is not being send, use the command:
+  # `DEBUG=true SE_CLEAR_CACHE=true rspec`
+  #
+  # Ref: SeleniumHQ/selenium#13173
+  ENV['SE_AVOID_STATS'] = 'true'
+
   opts = Selenium::WebDriver::Chrome::Options.new
 
   # See https://github.com/GoogleChrome/chrome-launcher/blob/main/docs/chrome-flags-for-tools.md
