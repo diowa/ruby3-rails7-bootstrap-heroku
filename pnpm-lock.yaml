@@ -90,8 +90,8 @@ importers:
         specifier: 1.77.6
         version: 1.77.6
       sass-loader:
-        specifier: ^16.0.3
-        version: 16.0.3(sass@1.77.6)(webpack@5.97.0)
+        specifier: ^16.0.4
+        version: 16.0.4(sass@1.77.6)(webpack@5.97.0)
       shakapacker:
         specifier: 8.0.2
         version: 8.0.2(@babel/core@7.26.0)(@babel/plugin-transform-runtime@7.25.9(@babel/core@7.26.0))(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@babel/runtime@7.26.0)(babel-loader@9.2.1(@babel/core@7.26.0)(webpack@5.97.0))(compression-webpack-plugin@11.1.0(webpack@5.97.0))(terser-webpack-plugin@5.3.10(webpack@5.97.0))(webpack-assets-manifest@5.2.1(webpack@5.97.0))(webpack-cli@5.1.4)(webpack-dev-server@5.1.0)(webpack-merge@6.0.1)(webpack@5.97.0)
@@ -3572,8 +3572,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sass-loader@16.0.3:
-    resolution: {integrity: sha512-gosNorT1RCkuCMyihv6FBRR7BMV06oKRAs+l4UMp1mlcVg9rWN6KMmUj3igjQwmYys4mDP3etEYJgiHRbgHCHA==}
+  sass-loader@16.0.4:
+    resolution: {integrity: sha512-LavLbgbBGUt3wCiYzhuLLu65+fWXaXLmq7YxivLhEqmiupCFZ5sKUAipK3do6V80YSU0jvSxNhEdT13IXNr3rg==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
       '@rspack/core': 0.x || 1.x
@@ -8002,7 +8002,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass-loader@16.0.3(sass@1.77.6)(webpack@5.97.0):
+  sass-loader@16.0.4(sass@1.77.6)(webpack@5.97.0):
     dependencies:
       neo-async: 2.6.2
     optionalDependencies:
