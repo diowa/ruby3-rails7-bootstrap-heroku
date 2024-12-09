@@ -36,7 +36,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'i18n-tasks', require: false
+  gem 'i18n-tasks', github: 'retailzipline/i18n-tasks', branch: 'pluralization', require: false
   gem 'rack-mini-profiler'
   gem 'web-console'
 end

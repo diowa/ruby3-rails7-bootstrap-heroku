@@ -1,12 +1,12 @@
 ---
-en:
+ar:
   activemodel:
     models:
       user:
         one: User
         other: Users
   app_name: Rails 7 Starter App
-  meta_description: An opinionated starter application based on Ruby 3.3, Rails 7.2, Webpack 5, Yarn, and Bootstrap 5
+  meta_description: An opinionated starter application based on Ruby 3.1, Rails 7.1, Webpack 5, Yarn, and Bootstrap 5
   shared:
     navbar:
       toggle_navigation: Toggle Navigation
