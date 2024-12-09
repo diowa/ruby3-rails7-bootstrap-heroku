@@ -41,6 +41,35 @@ jobs:
       if: steps.changed-files.outputs.any_changed == 'true'
       run: bundle exec rubocop --format github
 
+  i18n:
+    name: I18n tasks
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    concurrency:
+      group: "${{ github.workflow }} / i18n @ ${{ github.ref }}"
+      cancel-in-progress: true
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: tj-actions/changed-files@v45
+      id: changed-files
+      with:
+        files: |
+          .github/workflows/lint.yml
+          config/i18n-tasks.yml
+          config/locales/**/*.yml
+          app/**/*
+          Gemfile*
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.3.6'
+        bundler-cache: true
+    - name: Run i18n-tasks health
+      if: steps.changed-files.outputs.any_changed == 'true'
+      run: bundle exec i18n-tasks health
+
   slimlint:
     name: Slim-Lint
     runs-on: ubuntu-latest
