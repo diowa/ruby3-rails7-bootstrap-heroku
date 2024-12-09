@@ -23,11 +23,11 @@ Capybara.register_driver :custom_chrome do |app|
     'BackForwardCache',
     'MediaRouter',
     'OptimizationHints',
-    'ProcessPerSiteUpToMainFrameThreshold' # crbug.com/1492053
+    'ProcessPerSiteUpToMainFrameThreshold', # crbug.com/1492053
   ]
 
   enabled_features = [
-    'NetworkServiceInProcess2'
+    'NetworkServiceInProcess2',
   ]
 
   opts.add_argument('allow-pre-commit-input')
