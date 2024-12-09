@@ -17,30 +17,32 @@ This is an opinionated starter web application based on the following technology
 * [RSpec][:rspec-url]
 * [Bootstrap 5.3.3][:bootstrap-url]
 * [Autoprefixer][:autoprefixer-url]
-* [Font Awesome 6.6.0 SVG][:fontawesome-url]
+* [Font Awesome 6.7.1 SVG][:fontawesome-url]
 * [Slim][:slim-url]
 * [RuboCop][:rubocop-url]
 * [RuboCop RSpec][:rubocop-rspec-url]
 * [Slim-Lint][:slim-lint-url]
 * [stylelint][:stylelint-url]
+* [i18n-tasks][:i18n-tasks-url]
 
 [:autoprefixer-url]: https://github.com/postcss/autoprefixer
-[:bootstrap-url]: https://getbootstrap.com/
-[:fontawesome-url]: https://fontawesome.com/
+[:bootstrap-url]: https://getbootstrap.com
+[:fontawesome-url]: https://fontawesome.com
+[:i18n-tasks-url]: https://github.com/glebm/i18n-tasks
 [:pnpm-url]: https://pnpm.io/
-[:postgresql-url]: https://www.postgresql.org/
-[:puma-url]: https://puma.io/
-[:redis-url]: https://redis.io/
-[:rspec-url]: https://rspec.info/
+[:postgresql-url]: https://www.postgresql.org
+[:puma-url]: https://puma.io
+[:redis-url]: https://redis.io
+[:rspec-url]: https://rspec.info
 [:rubocop-rspec-url]: https://github.com/backus/rubocop-rspec
 [:rubocop-url]: https://github.com/bbatsov/rubocop
-[:ruby-on-rails-url]: https://rubyonrails.org/
+[:ruby-on-rails-url]: https://rubyonrails.org
 [:ruby-url]: https://www.ruby-lang.org/en/
 [:shakapacker-url]: https://github.com/shakacode/shakapacker
 [:slim-lint-url]: https://github.com/sds/slim-lint
-[:slim-url]: http://slim-lang.com/
-[:stylelint-url]: https://stylelint.io/
-[:webpack-url]: https://webpack.js.org/
+[:slim-url]: https://slim-lang.com
+[:stylelint-url]: https://stylelint.io
+[:webpack-url]: https://webpack.js.org
 
 Starter App is deployable on [Heroku](https://www.heroku.com/). Demo: https://ruby3-rails7-bootstrap-heroku.herokuapp.com/
 
