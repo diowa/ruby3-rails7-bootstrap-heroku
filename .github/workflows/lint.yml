@@ -62,6 +62,7 @@ jobs:
           app/**/*
           Gemfile*
     - name: Setup Ruby
+      if: steps.changed-files.outputs.any_changed == 'true'
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.3.6'
