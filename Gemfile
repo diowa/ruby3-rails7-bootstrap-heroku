@@ -21,6 +21,7 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails'
   gem 'faker'
+  gem 'i18n-tasks', require: false
   gem 'pry'
   gem 'pry-byebug'
   gem 'pry-rails'
@@ -36,7 +37,6 @@ group :development, :test do
 end
 
 group :development do
-  gem 'i18n-tasks', require: false
   gem 'rack-mini-profiler'
   gem 'web-console'
 end
