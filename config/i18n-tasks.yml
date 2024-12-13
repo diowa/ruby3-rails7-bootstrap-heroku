@@ -139,10 +139,10 @@ search:
 ## Do not consider these keys missing:
 ignore_missing:
   ar:
-    - *.zero
-    - *.two
-    - *.few
-    - *.many
+    - '*.zero'
+    - '*.two'
+    - '*.few'
+    - '*.many'
 # - 'errors.messages.{accepted,blank,invalid,too_short,too_long}'
 # - '{devise,simple_form}.*'
 
