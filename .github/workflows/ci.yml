@@ -59,6 +59,8 @@ jobs:
       run: pnpm install
     - name: Set up Database
       run: bundle exec rails db:prepare
+    - name: Compile assets (webpack-contrib/stylelint-webpack-plugin#364)
+      run: NODE_ENV=development pnpm webpack -c config/webpack/webpack.config.js
     - name: Run specs
       run: bundle exec rake spec
     - name: Coveralls
