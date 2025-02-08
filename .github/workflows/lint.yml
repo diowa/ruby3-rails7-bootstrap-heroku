@@ -35,7 +35,7 @@ jobs:
       if: steps.changed-files.outputs.any_changed == 'true'
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.4.1'
+        ruby-version: .ruby-version
         bundler-cache: true
     - name: Run RuboCop
       if: steps.changed-files.outputs.any_changed == 'true'
@@ -65,7 +65,7 @@ jobs:
       if: steps.changed-files.outputs.any_changed == 'true'
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.4.1'
+        ruby-version: .ruby-version
         bundler-cache: true
     - name: Run i18n-tasks health
       if: steps.changed-files.outputs.any_changed == 'true'
@@ -93,7 +93,7 @@ jobs:
       if: steps.changed-files.outputs.any_changed == 'true'
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.4.1'
+        ruby-version: .ruby-version
         bundler-cache: true
     - name: Run Slim-Lint
       if: steps.changed-files.outputs.any_changed == 'true'
