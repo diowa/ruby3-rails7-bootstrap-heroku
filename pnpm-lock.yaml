@@ -94,13 +94,13 @@ importers:
         version: 16.0.5(sass@1.77.6)(webpack@5.98.0)
       shakapacker:
         specifier: 8.1.0
-        version: 8.1.0(@babel/core@7.26.9)(@babel/plugin-transform-runtime@7.26.9(@babel/core@7.26.9))(@babel/preset-env@7.26.9(@babel/core@7.26.9))(@babel/runtime@7.26.9)(babel-loader@9.2.1(@babel/core@7.26.9)(webpack@5.98.0))(compression-webpack-plugin@11.1.0(webpack@5.98.0))(terser-webpack-plugin@5.3.11(webpack@5.98.0))(webpack-assets-manifest@5.2.1(webpack@5.98.0))(webpack-cli@6.0.1)(webpack-dev-server@5.2.0)(webpack-merge@6.0.1)(webpack@5.98.0)
+        version: 8.1.0(@babel/core@7.26.9)(@babel/plugin-transform-runtime@7.26.9(@babel/core@7.26.9))(@babel/preset-env@7.26.9(@babel/core@7.26.9))(@babel/runtime@7.26.9)(babel-loader@9.2.1(@babel/core@7.26.9)(webpack@5.98.0))(compression-webpack-plugin@11.1.0(webpack@5.98.0))(terser-webpack-plugin@5.3.12(webpack@5.98.0))(webpack-assets-manifest@5.2.1(webpack@5.98.0))(webpack-cli@6.0.1)(webpack-dev-server@5.2.0)(webpack-merge@6.0.1)(webpack@5.98.0)
       style-loader:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.98.0)
       terser-webpack-plugin:
-        specifier: ^5.3.11
-        version: 5.3.11(webpack@5.98.0)
+        specifier: ^5.3.12
+        version: 5.3.12(webpack@5.98.0)
       webpack:
         specifier: ^5.98.0
         version: 5.98.0(webpack-cli@6.0.1)
@@ -3987,8 +3987,8 @@ packages:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
 
-  terser-webpack-plugin@5.3.11:
-    resolution: {integrity: sha512-RVCsMfuD0+cTt3EwX8hSl2Ks56EbFHWmhluwcqoPKtBnfjiT6olaq7PRIRfhyU8nnC2MrnDrBLfrD/RGE+cVXQ==}
+  terser-webpack-plugin@5.3.12:
+    resolution: {integrity: sha512-jDLYqo7oF8tJIttjXO6jBY5Hk8p3A8W4ttih7cCEq64fQFWmgJ4VqAQjKr7WwIDlmXKEc6QeoRb5ecjZ+2afcg==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
       '@swc/core': '*'
@@ -4003,8 +4003,8 @@ packages:
       uglify-js:
         optional: true
 
-  terser@5.38.1:
-    resolution: {integrity: sha512-GWANVlPM/ZfYzuPHjq0nxT+EbOEDDN3Jwhwdg1D8TU8oSkktp8w64Uq4auuGLxFSoNTRDncTq2hQHX1Ld9KHkA==}
+  terser@5.39.0:
+    resolution: {integrity: sha512-LBAhFyLho16harJoWMg/nZsQYgTrg5jXOn2nCYjRUcZZEdE3qa2zb8QEDRUGVZBW4rlazf2fxkg8tztybTaqWw==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -7225,7 +7225,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 22.13.1
+      '@types/node': 22.13.5
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -8338,7 +8338,7 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  shakapacker@8.1.0(@babel/core@7.26.9)(@babel/plugin-transform-runtime@7.26.9(@babel/core@7.26.9))(@babel/preset-env@7.26.9(@babel/core@7.26.9))(@babel/runtime@7.26.9)(babel-loader@9.2.1(@babel/core@7.26.9)(webpack@5.98.0))(compression-webpack-plugin@11.1.0(webpack@5.98.0))(terser-webpack-plugin@5.3.11(webpack@5.98.0))(webpack-assets-manifest@5.2.1(webpack@5.98.0))(webpack-cli@6.0.1)(webpack-dev-server@5.2.0)(webpack-merge@6.0.1)(webpack@5.98.0):
+  shakapacker@8.1.0(@babel/core@7.26.9)(@babel/plugin-transform-runtime@7.26.9(@babel/core@7.26.9))(@babel/preset-env@7.26.9(@babel/core@7.26.9))(@babel/runtime@7.26.9)(babel-loader@9.2.1(@babel/core@7.26.9)(webpack@5.98.0))(compression-webpack-plugin@11.1.0(webpack@5.98.0))(terser-webpack-plugin@5.3.12(webpack@5.98.0))(webpack-assets-manifest@5.2.1(webpack@5.98.0))(webpack-cli@6.0.1)(webpack-dev-server@5.2.0)(webpack-merge@6.0.1)(webpack@5.98.0):
     dependencies:
       '@babel/core': 7.26.9
       '@babel/plugin-transform-runtime': 7.26.9(@babel/core@7.26.9)
@@ -8348,7 +8348,7 @@ snapshots:
       compression-webpack-plugin: 11.1.0(webpack@5.98.0)
       js-yaml: 4.1.0
       path-complete-extname: 1.0.0
-      terser-webpack-plugin: 5.3.11(webpack@5.98.0)
+      terser-webpack-plugin: 5.3.12(webpack@5.98.0)
       webpack: 5.98.0(webpack-cli@6.0.1)
       webpack-assets-manifest: 5.2.1(webpack@5.98.0)
       webpack-cli: 6.0.1(webpack-dev-server@5.2.0)(webpack@5.98.0)
@@ -8682,16 +8682,16 @@ snapshots:
 
   tapable@2.2.1: {}
 
-  terser-webpack-plugin@5.3.11(webpack@5.98.0):
+  terser-webpack-plugin@5.3.12(webpack@5.98.0):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 4.3.0
       serialize-javascript: 6.0.2
-      terser: 5.38.1
+      terser: 5.39.0
       webpack: 5.98.0(webpack-cli@6.0.1)
 
-  terser@5.38.1:
+  terser@5.39.0:
     dependencies:
       '@jridgewell/source-map': 0.3.6
       acorn: 8.14.0
@@ -8940,7 +8940,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.11(webpack@5.98.0)
+      terser-webpack-plugin: 5.3.12(webpack@5.98.0)
       watchpack: 2.4.2
       webpack-sources: 3.2.3
     optionalDependencies:
