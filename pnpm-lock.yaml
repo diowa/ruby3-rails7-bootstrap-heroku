@@ -33,8 +33,8 @@ importers:
         specifier: ^6.7.2
         version: 6.7.2
       '@hotwired/turbo-rails':
-        specifier: ^8.0.12
-        version: 8.0.12
+        specifier: ^8.0.13
+        version: 8.0.13
       '@popperjs/core':
         specifier: ^2.11.8
         version: 2.11.8
@@ -975,11 +975,11 @@ packages:
     resolution: {integrity: sha512-GsBrnOzU8uj0LECDfD5zomZJIjrPhIlWU82AHwa2s40FKH+kcxQaBvBo3Z4TxyZHIyX8XTDxsyA33/Vx9eFuQA==}
     engines: {node: '>=6'}
 
-  '@hotwired/turbo-rails@8.0.12':
-    resolution: {integrity: sha512-ZXwu9ez+Gd4RQNeHIitqOQgi/LyqY8J4JqsUN0nnYiZDBRq7IreeFdMbz29VdJpIsmYqwooE4cFzPU7QvJkQkA==}
+  '@hotwired/turbo-rails@8.0.13':
+    resolution: {integrity: sha512-6SCnnOSzhtaJ0pNkAjncZxjtKsK3sP/vPEkCnTXBXSHkr+vF7DTZkOlwjhms1DbbQNTsjCsBoKvzSMbh/omSCQ==}
 
-  '@hotwired/turbo@8.0.12':
-    resolution: {integrity: sha512-l3BiQRkD7qrnQv6ms6sqPLczvwbQpXt5iAVwjDvX0iumrz6yEonQkNAzNjeDX25/OJMFDTxpHjkJZHGpM9ikWw==}
+  '@hotwired/turbo@8.0.13':
+    resolution: {integrity: sha512-M7qXUqcGab6G5PKOiwhgbByTtrPgKPFCTMNQ52QhzUEXEqmp0/ApEguUesh/FPiUjrmFec+3lq98KsWnYY2C7g==}
     engines: {node: '>= 14'}
 
   '@humanfs/core@0.19.1':
@@ -5252,12 +5252,12 @@ snapshots:
     dependencies:
       '@fortawesome/fontawesome-common-types': 6.7.2
 
-  '@hotwired/turbo-rails@8.0.12':
+  '@hotwired/turbo-rails@8.0.13':
     dependencies:
-      '@hotwired/turbo': 8.0.12
+      '@hotwired/turbo': 8.0.13
       '@rails/actioncable': 7.2.201
 
-  '@hotwired/turbo@8.0.12': {}
+  '@hotwired/turbo@8.0.13': {}
 
   '@humanfs/core@0.19.1': {}
 
