@@ -94,13 +94,13 @@ importers:
         version: 16.0.5(sass@1.77.6)(webpack@5.98.0)
       shakapacker:
         specifier: 8.1.0
-        version: 8.1.0(@babel/core@7.26.9)(@babel/plugin-transform-runtime@7.26.9(@babel/core@7.26.9))(@babel/preset-env@7.26.9(@babel/core@7.26.9))(@babel/runtime@7.26.9)(babel-loader@9.2.1(@babel/core@7.26.9)(webpack@5.98.0))(compression-webpack-plugin@11.1.0(webpack@5.98.0))(terser-webpack-plugin@5.3.12(webpack@5.98.0))(webpack-assets-manifest@5.2.1(webpack@5.98.0))(webpack-cli@6.0.1)(webpack-dev-server@5.2.0)(webpack-merge@6.0.1)(webpack@5.98.0)
+        version: 8.1.0(@babel/core@7.26.9)(@babel/plugin-transform-runtime@7.26.9(@babel/core@7.26.9))(@babel/preset-env@7.26.9(@babel/core@7.26.9))(@babel/runtime@7.26.9)(babel-loader@9.2.1(@babel/core@7.26.9)(webpack@5.98.0))(compression-webpack-plugin@11.1.0(webpack@5.98.0))(terser-webpack-plugin@5.3.13(webpack@5.98.0))(webpack-assets-manifest@5.2.1(webpack@5.98.0))(webpack-cli@6.0.1)(webpack-dev-server@5.2.0)(webpack-merge@6.0.1)(webpack@5.98.0)
       style-loader:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.98.0)
       terser-webpack-plugin:
-        specifier: ^5.3.12
-        version: 5.3.12(webpack@5.98.0)
+        specifier: ^5.3.13
+        version: 5.3.13(webpack@5.98.0)
       webpack:
         specifier: ^5.98.0
         version: 5.98.0(webpack-cli@6.0.1)
@@ -1183,6 +1183,9 @@ packages:
   '@types/node@22.13.5':
     resolution: {integrity: sha512-+lTU0PxZXn0Dr1NBtC7Y8cR21AJr87dLLU953CWA6pMxxv/UDc7jYAY90upcrie1nRcD6XNG5HOYEDtgW5TxAg==}
 
+  '@types/node@22.13.9':
+    resolution: {integrity: sha512-acBjXdRJ3A6Pb3tqnw9HZmyR3Fiol3aGxRCK1x3d+6CDAMjl7I649wpSd+yNURCjbOUGu9tqtLKnTGxmK6CyGw==}
+
   '@types/parse-json@4.0.2':
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
 
@@ -1350,6 +1353,11 @@ packages:
 
   acorn@8.14.0:
     resolution: {integrity: sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
+  acorn@8.14.1:
+    resolution: {integrity: sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -3984,8 +3992,8 @@ packages:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
 
-  terser-webpack-plugin@5.3.12:
-    resolution: {integrity: sha512-jDLYqo7oF8tJIttjXO6jBY5Hk8p3A8W4ttih7cCEq64fQFWmgJ4VqAQjKr7WwIDlmXKEc6QeoRb5ecjZ+2afcg==}
+  terser-webpack-plugin@5.3.13:
+    resolution: {integrity: sha512-JG3pBixF6kx2o0Yfz2K6pqh72DpwTI08nooHd06tcj5WyIt5SsSiUYqRT+kemrGUNSuSzVhwfZ28aO8gogajNQ==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
       '@swc/core': '*'
@@ -5283,7 +5291,7 @@ snapshots:
       '@jest/schemas': 29.6.3
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 22.13.5
+      '@types/node': 22.13.9
       '@types/yargs': 17.0.33
       chalk: 4.1.2
 
@@ -5426,7 +5434,7 @@ snapshots:
 
   '@types/express-serve-static-core@4.19.6':
     dependencies:
-      '@types/node': 22.13.5
+      '@types/node': 22.13.9
       '@types/qs': 6.9.18
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
@@ -5456,7 +5464,7 @@ snapshots:
 
   '@types/http-proxy@1.17.16':
     dependencies:
-      '@types/node': 22.13.5
+      '@types/node': 22.13.9
 
   '@types/istanbul-lib-coverage@2.0.6': {}
 
@@ -5477,13 +5485,17 @@ snapshots:
 
   '@types/node-forge@1.3.11':
     dependencies:
-      '@types/node': 22.13.5
+      '@types/node': 22.13.9
 
   '@types/node@22.13.1':
     dependencies:
       undici-types: 6.20.0
 
   '@types/node@22.13.5':
+    dependencies:
+      undici-types: 6.20.0
+
+  '@types/node@22.13.9':
     dependencies:
       undici-types: 6.20.0
 
@@ -5708,6 +5720,8 @@ snapshots:
       acorn: 8.14.0
 
   acorn@8.14.0: {}
+
+  acorn@8.14.1: {}
 
   adjust-sourcemap-loader@4.0.0:
     dependencies:
@@ -7220,7 +7234,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 22.13.5
+      '@types/node': 22.13.9
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -8333,7 +8347,7 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  shakapacker@8.1.0(@babel/core@7.26.9)(@babel/plugin-transform-runtime@7.26.9(@babel/core@7.26.9))(@babel/preset-env@7.26.9(@babel/core@7.26.9))(@babel/runtime@7.26.9)(babel-loader@9.2.1(@babel/core@7.26.9)(webpack@5.98.0))(compression-webpack-plugin@11.1.0(webpack@5.98.0))(terser-webpack-plugin@5.3.12(webpack@5.98.0))(webpack-assets-manifest@5.2.1(webpack@5.98.0))(webpack-cli@6.0.1)(webpack-dev-server@5.2.0)(webpack-merge@6.0.1)(webpack@5.98.0):
+  shakapacker@8.1.0(@babel/core@7.26.9)(@babel/plugin-transform-runtime@7.26.9(@babel/core@7.26.9))(@babel/preset-env@7.26.9(@babel/core@7.26.9))(@babel/runtime@7.26.9)(babel-loader@9.2.1(@babel/core@7.26.9)(webpack@5.98.0))(compression-webpack-plugin@11.1.0(webpack@5.98.0))(terser-webpack-plugin@5.3.13(webpack@5.98.0))(webpack-assets-manifest@5.2.1(webpack@5.98.0))(webpack-cli@6.0.1)(webpack-dev-server@5.2.0)(webpack-merge@6.0.1)(webpack@5.98.0):
     dependencies:
       '@babel/core': 7.26.9
       '@babel/plugin-transform-runtime': 7.26.9(@babel/core@7.26.9)
@@ -8343,7 +8357,7 @@ snapshots:
       compression-webpack-plugin: 11.1.0(webpack@5.98.0)
       js-yaml: 4.1.0
       path-complete-extname: 1.0.0
-      terser-webpack-plugin: 5.3.12(webpack@5.98.0)
+      terser-webpack-plugin: 5.3.13(webpack@5.98.0)
       webpack: 5.98.0(webpack-cli@6.0.1)
       webpack-assets-manifest: 5.2.1(webpack@5.98.0)
       webpack-cli: 6.0.1(webpack-dev-server@5.2.0)(webpack@5.98.0)
@@ -8677,7 +8691,7 @@ snapshots:
 
   tapable@2.2.1: {}
 
-  terser-webpack-plugin@5.3.12(webpack@5.98.0):
+  terser-webpack-plugin@5.3.13(webpack@5.98.0):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
@@ -8689,7 +8703,7 @@ snapshots:
   terser@5.39.0:
     dependencies:
       '@jridgewell/source-map': 0.3.6
-      acorn: 8.14.0
+      acorn: 8.14.1
       commander: 2.20.3
       source-map-support: 0.5.21
 
@@ -8935,7 +8949,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.12(webpack@5.98.0)
+      terser-webpack-plugin: 5.3.13(webpack@5.98.0)
       watchpack: 2.4.2
       webpack-sources: 3.2.3
     optionalDependencies:
