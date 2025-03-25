@@ -18,8 +18,8 @@ importers:
         specifier: ^7.26.9
         version: 7.26.9(@babel/core@7.26.10)
       '@babel/runtime':
-        specifier: ^7.26.10
-        version: 7.26.10
+        specifier: ^7.27.0
+        version: 7.27.0
       '@fortawesome/fontawesome-svg-core':
         specifier: ^6.7.2
         version: 6.7.2
@@ -94,7 +94,7 @@ importers:
         version: 16.0.5(sass@1.77.6)(webpack@5.98.0)
       shakapacker:
         specifier: 8.2.0
-        version: 8.2.0(@babel/core@7.26.10)(@babel/plugin-transform-runtime@7.26.10(@babel/core@7.26.10))(@babel/preset-env@7.26.9(@babel/core@7.26.10))(@babel/runtime@7.26.10)(babel-loader@10.0.0(@babel/core@7.26.10)(webpack@5.98.0))(compression-webpack-plugin@11.1.0(webpack@5.98.0))(terser-webpack-plugin@5.3.14(webpack@5.98.0))(webpack-assets-manifest@5.2.1(webpack@5.98.0))(webpack-cli@6.0.1)(webpack-dev-server@5.2.0)(webpack-merge@6.0.1)(webpack@5.98.0)
+        version: 8.2.0(@babel/core@7.26.10)(@babel/plugin-transform-runtime@7.26.10(@babel/core@7.26.10))(@babel/preset-env@7.26.9(@babel/core@7.26.10))(@babel/runtime@7.27.0)(babel-loader@10.0.0(@babel/core@7.26.10)(webpack@5.98.0))(compression-webpack-plugin@11.1.0(webpack@5.98.0))(terser-webpack-plugin@5.3.14(webpack@5.98.0))(webpack-assets-manifest@5.2.1(webpack@5.98.0))(webpack-cli@6.0.1)(webpack-dev-server@5.2.0)(webpack-merge@6.0.1)(webpack@5.98.0)
       style-loader:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.98.0)
@@ -115,8 +115,8 @@ importers:
         version: 6.0.1
     devDependencies:
       '@babel/eslint-parser':
-        specifier: ^7.26.10
-        version: 7.26.10(@babel/core@7.26.10)(eslint@9.23.0(jiti@1.21.7))
+        specifier: ^7.27.0
+        version: 7.27.0(@babel/core@7.26.10)(eslint@9.23.0(jiti@1.21.7))
       '@types/express':
         specifier: ^5.0.1
         version: 5.0.1
@@ -169,8 +169,8 @@ packages:
     resolution: {integrity: sha512-vMqyb7XCDMPvJFFOaT9kxtiRh42GwlZEg1/uIgtZshS5a/8OaduUfCi7kynKgc3Tw/6Uo2D+db9qBttghhmxwQ==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/eslint-parser@7.26.10':
-    resolution: {integrity: sha512-QsfQZr4AiLpKqn7fz+j7SN+f43z2DZCgGyYbNJ2vJOqKfG4E6MZer1+jqGZqKJaxq/gdO2DC/nUu45+pOL5p2Q==}
+  '@babel/eslint-parser@7.27.0':
+    resolution: {integrity: sha512-dtnzmSjXfgL/HDgMcmsLSzyGbEosi4DrGWoCNfuI+W4IkVJw6izpTe7LtOdwAXnkDqw5yweboYCTkM2rQizCng==}
     engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
     peerDependencies:
       '@babel/core': ^7.11.0
@@ -639,8 +639,8 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0 || ^8.0.0-0 <8.0.0
 
-  '@babel/runtime@7.26.10':
-    resolution: {integrity: sha512-2WJMeRQPHKSPemqk/awGrAiuFfzBmOIPXKizAsVhWH9YJqLZ0H+HS4c8loHGgW6utJ3E/ejXQUsiGaQy2NZ9Fw==}
+  '@babel/runtime@7.27.0':
+    resolution: {integrity: sha512-VtPOkrdPHZsKc/clNqyi9WUA8TINkZ4cGk63UUE3u4pmB2k+ZMQRDuIOagv8UVd6j7k0T3+RRIb7beKTebNbcw==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.26.9':
@@ -4343,7 +4343,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/eslint-parser@7.26.10(@babel/core@7.26.10)(eslint@9.23.0(jiti@1.21.7))':
+  '@babel/eslint-parser@7.27.0(@babel/core@7.26.10)(eslint@9.23.0(jiti@1.21.7))':
     dependencies:
       '@babel/core': 7.26.10
       '@nicolo-ribaudo/eslint-scope-5-internals': 5.1.1-v1
@@ -4947,7 +4947,7 @@ snapshots:
       '@babel/types': 7.26.10
       esutils: 2.0.3
 
-  '@babel/runtime@7.26.10':
+  '@babel/runtime@7.27.0':
     dependencies:
       regenerator-runtime: 0.14.1
 
@@ -5955,7 +5955,7 @@ snapshots:
 
   babel-plugin-macros@3.1.0:
     dependencies:
-      '@babel/runtime': 7.26.10
+      '@babel/runtime': 7.27.0
       cosmiconfig: 7.1.0
       resolve: 1.22.10
 
@@ -8193,7 +8193,7 @@ snapshots:
 
   regenerator-transform@0.15.2:
     dependencies:
-      '@babel/runtime': 7.26.10
+      '@babel/runtime': 7.27.0
 
   regex-parser@2.3.1: {}
 
@@ -8410,12 +8410,12 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  shakapacker@8.2.0(@babel/core@7.26.10)(@babel/plugin-transform-runtime@7.26.10(@babel/core@7.26.10))(@babel/preset-env@7.26.9(@babel/core@7.26.10))(@babel/runtime@7.26.10)(babel-loader@10.0.0(@babel/core@7.26.10)(webpack@5.98.0))(compression-webpack-plugin@11.1.0(webpack@5.98.0))(terser-webpack-plugin@5.3.14(webpack@5.98.0))(webpack-assets-manifest@5.2.1(webpack@5.98.0))(webpack-cli@6.0.1)(webpack-dev-server@5.2.0)(webpack-merge@6.0.1)(webpack@5.98.0):
+  shakapacker@8.2.0(@babel/core@7.26.10)(@babel/plugin-transform-runtime@7.26.10(@babel/core@7.26.10))(@babel/preset-env@7.26.9(@babel/core@7.26.10))(@babel/runtime@7.27.0)(babel-loader@10.0.0(@babel/core@7.26.10)(webpack@5.98.0))(compression-webpack-plugin@11.1.0(webpack@5.98.0))(terser-webpack-plugin@5.3.14(webpack@5.98.0))(webpack-assets-manifest@5.2.1(webpack@5.98.0))(webpack-cli@6.0.1)(webpack-dev-server@5.2.0)(webpack-merge@6.0.1)(webpack@5.98.0):
     dependencies:
       '@babel/core': 7.26.10
       '@babel/plugin-transform-runtime': 7.26.10(@babel/core@7.26.10)
       '@babel/preset-env': 7.26.9(@babel/core@7.26.10)
-      '@babel/runtime': 7.26.10
+      '@babel/runtime': 7.27.0
       babel-loader: 10.0.0(@babel/core@7.26.10)(webpack@5.98.0)
       compression-webpack-plugin: 11.1.0(webpack@5.98.0)
       js-yaml: 4.1.0
