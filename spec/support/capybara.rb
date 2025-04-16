@@ -23,11 +23,11 @@ Capybara.register_driver :custom_chrome do |app|
     'MediaRouter',
     'OptimizationHints',
     'ProcessPerSiteUpToMainFrameThreshold', # crbug.com/1492053
-    'IsolateSandboxedIframes' # https://github.com/puppeteer/puppeteer/issues/10715
+    'IsolateSandboxedIframes', # https://github.com/puppeteer/puppeteer/issues/10715
   ]
 
   enabled_features = [
-    'PdfOopif'
+    'PdfOopif',
   ]
 
   opts.add_argument('allow-pre-commit-input')
