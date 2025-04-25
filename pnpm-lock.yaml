@@ -94,7 +94,7 @@ importers:
         version: 16.0.5(sass@1.87.0)(webpack@5.99.6)
       shakapacker:
         specifier: 8.2.0
-        version: 8.2.0(@babel/core@7.26.10)(@babel/plugin-transform-runtime@7.26.10(@babel/core@7.26.10))(@babel/preset-env@7.26.9(@babel/core@7.26.10))(@babel/runtime@7.27.0)(babel-loader@10.0.0(@babel/core@7.26.10)(webpack@5.99.6))(compression-webpack-plugin@11.1.0(webpack@5.99.6))(terser-webpack-plugin@5.3.14(webpack@5.99.6))(webpack-assets-manifest@5.2.1(webpack@5.99.6))(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack-merge@6.0.1)(webpack@5.99.6)
+        version: 8.2.0(@babel/core@7.26.10)(@babel/plugin-transform-runtime@7.26.10(@babel/core@7.26.10))(@babel/preset-env@7.26.9(@babel/core@7.26.10))(@babel/runtime@7.27.0)(babel-loader@10.0.0(@babel/core@7.26.10)(webpack@5.99.6))(compression-webpack-plugin@11.1.0(webpack@5.99.6))(terser-webpack-plugin@5.3.14(webpack@5.99.6))(webpack-assets-manifest@6.0.2(webpack@5.99.6))(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack-merge@6.0.1)(webpack@5.99.6)
       style-loader:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.99.6)
@@ -105,8 +105,8 @@ importers:
         specifier: ^5.99.6
         version: 5.99.6(webpack-cli@6.0.1)
       webpack-assets-manifest:
-        specifier: ^5.2.1
-        version: 5.2.1(webpack@5.99.6)
+        specifier: ^6.0.2
+        version: 6.0.2(webpack@5.99.6)
       webpack-cli:
         specifier: ^6.0.1
         version: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.6)
@@ -1547,11 +1547,6 @@ packages:
       ajv:
         optional: true
 
-  ajv-keywords@3.5.2:
-    resolution: {integrity: sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==}
-    peerDependencies:
-      ajv: ^6.9.1
-
   ajv-keywords@5.1.0:
     resolution: {integrity: sha512-YCS/JNFAUyr5vAuhk1DWm1CBxRHW9LbJ2ozWeemrIqpbsqKjHVxYPyi5GC0rjZIT5JxJ3virVTS8wk4i/Z+krw==}
     peerDependencies:
@@ -2936,13 +2931,6 @@ packages:
   lodash.debounce@4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
 
-  lodash.get@4.4.2:
-    resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
-    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
-
-  lodash.has@4.5.2:
-    resolution: {integrity: sha512-rnYUdIo6xRCJnQmbVFEwcxF144erlD+M3YcJUVesflU9paQaE8p+fJDcIQrlMYbxoANFL+AB9hZrzSBBk5PL+g==}
-
   lodash.memoize@4.1.2:
     resolution: {integrity: sha512-t7j+NzmgnQzTAYXcsHYLgimltOV1MXHtlOWf6GjL9Kj8GK5FInw5JotxvbOs+IvV1/Dzo04/fCGfLVs7aXb4Ag==}
 
@@ -3846,12 +3834,12 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  schema-utils@3.3.0:
-    resolution: {integrity: sha512-pN/yOAvcC+5rQ5nERGuwrjLlYvLTbCibnZ1I7B1LaiAz9BRBlE9GMgE/eqV30P7aJQUf7Ddimy/RsbYO/GrVGg==}
-    engines: {node: '>= 10.13.0'}
-
   schema-utils@4.3.0:
     resolution: {integrity: sha512-Gf9qqc58SpCA/xdziiHz35F4GNIWYWZrEshUc/G/r5BnLph6xpKuLeoJoQuj5WfBIx/eQLf+hmVPYHaxJu7V2g==}
+    engines: {node: '>= 10.13.0'}
+
+  schema-utils@4.3.2:
+    resolution: {integrity: sha512-Gn/JaSk/Mt9gYubxTtSn/QCV4em9mpAPiR1rqy/Ocu19u/G9J5WWdNoUT4SiV6mFC3y6cxyFcFwdzPM3FgxGAQ==}
     engines: {node: '>= 10.13.0'}
 
   select-hose@2.0.0:
@@ -4320,11 +4308,11 @@ packages:
   wbuf@1.7.3:
     resolution: {integrity: sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==}
 
-  webpack-assets-manifest@5.2.1:
-    resolution: {integrity: sha512-MsEcXVio1GY6R+b4dVfTHIDMB0RB90KajQG8neRbH92vE2S1ClGw9mNa9NPlratYBvZOhExmN0qqMNFTaCTuIg==}
-    engines: {node: '>=10.13.0'}
+  webpack-assets-manifest@6.0.2:
+    resolution: {integrity: sha512-L27ie/OYb+AHqHQzBJ3wGSm5IHRPPO0lsCNoYwDa8qL5rNkTfmNSRnyWQK6TLvL3wLhsrAcVbnM/S17A6gv0DA==}
+    engines: {node: '>=20.10.0'}
     peerDependencies:
-      webpack: ^5.2.0
+      webpack: ^5.61.0
 
   webpack-cli@6.0.1:
     resolution: {integrity: sha512-MfwFQ6SfwinsUVi0rNJm7rHZ31GyTcpVE5pgVA3hwFRb7COD4TzjUUwhGWKfO50+xdc2MQPuEBBJoqIMGt3JDw==}
@@ -6038,10 +6026,6 @@ snapshots:
     optionalDependencies:
       ajv: 8.17.1
 
-  ajv-keywords@3.5.2(ajv@6.12.6):
-    dependencies:
-      ajv: 6.12.6
-
   ajv-keywords@5.1.0(ajv@8.17.1):
     dependencies:
       ajv: 8.17.1
@@ -7623,10 +7607,6 @@ snapshots:
 
   lodash.debounce@4.0.8: {}
 
-  lodash.get@4.4.2: {}
-
-  lodash.has@4.5.2: {}
-
   lodash.memoize@4.1.2: {}
 
   lodash.merge@4.6.2: {}
@@ -8544,13 +8524,14 @@ snapshots:
     optionalDependencies:
       '@parcel/watcher': 2.5.1
 
-  schema-utils@3.3.0:
+  schema-utils@4.3.0:
     dependencies:
       '@types/json-schema': 7.0.15
-      ajv: 6.12.6
-      ajv-keywords: 3.5.2(ajv@6.12.6)
+      ajv: 8.17.1
+      ajv-formats: 2.1.1(ajv@8.17.1)
+      ajv-keywords: 5.1.0(ajv@8.17.1)
 
-  schema-utils@4.3.0:
+  schema-utils@4.3.2:
     dependencies:
       '@types/json-schema': 7.0.15
       ajv: 8.17.1
@@ -8637,7 +8618,7 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  shakapacker@8.2.0(@babel/core@7.26.10)(@babel/plugin-transform-runtime@7.26.10(@babel/core@7.26.10))(@babel/preset-env@7.26.9(@babel/core@7.26.10))(@babel/runtime@7.27.0)(babel-loader@10.0.0(@babel/core@7.26.10)(webpack@5.99.6))(compression-webpack-plugin@11.1.0(webpack@5.99.6))(terser-webpack-plugin@5.3.14(webpack@5.99.6))(webpack-assets-manifest@5.2.1(webpack@5.99.6))(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack-merge@6.0.1)(webpack@5.99.6):
+  shakapacker@8.2.0(@babel/core@7.26.10)(@babel/plugin-transform-runtime@7.26.10(@babel/core@7.26.10))(@babel/preset-env@7.26.9(@babel/core@7.26.10))(@babel/runtime@7.27.0)(babel-loader@10.0.0(@babel/core@7.26.10)(webpack@5.99.6))(compression-webpack-plugin@11.1.0(webpack@5.99.6))(terser-webpack-plugin@5.3.14(webpack@5.99.6))(webpack-assets-manifest@6.0.2(webpack@5.99.6))(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack-merge@6.0.1)(webpack@5.99.6):
     dependencies:
       '@babel/core': 7.26.10
       '@babel/plugin-transform-runtime': 7.26.10(@babel/core@7.26.10)
@@ -8649,7 +8630,7 @@ snapshots:
       path-complete-extname: 1.0.0
       terser-webpack-plugin: 5.3.14(webpack@5.99.6)
       webpack: 5.99.6(webpack-cli@6.0.1)
-      webpack-assets-manifest: 5.2.1(webpack@5.99.6)
+      webpack-assets-manifest: 6.0.2(webpack@5.99.6)
       webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.6)
       webpack-dev-server: 5.2.1(webpack-cli@6.0.1)(webpack@5.99.6)
       webpack-merge: 6.0.1
@@ -9156,14 +9137,11 @@ snapshots:
     dependencies:
       minimalistic-assert: 1.0.1
 
-  webpack-assets-manifest@5.2.1(webpack@5.99.6):
+  webpack-assets-manifest@6.0.2(webpack@5.99.6):
     dependencies:
-      chalk: 4.1.2
       deepmerge: 4.3.1
       lockfile: 1.0.4
-      lodash.get: 4.4.2
-      lodash.has: 4.5.2
-      schema-utils: 3.3.0
+      schema-utils: 4.3.2
       tapable: 2.2.1
       webpack: 5.99.6(webpack-cli@6.0.1)
 
