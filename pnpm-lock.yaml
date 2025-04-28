@@ -46,7 +46,7 @@ importers:
         version: 7.2.201
       babel-loader:
         specifier: ^10.0.0
-        version: 10.0.0(@babel/core@7.26.10)(webpack@5.99.6)
+        version: 10.0.0(@babel/core@7.26.10)(webpack@5.99.7)
       babel-plugin-macros:
         specifier: ^3.1.0
         version: 3.1.0
@@ -55,19 +55,19 @@ importers:
         version: 5.3.5(@popperjs/core@2.11.8)
       compression-webpack-plugin:
         specifier: ^11.1.0
-        version: 11.1.0(webpack@5.99.6)
+        version: 11.1.0(webpack@5.99.7)
       css-loader:
         specifier: ^7.1.2
-        version: 7.1.2(webpack@5.99.6)
+        version: 7.1.2(webpack@5.99.7)
       css-minimizer-webpack-plugin:
         specifier: ^7.0.2
-        version: 7.0.2(webpack@5.99.6)
+        version: 7.0.2(webpack@5.99.7)
       exports-loader:
         specifier: ^5.0.0
-        version: 5.0.0(webpack@5.99.6)
+        version: 5.0.0(webpack@5.99.7)
       mini-css-extract-plugin:
         specifier: ^2.9.2
-        version: 2.9.2(webpack@5.99.6)
+        version: 2.9.2(webpack@5.99.7)
       postcss:
         specifier: ^8.5.3
         version: 8.5.3
@@ -79,7 +79,7 @@ importers:
         version: 16.1.0(postcss@8.5.3)
       postcss-loader:
         specifier: ^8.1.1
-        version: 8.1.1(postcss@8.5.3)(typescript@5.6.3)(webpack@5.99.6)
+        version: 8.1.1(postcss@8.5.3)(typescript@5.6.3)(webpack@5.99.7)
       postcss-preset-env:
         specifier: ^10.1.6
         version: 10.1.6(postcss@8.5.3)
@@ -91,25 +91,25 @@ importers:
         version: 1.87.0
       sass-loader:
         specifier: ^16.0.5
-        version: 16.0.5(sass@1.87.0)(webpack@5.99.6)
+        version: 16.0.5(sass@1.87.0)(webpack@5.99.7)
       shakapacker:
         specifier: 8.2.0
-        version: 8.2.0(@babel/core@7.26.10)(@babel/plugin-transform-runtime@7.26.10(@babel/core@7.26.10))(@babel/preset-env@7.26.9(@babel/core@7.26.10))(@babel/runtime@7.27.0)(babel-loader@10.0.0(@babel/core@7.26.10)(webpack@5.99.6))(compression-webpack-plugin@11.1.0(webpack@5.99.6))(terser-webpack-plugin@5.3.14(webpack@5.99.6))(webpack-assets-manifest@5.2.1(webpack@5.99.6))(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack-merge@6.0.1)(webpack@5.99.6)
+        version: 8.2.0(@babel/core@7.26.10)(@babel/plugin-transform-runtime@7.26.10(@babel/core@7.26.10))(@babel/preset-env@7.26.9(@babel/core@7.26.10))(@babel/runtime@7.27.0)(babel-loader@10.0.0(@babel/core@7.26.10)(webpack@5.99.7))(compression-webpack-plugin@11.1.0(webpack@5.99.7))(terser-webpack-plugin@5.3.14(webpack@5.99.7))(webpack-assets-manifest@5.2.1(webpack@5.99.7))(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack-merge@6.0.1)(webpack@5.99.7)
       style-loader:
         specifier: ^4.0.0
-        version: 4.0.0(webpack@5.99.6)
+        version: 4.0.0(webpack@5.99.7)
       terser-webpack-plugin:
         specifier: ^5.3.14
-        version: 5.3.14(webpack@5.99.6)
+        version: 5.3.14(webpack@5.99.7)
       webpack:
         specifier: ^5.99.6
-        version: 5.99.6(webpack-cli@6.0.1)
+        version: 5.99.7(webpack-cli@6.0.1)
       webpack-assets-manifest:
         specifier: ^5.2.1
-        version: 5.2.1(webpack@5.99.6)
+        version: 5.2.1(webpack@5.99.7)
       webpack-cli:
         specifier: ^6.0.1
-        version: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.6)
+        version: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.7)
       webpack-merge:
         specifier: ^6.0.1
         version: 6.0.1
@@ -122,34 +122,34 @@ importers:
         version: 5.0.1
       '@webpack-cli/serve':
         specifier: ^3.0.1
-        version: 3.0.1(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack@5.99.6)
+        version: 3.0.1(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack@5.99.7)
       eslint:
         specifier: ^9.25.1
         version: 9.25.1(jiti@1.21.7)
       eslint-webpack-plugin:
         specifier: ^5.0.1
-        version: 5.0.1(eslint@9.25.1(jiti@1.21.7))(webpack@5.99.6)
+        version: 5.0.1(eslint@9.25.1(jiti@1.21.7))(webpack@5.99.7)
       neostandard:
         specifier: ^0.12.1
         version: 0.12.1(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.31.0(eslint@9.25.1(jiti@1.21.7))(typescript@5.6.3))(eslint@9.25.1(jiti@1.21.7)))(eslint@9.25.1(jiti@1.21.7))(typescript@5.6.3)
       stylelint:
-        specifier: ^16.19.0
-        version: 16.19.0(typescript@5.6.3)
+        specifier: ^16.19.1
+        version: 16.19.1(typescript@5.6.3)
       stylelint-config-twbs-bootstrap:
         specifier: ^16.0.0
-        version: 16.0.0(postcss@8.5.3)(stylelint@16.19.0(typescript@5.6.3))
+        version: 16.0.0(postcss@8.5.3)(stylelint@16.19.1(typescript@5.6.3))
       stylelint-order:
         specifier: ^6.0.4
-        version: 6.0.4(stylelint@16.19.0(typescript@5.6.3))
+        version: 6.0.4(stylelint@16.19.1(typescript@5.6.3))
       stylelint-scss:
         specifier: ^6.11.1
-        version: 6.11.1(stylelint@16.19.0(typescript@5.6.3))
+        version: 6.11.1(stylelint@16.19.1(typescript@5.6.3))
       stylelint-webpack-plugin:
         specifier: ^5.0.1
-        version: 5.0.1(stylelint@16.19.0(typescript@5.6.3))(webpack@5.99.6)
+        version: 5.0.1(stylelint@16.19.1(typescript@5.6.3))(webpack@5.99.7)
       webpack-dev-server:
         specifier: ^5.2.1
-        version: 5.2.1(webpack-cli@6.0.1)(webpack@5.99.6)
+        version: 5.2.1(webpack-cli@6.0.1)(webpack@5.99.7)
 
 packages:
 
@@ -2621,8 +2621,8 @@ packages:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
 
-  ignore@7.0.3:
-    resolution: {integrity: sha512-bAH5jbK/F3T3Jls4I0SO1hmPR0dKU0a7+SY6n1yzRtG54FLO8d6w/nxLFX2Nb7dBu6cCWXPaAME6cYqFUMmuCA==}
+  ignore@7.0.4:
+    resolution: {integrity: sha512-gJzzk+PQNznz8ysRrC0aOkBNVRBDtE1n53IqyqEf3PXrYwomFs5q4pGMizBMJF+ykh03insJ27hB8gSrD2Hn8A==}
     engines: {node: '>= 4'}
 
   immutable@5.1.1:
@@ -3854,6 +3854,10 @@ packages:
     resolution: {integrity: sha512-Gf9qqc58SpCA/xdziiHz35F4GNIWYWZrEshUc/G/r5BnLph6xpKuLeoJoQuj5WfBIx/eQLf+hmVPYHaxJu7V2g==}
     engines: {node: '>= 10.13.0'}
 
+  schema-utils@4.3.2:
+    resolution: {integrity: sha512-Gn/JaSk/Mt9gYubxTtSn/QCV4em9mpAPiR1rqy/Ocu19u/G9J5WWdNoUT4SiV6mFC3y6cxyFcFwdzPM3FgxGAQ==}
+    engines: {node: '>= 10.13.0'}
+
   select-hose@2.0.0:
     resolution: {integrity: sha512-mEugaLK+YfkijB4fx0e6kImuJdCIt2LxCRcbEYPqRGCs4F2ogyfZU5IAZRdjCP8JPq2AtdNoC/Dux63d9Kiryg==}
 
@@ -4126,8 +4130,8 @@ packages:
       stylelint: ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
       webpack: ^5.0.0
 
-  stylelint@16.19.0:
-    resolution: {integrity: sha512-BJzc5mo/ez0H/ZSl3UbxGdkK/s0kFGsF5/k6IGu4z8wJ1qp49WrOS9RxswvcN6HMirt0g/iiJqOwLHTbWv49IQ==}
+  stylelint@16.19.1:
+    resolution: {integrity: sha512-C1SlPZNMKl+d/C867ZdCRthrS+6KuZ3AoGW113RZCOL0M8xOGpgx7G70wq7lFvqvm4dcfdGFVLB/mNaLFChRKw==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -4370,8 +4374,8 @@ packages:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
 
-  webpack@5.99.6:
-    resolution: {integrity: sha512-TJOLrJ6oeccsGWPl7ujCYuc0pIq2cNsuD6GZDma8i5o5Npvcco/z+NKvZSFsP0/x6SShVb0+X2JK/JHUjKY9dQ==}
+  webpack@5.99.7:
+    resolution: {integrity: sha512-CNqKBRMQjwcmKR0idID5va1qlhrqVUKpovi+Ec79ksW8ux7iS1+A6VqzfZXgVYCFRKl7XL5ap3ZoMpwBJxcg0w==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -5644,12 +5648,12 @@ snapshots:
       - supports-color
       - typescript
 
-  '@stylistic/stylelint-config@2.0.0(stylelint@16.19.0(typescript@5.6.3))':
+  '@stylistic/stylelint-config@2.0.0(stylelint@16.19.1(typescript@5.6.3))':
     dependencies:
-      '@stylistic/stylelint-plugin': 3.1.2(stylelint@16.19.0(typescript@5.6.3))
-      stylelint: 16.19.0(typescript@5.6.3)
+      '@stylistic/stylelint-plugin': 3.1.2(stylelint@16.19.1(typescript@5.6.3))
+      stylelint: 16.19.1(typescript@5.6.3)
 
-  '@stylistic/stylelint-plugin@3.1.2(stylelint@16.19.0(typescript@5.6.3))':
+  '@stylistic/stylelint-plugin@3.1.2(stylelint@16.19.1(typescript@5.6.3))':
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.4(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-tokenizer': 3.0.3
@@ -5658,7 +5662,7 @@ snapshots:
       postcss-selector-parser: 6.1.2
       postcss-value-parser: 4.2.0
       style-search: 0.1.0
-      stylelint: 16.19.0(typescript@5.6.3)
+      stylelint: 16.19.1(typescript@5.6.3)
 
   '@trysound/sax@0.2.0': {}
 
@@ -5997,22 +6001,22 @@ snapshots:
       '@webassemblyjs/ast': 1.14.1
       '@xtuc/long': 4.2.2
 
-  '@webpack-cli/configtest@3.0.1(webpack-cli@6.0.1)(webpack@5.99.6)':
+  '@webpack-cli/configtest@3.0.1(webpack-cli@6.0.1)(webpack@5.99.7)':
     dependencies:
-      webpack: 5.99.6(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.6)
+      webpack: 5.99.7(webpack-cli@6.0.1)
+      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.7)
 
-  '@webpack-cli/info@3.0.1(webpack-cli@6.0.1)(webpack@5.99.6)':
+  '@webpack-cli/info@3.0.1(webpack-cli@6.0.1)(webpack@5.99.7)':
     dependencies:
-      webpack: 5.99.6(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.6)
+      webpack: 5.99.7(webpack-cli@6.0.1)
+      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.7)
 
-  '@webpack-cli/serve@3.0.1(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack@5.99.6)':
+  '@webpack-cli/serve@3.0.1(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack@5.99.7)':
     dependencies:
-      webpack: 5.99.6(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.6)
+      webpack: 5.99.7(webpack-cli@6.0.1)
+      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.7)
     optionalDependencies:
-      webpack-dev-server: 5.2.1(webpack-cli@6.0.1)(webpack@5.99.6)
+      webpack-dev-server: 5.2.1(webpack-cli@6.0.1)(webpack@5.99.7)
 
   '@xtuc/ieee754@1.2.0': {}
 
@@ -6164,11 +6168,11 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.1.0
 
-  babel-loader@10.0.0(@babel/core@7.26.10)(webpack@5.99.6):
+  babel-loader@10.0.0(@babel/core@7.26.10)(webpack@5.99.7):
     dependencies:
       '@babel/core': 7.26.10
       find-up: 5.0.0
-      webpack: 5.99.6(webpack-cli@6.0.1)
+      webpack: 5.99.7(webpack-cli@6.0.1)
 
   babel-plugin-macros@3.1.0:
     dependencies:
@@ -6357,11 +6361,11 @@ snapshots:
     dependencies:
       mime-db: 1.54.0
 
-  compression-webpack-plugin@11.1.0(webpack@5.99.6):
+  compression-webpack-plugin@11.1.0(webpack@5.99.7):
     dependencies:
       schema-utils: 4.3.0
       serialize-javascript: 6.0.2
-      webpack: 5.99.6(webpack-cli@6.0.1)
+      webpack: 5.99.7(webpack-cli@6.0.1)
 
   compression@1.8.0:
     dependencies:
@@ -6440,7 +6444,7 @@ snapshots:
       postcss-selector-parser: 7.1.0
       postcss-value-parser: 4.2.0
 
-  css-loader@7.1.2(webpack@5.99.6):
+  css-loader@7.1.2(webpack@5.99.7):
     dependencies:
       icss-utils: 5.1.0(postcss@8.5.3)
       postcss: 8.5.3
@@ -6451,9 +6455,9 @@ snapshots:
       postcss-value-parser: 4.2.0
       semver: 7.7.1
     optionalDependencies:
-      webpack: 5.99.6(webpack-cli@6.0.1)
+      webpack: 5.99.7(webpack-cli@6.0.1)
 
-  css-minimizer-webpack-plugin@7.0.2(webpack@5.99.6):
+  css-minimizer-webpack-plugin@7.0.2(webpack@5.99.7):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       cssnano: 7.0.6(postcss@8.5.3)
@@ -6461,7 +6465,7 @@ snapshots:
       postcss: 8.5.3
       schema-utils: 4.3.0
       serialize-javascript: 6.0.2
-      webpack: 5.99.6(webpack-cli@6.0.1)
+      webpack: 5.99.7(webpack-cli@6.0.1)
 
   css-prefers-color-scheme@10.0.0(postcss@8.5.3):
     dependencies:
@@ -6935,7 +6939,7 @@ snapshots:
 
   eslint-visitor-keys@4.2.0: {}
 
-  eslint-webpack-plugin@5.0.1(eslint@9.25.1(jiti@1.21.7))(webpack@5.99.6):
+  eslint-webpack-plugin@5.0.1(eslint@9.25.1(jiti@1.21.7))(webpack@5.99.7):
     dependencies:
       '@types/eslint': 9.6.1
       eslint: 9.25.1(jiti@1.21.7)
@@ -6943,7 +6947,7 @@ snapshots:
       micromatch: 4.0.8
       normalize-path: 3.0.0
       schema-utils: 4.3.0
-      webpack: 5.99.6(webpack-cli@6.0.1)
+      webpack: 5.99.7(webpack-cli@6.0.1)
 
   eslint@9.25.1(jiti@1.21.7):
     dependencies:
@@ -7013,10 +7017,10 @@ snapshots:
 
   events@3.3.0: {}
 
-  exports-loader@5.0.0(webpack@5.99.6):
+  exports-loader@5.0.0(webpack@5.99.7):
     dependencies:
       source-map: 0.6.1
-      webpack: 5.99.6(webpack-cli@6.0.1)
+      webpack: 5.99.7(webpack-cli@6.0.1)
 
   express@4.21.2:
     dependencies:
@@ -7327,7 +7331,7 @@ snapshots:
 
   ignore@5.3.2: {}
 
-  ignore@7.0.3: {}
+  ignore@7.0.4: {}
 
   immutable@5.1.1: {}
 
@@ -7689,11 +7693,11 @@ snapshots:
 
   mime@1.6.0: {}
 
-  mini-css-extract-plugin@2.9.2(webpack@5.99.6):
+  mini-css-extract-plugin@2.9.2(webpack@5.99.7):
     dependencies:
       schema-utils: 4.3.0
       tapable: 2.2.1
-      webpack: 5.99.6(webpack-cli@6.0.1)
+      webpack: 5.99.7(webpack-cli@6.0.1)
 
   minimalistic-assert@1.0.1: {}
 
@@ -8054,14 +8058,14 @@ snapshots:
       '@csstools/utilities': 2.0.0(postcss@8.5.3)
       postcss: 8.5.3
 
-  postcss-loader@8.1.1(postcss@8.5.3)(typescript@5.6.3)(webpack@5.99.6):
+  postcss-loader@8.1.1(postcss@8.5.3)(typescript@5.6.3)(webpack@5.99.7):
     dependencies:
       cosmiconfig: 9.0.0(typescript@5.6.3)
       jiti: 1.21.7
       postcss: 8.5.3
       semver: 7.7.1
     optionalDependencies:
-      webpack: 5.99.6(webpack-cli@6.0.1)
+      webpack: 5.99.7(webpack-cli@6.0.1)
     transitivePeerDependencies:
       - typescript
 
@@ -8529,12 +8533,12 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass-loader@16.0.5(sass@1.87.0)(webpack@5.99.6):
+  sass-loader@16.0.5(sass@1.87.0)(webpack@5.99.7):
     dependencies:
       neo-async: 2.6.2
     optionalDependencies:
       sass: 1.87.0
-      webpack: 5.99.6(webpack-cli@6.0.1)
+      webpack: 5.99.7(webpack-cli@6.0.1)
 
   sass@1.87.0:
     dependencies:
@@ -8551,6 +8555,13 @@ snapshots:
       ajv-keywords: 3.5.2(ajv@6.12.6)
 
   schema-utils@4.3.0:
+    dependencies:
+      '@types/json-schema': 7.0.15
+      ajv: 8.17.1
+      ajv-formats: 2.1.1(ajv@8.17.1)
+      ajv-keywords: 5.1.0(ajv@8.17.1)
+
+  schema-utils@4.3.2:
     dependencies:
       '@types/json-schema': 7.0.15
       ajv: 8.17.1
@@ -8637,21 +8648,21 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  shakapacker@8.2.0(@babel/core@7.26.10)(@babel/plugin-transform-runtime@7.26.10(@babel/core@7.26.10))(@babel/preset-env@7.26.9(@babel/core@7.26.10))(@babel/runtime@7.27.0)(babel-loader@10.0.0(@babel/core@7.26.10)(webpack@5.99.6))(compression-webpack-plugin@11.1.0(webpack@5.99.6))(terser-webpack-plugin@5.3.14(webpack@5.99.6))(webpack-assets-manifest@5.2.1(webpack@5.99.6))(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack-merge@6.0.1)(webpack@5.99.6):
+  shakapacker@8.2.0(@babel/core@7.26.10)(@babel/plugin-transform-runtime@7.26.10(@babel/core@7.26.10))(@babel/preset-env@7.26.9(@babel/core@7.26.10))(@babel/runtime@7.27.0)(babel-loader@10.0.0(@babel/core@7.26.10)(webpack@5.99.7))(compression-webpack-plugin@11.1.0(webpack@5.99.7))(terser-webpack-plugin@5.3.14(webpack@5.99.7))(webpack-assets-manifest@5.2.1(webpack@5.99.7))(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack-merge@6.0.1)(webpack@5.99.7):
     dependencies:
       '@babel/core': 7.26.10
       '@babel/plugin-transform-runtime': 7.26.10(@babel/core@7.26.10)
       '@babel/preset-env': 7.26.9(@babel/core@7.26.10)
       '@babel/runtime': 7.27.0
-      babel-loader: 10.0.0(@babel/core@7.26.10)(webpack@5.99.6)
-      compression-webpack-plugin: 11.1.0(webpack@5.99.6)
+      babel-loader: 10.0.0(@babel/core@7.26.10)(webpack@5.99.7)
+      compression-webpack-plugin: 11.1.0(webpack@5.99.7)
       js-yaml: 4.1.0
       path-complete-extname: 1.0.0
-      terser-webpack-plugin: 5.3.14(webpack@5.99.6)
-      webpack: 5.99.6(webpack-cli@6.0.1)
-      webpack-assets-manifest: 5.2.1(webpack@5.99.6)
-      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.6)
-      webpack-dev-server: 5.2.1(webpack-cli@6.0.1)(webpack@5.99.6)
+      terser-webpack-plugin: 5.3.14(webpack@5.99.7)
+      webpack: 5.99.7(webpack-cli@6.0.1)
+      webpack-assets-manifest: 5.2.1(webpack@5.99.7)
+      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.7)
+      webpack-dev-server: 5.2.1(webpack-cli@6.0.1)(webpack@5.99.7)
       webpack-merge: 6.0.1
 
   shallow-clone@3.0.1:
@@ -8817,9 +8828,9 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  style-loader@4.0.0(webpack@5.99.6):
+  style-loader@4.0.0(webpack@5.99.7):
     dependencies:
-      webpack: 5.99.6(webpack-cli@6.0.1)
+      webpack: 5.99.7(webpack-cli@6.0.1)
 
   style-search@0.1.0: {}
 
@@ -8829,56 +8840,56 @@ snapshots:
       postcss: 8.5.3
       postcss-selector-parser: 6.1.2
 
-  stylelint-config-recess-order@5.1.1(stylelint@16.19.0(typescript@5.6.3)):
+  stylelint-config-recess-order@5.1.1(stylelint@16.19.1(typescript@5.6.3)):
     dependencies:
-      stylelint: 16.19.0(typescript@5.6.3)
-      stylelint-order: 6.0.4(stylelint@16.19.0(typescript@5.6.3))
+      stylelint: 16.19.1(typescript@5.6.3)
+      stylelint-order: 6.0.4(stylelint@16.19.1(typescript@5.6.3))
 
-  stylelint-config-recommended-scss@14.1.0(postcss@8.5.3)(stylelint@16.19.0(typescript@5.6.3)):
+  stylelint-config-recommended-scss@14.1.0(postcss@8.5.3)(stylelint@16.19.1(typescript@5.6.3)):
     dependencies:
       postcss-scss: 4.0.9(postcss@8.5.3)
-      stylelint: 16.19.0(typescript@5.6.3)
-      stylelint-config-recommended: 14.0.1(stylelint@16.19.0(typescript@5.6.3))
-      stylelint-scss: 6.11.1(stylelint@16.19.0(typescript@5.6.3))
+      stylelint: 16.19.1(typescript@5.6.3)
+      stylelint-config-recommended: 14.0.1(stylelint@16.19.1(typescript@5.6.3))
+      stylelint-scss: 6.11.1(stylelint@16.19.1(typescript@5.6.3))
     optionalDependencies:
       postcss: 8.5.3
 
-  stylelint-config-recommended@14.0.1(stylelint@16.19.0(typescript@5.6.3)):
+  stylelint-config-recommended@14.0.1(stylelint@16.19.1(typescript@5.6.3)):
     dependencies:
-      stylelint: 16.19.0(typescript@5.6.3)
+      stylelint: 16.19.1(typescript@5.6.3)
 
-  stylelint-config-standard-scss@14.0.0(postcss@8.5.3)(stylelint@16.19.0(typescript@5.6.3)):
+  stylelint-config-standard-scss@14.0.0(postcss@8.5.3)(stylelint@16.19.1(typescript@5.6.3)):
     dependencies:
-      stylelint: 16.19.0(typescript@5.6.3)
-      stylelint-config-recommended-scss: 14.1.0(postcss@8.5.3)(stylelint@16.19.0(typescript@5.6.3))
-      stylelint-config-standard: 36.0.1(stylelint@16.19.0(typescript@5.6.3))
+      stylelint: 16.19.1(typescript@5.6.3)
+      stylelint-config-recommended-scss: 14.1.0(postcss@8.5.3)(stylelint@16.19.1(typescript@5.6.3))
+      stylelint-config-standard: 36.0.1(stylelint@16.19.1(typescript@5.6.3))
     optionalDependencies:
       postcss: 8.5.3
 
-  stylelint-config-standard@36.0.1(stylelint@16.19.0(typescript@5.6.3)):
+  stylelint-config-standard@36.0.1(stylelint@16.19.1(typescript@5.6.3)):
     dependencies:
-      stylelint: 16.19.0(typescript@5.6.3)
-      stylelint-config-recommended: 14.0.1(stylelint@16.19.0(typescript@5.6.3))
+      stylelint: 16.19.1(typescript@5.6.3)
+      stylelint-config-recommended: 14.0.1(stylelint@16.19.1(typescript@5.6.3))
 
-  stylelint-config-twbs-bootstrap@16.0.0(postcss@8.5.3)(stylelint@16.19.0(typescript@5.6.3)):
+  stylelint-config-twbs-bootstrap@16.0.0(postcss@8.5.3)(stylelint@16.19.1(typescript@5.6.3)):
     dependencies:
-      '@stylistic/stylelint-config': 2.0.0(stylelint@16.19.0(typescript@5.6.3))
-      '@stylistic/stylelint-plugin': 3.1.2(stylelint@16.19.0(typescript@5.6.3))
-      stylelint: 16.19.0(typescript@5.6.3)
-      stylelint-config-recess-order: 5.1.1(stylelint@16.19.0(typescript@5.6.3))
-      stylelint-config-standard: 36.0.1(stylelint@16.19.0(typescript@5.6.3))
-      stylelint-config-standard-scss: 14.0.0(postcss@8.5.3)(stylelint@16.19.0(typescript@5.6.3))
-      stylelint-scss: 6.11.1(stylelint@16.19.0(typescript@5.6.3))
+      '@stylistic/stylelint-config': 2.0.0(stylelint@16.19.1(typescript@5.6.3))
+      '@stylistic/stylelint-plugin': 3.1.2(stylelint@16.19.1(typescript@5.6.3))
+      stylelint: 16.19.1(typescript@5.6.3)
+      stylelint-config-recess-order: 5.1.1(stylelint@16.19.1(typescript@5.6.3))
+      stylelint-config-standard: 36.0.1(stylelint@16.19.1(typescript@5.6.3))
+      stylelint-config-standard-scss: 14.0.0(postcss@8.5.3)(stylelint@16.19.1(typescript@5.6.3))
+      stylelint-scss: 6.11.1(stylelint@16.19.1(typescript@5.6.3))
     transitivePeerDependencies:
       - postcss
 
-  stylelint-order@6.0.4(stylelint@16.19.0(typescript@5.6.3)):
+  stylelint-order@6.0.4(stylelint@16.19.1(typescript@5.6.3)):
     dependencies:
       postcss: 8.5.3
       postcss-sorting: 8.0.2(postcss@8.5.3)
-      stylelint: 16.19.0(typescript@5.6.3)
+      stylelint: 16.19.1(typescript@5.6.3)
 
-  stylelint-scss@6.11.1(stylelint@16.19.0(typescript@5.6.3)):
+  stylelint-scss@6.11.1(stylelint@16.19.1(typescript@5.6.3)):
     dependencies:
       css-tree: 3.1.0
       is-plain-object: 5.0.0
@@ -8888,19 +8899,19 @@ snapshots:
       postcss-resolve-nested-selector: 0.1.6
       postcss-selector-parser: 7.1.0
       postcss-value-parser: 4.2.0
-      stylelint: 16.19.0(typescript@5.6.3)
+      stylelint: 16.19.1(typescript@5.6.3)
 
-  stylelint-webpack-plugin@5.0.1(stylelint@16.19.0(typescript@5.6.3))(webpack@5.99.6):
+  stylelint-webpack-plugin@5.0.1(stylelint@16.19.1(typescript@5.6.3))(webpack@5.99.7):
     dependencies:
       globby: 11.1.0
       jest-worker: 29.7.0
       micromatch: 4.0.8
       normalize-path: 3.0.0
       schema-utils: 4.3.0
-      stylelint: 16.19.0(typescript@5.6.3)
-      webpack: 5.99.6(webpack-cli@6.0.1)
+      stylelint: 16.19.1(typescript@5.6.3)
+      webpack: 5.99.7(webpack-cli@6.0.1)
 
-  stylelint@16.19.0(typescript@5.6.3):
+  stylelint@16.19.1(typescript@5.6.3):
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.4(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-tokenizer': 3.0.3
@@ -8920,7 +8931,7 @@ snapshots:
       globby: 11.1.0
       globjoin: 0.1.4
       html-tags: 3.3.1
-      ignore: 7.0.3
+      ignore: 7.0.4
       imurmurhash: 0.1.4
       is-plain-object: 5.0.0
       known-css-properties: 0.36.0
@@ -8981,14 +8992,14 @@ snapshots:
 
   tapable@2.2.1: {}
 
-  terser-webpack-plugin@5.3.14(webpack@5.99.6):
+  terser-webpack-plugin@5.3.14(webpack@5.99.7):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 4.3.0
       serialize-javascript: 6.0.2
       terser: 5.39.0
-      webpack: 5.99.6(webpack-cli@6.0.1)
+      webpack: 5.99.7(webpack-cli@6.0.1)
 
   terser@5.39.0:
     dependencies:
@@ -9156,7 +9167,7 @@ snapshots:
     dependencies:
       minimalistic-assert: 1.0.1
 
-  webpack-assets-manifest@5.2.1(webpack@5.99.6):
+  webpack-assets-manifest@5.2.1(webpack@5.99.7):
     dependencies:
       chalk: 4.1.2
       deepmerge: 4.3.1
@@ -9165,14 +9176,14 @@ snapshots:
       lodash.has: 4.5.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      webpack: 5.99.6(webpack-cli@6.0.1)
+      webpack: 5.99.7(webpack-cli@6.0.1)
 
-  webpack-cli@6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.6):
+  webpack-cli@6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.7):
     dependencies:
       '@discoveryjs/json-ext': 0.6.3
-      '@webpack-cli/configtest': 3.0.1(webpack-cli@6.0.1)(webpack@5.99.6)
-      '@webpack-cli/info': 3.0.1(webpack-cli@6.0.1)(webpack@5.99.6)
-      '@webpack-cli/serve': 3.0.1(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack@5.99.6)
+      '@webpack-cli/configtest': 3.0.1(webpack-cli@6.0.1)(webpack@5.99.7)
+      '@webpack-cli/info': 3.0.1(webpack-cli@6.0.1)(webpack@5.99.7)
+      '@webpack-cli/serve': 3.0.1(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack@5.99.7)
       colorette: 2.0.20
       commander: 12.1.0
       cross-spawn: 7.0.6
@@ -9181,12 +9192,12 @@ snapshots:
       import-local: 3.2.0
       interpret: 3.1.1
       rechoir: 0.8.0
-      webpack: 5.99.6(webpack-cli@6.0.1)
+      webpack: 5.99.7(webpack-cli@6.0.1)
       webpack-merge: 6.0.1
     optionalDependencies:
-      webpack-dev-server: 5.2.1(webpack-cli@6.0.1)(webpack@5.99.6)
+      webpack-dev-server: 5.2.1(webpack-cli@6.0.1)(webpack@5.99.7)
 
-  webpack-dev-middleware@7.4.2(webpack@5.99.6):
+  webpack-dev-middleware@7.4.2(webpack@5.99.7):
     dependencies:
       colorette: 2.0.20
       memfs: 4.17.0
@@ -9195,9 +9206,9 @@ snapshots:
       range-parser: 1.2.1
       schema-utils: 4.3.0
     optionalDependencies:
-      webpack: 5.99.6(webpack-cli@6.0.1)
+      webpack: 5.99.7(webpack-cli@6.0.1)
 
-  webpack-dev-server@5.2.1(webpack-cli@6.0.1)(webpack@5.99.6):
+  webpack-dev-server@5.2.1(webpack-cli@6.0.1)(webpack@5.99.7):
     dependencies:
       '@types/bonjour': 3.5.13
       '@types/connect-history-api-fallback': 1.5.4
@@ -9225,11 +9236,11 @@ snapshots:
       serve-index: 1.9.1
       sockjs: 0.3.24
       spdy: 4.0.2
-      webpack-dev-middleware: 7.4.2(webpack@5.99.6)
+      webpack-dev-middleware: 7.4.2(webpack@5.99.7)
       ws: 8.18.1
     optionalDependencies:
-      webpack: 5.99.6(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.6)
+      webpack: 5.99.7(webpack-cli@6.0.1)
+      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.7)
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -9244,10 +9255,11 @@ snapshots:
 
   webpack-sources@3.2.3: {}
 
-  webpack@5.99.6(webpack-cli@6.0.1):
+  webpack@5.99.7(webpack-cli@6.0.1):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.7
+      '@types/json-schema': 7.0.15
       '@webassemblyjs/ast': 1.14.1
       '@webassemblyjs/wasm-edit': 1.14.1
       '@webassemblyjs/wasm-parser': 1.14.1
@@ -9264,13 +9276,13 @@ snapshots:
       loader-runner: 4.3.0
       mime-types: 2.1.35
       neo-async: 2.6.2
-      schema-utils: 4.3.0
+      schema-utils: 4.3.2
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.14(webpack@5.99.6)
+      terser-webpack-plugin: 5.3.14(webpack@5.99.7)
       watchpack: 2.4.2
       webpack-sources: 3.2.3
     optionalDependencies:
-      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.6)
+      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.7)
     transitivePeerDependencies:
       - '@swc/core'
       - esbuild
