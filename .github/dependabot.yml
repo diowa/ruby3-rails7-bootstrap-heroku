@@ -15,6 +15,9 @@ updates:
       rubocop:
         patterns:
           - "rubocop*"
+    ignore:
+      - dependency-name: rails
+        versions: ">= 8.0.0"
   - package-ecosystem: npm
     directory: "/"
     schedule:
@@ -34,3 +37,6 @@ updates:
       webpack:
         patterns:
           - "webpack*"
+    ignore:
+      - dependency-name: "@rails/*"
+        versions: ">= 8.0.0"
