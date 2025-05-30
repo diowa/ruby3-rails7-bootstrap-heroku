@@ -51,7 +51,7 @@
     "eslint": "^9.27.0",
     "eslint-webpack-plugin": "^5.0.1",
     "neostandard": "^0.12.1",
-    "stylelint": "^16.19.1",
+    "stylelint": "^16.20.0",
     "stylelint-config-twbs-bootstrap": "^16.0.0",
     "stylelint-order": "^6.0.4",
     "stylelint-scss": "^6.12.0",
