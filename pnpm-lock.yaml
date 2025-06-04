@@ -94,7 +94,7 @@ importers:
         version: 16.0.5(sass@1.89.1)(webpack@5.99.9)
       shakapacker:
         specifier: 8.3.0
-        version: 8.3.0(@babel/core@7.27.4)(@babel/plugin-transform-runtime@7.27.4(@babel/core@7.27.4))(@babel/preset-env@7.27.2(@babel/core@7.27.4))(@babel/runtime@7.27.4)(babel-loader@10.0.0(@babel/core@7.27.4)(webpack@5.99.9))(compression-webpack-plugin@11.1.0(webpack@5.99.9))(terser-webpack-plugin@5.3.14(webpack@5.99.9))(webpack-assets-manifest@6.1.0(webpack@5.99.9))(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack-merge@6.0.1)(webpack@5.99.9)
+        version: 8.3.0(@babel/core@7.27.4)(@babel/plugin-transform-runtime@7.27.4(@babel/core@7.27.4))(@babel/preset-env@7.27.2(@babel/core@7.27.4))(@babel/runtime@7.27.4)(babel-loader@10.0.0(@babel/core@7.27.4)(webpack@5.99.9))(compression-webpack-plugin@11.1.0(webpack@5.99.9))(terser-webpack-plugin@5.3.14(webpack@5.99.9))(webpack-assets-manifest@6.1.0(webpack@5.99.9))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-merge@6.0.1)(webpack@5.99.9)
       style-loader:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.99.9)
@@ -109,20 +109,20 @@ importers:
         version: 6.1.0(webpack@5.99.9)
       webpack-cli:
         specifier: ^6.0.1
-        version: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.9)
+        version: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.99.9)
       webpack-merge:
         specifier: ^6.0.1
         version: 6.0.1
     devDependencies:
       '@babel/eslint-parser':
         specifier: ^7.27.1
-        version: 7.27.1(@babel/core@7.27.4)(eslint@9.28.0(jiti@1.21.7))
+        version: 7.27.5(@babel/core@7.27.4)(eslint@9.28.0(jiti@1.21.7))
       '@types/express':
         specifier: ^5.0.2
         version: 5.0.2
       '@webpack-cli/serve':
         specifier: ^3.0.1
-        version: 3.0.1(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack@5.99.9)
+        version: 3.0.1(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack@5.99.9)
       eslint:
         specifier: ^9.28.0
         version: 9.28.0(jiti@1.21.7)
@@ -148,8 +148,8 @@ importers:
         specifier: ^5.0.1
         version: 5.0.1(stylelint@16.20.0(typescript@5.6.3))(webpack@5.99.9)
       webpack-dev-server:
-        specifier: ^5.2.1
-        version: 5.2.1(webpack-cli@6.0.1)(webpack@5.99.9)
+        specifier: ^5.2.2
+        version: 5.2.2(webpack-cli@6.0.1)(webpack@5.99.9)
 
 packages:
 
@@ -169,8 +169,8 @@ packages:
     resolution: {integrity: sha512-bXYxrXFubeYdvB0NhD/NBB3Qi6aZeV20GOWVI47t2dkecCEoneR4NPVcb7abpXDEvejgrUfFtG6vG/zxAKmg+g==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/eslint-parser@7.27.1':
-    resolution: {integrity: sha512-q8rjOuadH0V6Zo4XLMkJ3RMQ9MSBqwaDByyYB0izsYdaIWGNLmEblbCOf1vyFHICcg16CD7Fsi51vcQnYxmt6Q==}
+  '@babel/eslint-parser@7.27.5':
+    resolution: {integrity: sha512-HLkYQfRICudzcOtjGwkPvGc5nF1b4ljLZh1IRDj50lRZ718NAKVgQpIAUX8bfg6u/yuSKY3L7E0YzIV+OxrB8Q==}
     engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
     peerDependencies:
       '@babel/core': ^7.11.0
@@ -3952,8 +3952,8 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  shell-quote@1.8.2:
-    resolution: {integrity: sha512-AzqKpGKjrj7EM6rKVQEPpB288oCfnrEIuyoT9cyF4nmGa7V8Zk6f7RRqYisX8X9m+Q7bd632aZW4ky7EhbQztA==}
+  shell-quote@1.8.3:
+    resolution: {integrity: sha512-ObmnIF4hXNg1BqhnHmgbDETF8dLPCggZWBjkQfhZpbszZnYur5DUljTcCHii5LC3J5E0yeO/1LIMyH+UvHQgyw==}
     engines: {node: '>= 0.4'}
 
   side-channel-list@1.0.0:
@@ -4366,8 +4366,8 @@ packages:
       webpack:
         optional: true
 
-  webpack-dev-server@5.2.1:
-    resolution: {integrity: sha512-ml/0HIj9NLpVKOMq+SuBPLHcmbG+TGIjXRHsYfZwocUBIqEvws8NnS/V9AFQ5FKP+tgn5adwVwRrTEpGL33QFQ==}
+  webpack-dev-server@5.2.2:
+    resolution: {integrity: sha512-QcQ72gh8a+7JO63TAx/6XZf/CWhgMzu5m0QirvPfGvptOusAxG12w2+aua1Jkjr7hzaWDnJ2n6JFeexMHI+Zjg==}
     engines: {node: '>= 18.12.0'}
     hasBin: true
     peerDependencies:
@@ -4499,7 +4499,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/eslint-parser@7.27.1(@babel/core@7.27.4)(eslint@9.28.0(jiti@1.21.7))':
+  '@babel/eslint-parser@7.27.5(@babel/core@7.27.4)(eslint@9.28.0(jiti@1.21.7))':
     dependencies:
       '@babel/core': 7.27.4
       '@nicolo-ribaudo/eslint-scope-5-internals': 5.1.1-v1
@@ -6038,19 +6038,19 @@ snapshots:
   '@webpack-cli/configtest@3.0.1(webpack-cli@6.0.1)(webpack@5.99.9)':
     dependencies:
       webpack: 5.99.9(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.9)
+      webpack-cli: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.99.9)
 
   '@webpack-cli/info@3.0.1(webpack-cli@6.0.1)(webpack@5.99.9)':
     dependencies:
       webpack: 5.99.9(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.9)
+      webpack-cli: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.99.9)
 
-  '@webpack-cli/serve@3.0.1(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack@5.99.9)':
+  '@webpack-cli/serve@3.0.1(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack@5.99.9)':
     dependencies:
       webpack: 5.99.9(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.9)
+      webpack-cli: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.99.9)
     optionalDependencies:
-      webpack-dev-server: 5.2.1(webpack-cli@6.0.1)(webpack@5.99.9)
+      webpack-dev-server: 5.2.2(webpack-cli@6.0.1)(webpack@5.99.9)
 
   '@xtuc/ieee754@1.2.0': {}
 
@@ -7644,7 +7644,7 @@ snapshots:
   launch-editor@2.10.0:
     dependencies:
       picocolors: 1.1.1
-      shell-quote: 1.8.2
+      shell-quote: 1.8.3
 
   levn@0.4.1:
     dependencies:
@@ -8678,7 +8678,7 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  shakapacker@8.3.0(@babel/core@7.27.4)(@babel/plugin-transform-runtime@7.27.4(@babel/core@7.27.4))(@babel/preset-env@7.27.2(@babel/core@7.27.4))(@babel/runtime@7.27.4)(babel-loader@10.0.0(@babel/core@7.27.4)(webpack@5.99.9))(compression-webpack-plugin@11.1.0(webpack@5.99.9))(terser-webpack-plugin@5.3.14(webpack@5.99.9))(webpack-assets-manifest@6.1.0(webpack@5.99.9))(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack-merge@6.0.1)(webpack@5.99.9):
+  shakapacker@8.3.0(@babel/core@7.27.4)(@babel/plugin-transform-runtime@7.27.4(@babel/core@7.27.4))(@babel/preset-env@7.27.2(@babel/core@7.27.4))(@babel/runtime@7.27.4)(babel-loader@10.0.0(@babel/core@7.27.4)(webpack@5.99.9))(compression-webpack-plugin@11.1.0(webpack@5.99.9))(terser-webpack-plugin@5.3.14(webpack@5.99.9))(webpack-assets-manifest@6.1.0(webpack@5.99.9))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-merge@6.0.1)(webpack@5.99.9):
     dependencies:
       '@babel/core': 7.27.4
       '@babel/plugin-transform-runtime': 7.27.4(@babel/core@7.27.4)
@@ -8691,8 +8691,8 @@ snapshots:
       terser-webpack-plugin: 5.3.14(webpack@5.99.9)
       webpack: 5.99.9(webpack-cli@6.0.1)
       webpack-assets-manifest: 6.1.0(webpack@5.99.9)
-      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.9)
-      webpack-dev-server: 5.2.1(webpack-cli@6.0.1)(webpack@5.99.9)
+      webpack-cli: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.99.9)
+      webpack-dev-server: 5.2.2(webpack-cli@6.0.1)(webpack@5.99.9)
       webpack-merge: 6.0.1
 
   shallow-clone@3.0.1:
@@ -8705,7 +8705,7 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  shell-quote@1.8.2: {}
+  shell-quote@1.8.3: {}
 
   side-channel-list@1.0.0:
     dependencies:
@@ -9211,12 +9211,12 @@ snapshots:
       tapable: 2.2.2
       webpack: 5.99.9(webpack-cli@6.0.1)
 
-  webpack-cli@6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.9):
+  webpack-cli@6.0.1(webpack-dev-server@5.2.2)(webpack@5.99.9):
     dependencies:
       '@discoveryjs/json-ext': 0.6.3
       '@webpack-cli/configtest': 3.0.1(webpack-cli@6.0.1)(webpack@5.99.9)
       '@webpack-cli/info': 3.0.1(webpack-cli@6.0.1)(webpack@5.99.9)
-      '@webpack-cli/serve': 3.0.1(webpack-cli@6.0.1)(webpack-dev-server@5.2.1)(webpack@5.99.9)
+      '@webpack-cli/serve': 3.0.1(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack@5.99.9)
       colorette: 2.0.20
       commander: 12.1.0
       cross-spawn: 7.0.6
@@ -9228,7 +9228,7 @@ snapshots:
       webpack: 5.99.9(webpack-cli@6.0.1)
       webpack-merge: 6.0.1
     optionalDependencies:
-      webpack-dev-server: 5.2.1(webpack-cli@6.0.1)(webpack@5.99.9)
+      webpack-dev-server: 5.2.2(webpack-cli@6.0.1)(webpack@5.99.9)
 
   webpack-dev-middleware@7.4.2(webpack@5.99.9):
     dependencies:
@@ -9241,7 +9241,7 @@ snapshots:
     optionalDependencies:
       webpack: 5.99.9(webpack-cli@6.0.1)
 
-  webpack-dev-server@5.2.1(webpack-cli@6.0.1)(webpack@5.99.9):
+  webpack-dev-server@5.2.2(webpack-cli@6.0.1)(webpack@5.99.9):
     dependencies:
       '@types/bonjour': 3.5.13
       '@types/connect-history-api-fallback': 1.5.4
@@ -9273,7 +9273,7 @@ snapshots:
       ws: 8.18.2
     optionalDependencies:
       webpack: 5.99.9(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.9)
+      webpack-cli: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.99.9)
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -9315,7 +9315,7 @@ snapshots:
       watchpack: 2.4.4
       webpack-sources: 3.3.0
     optionalDependencies:
-      webpack-cli: 6.0.1(webpack-dev-server@5.2.1)(webpack@5.99.9)
+      webpack-cli: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.99.9)
     transitivePeerDependencies:
       - '@swc/core'
       - esbuild
