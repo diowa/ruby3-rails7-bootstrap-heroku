@@ -19,7 +19,7 @@ importers:
         version: 7.27.2(@babel/core@7.27.4)
       '@babel/runtime':
         specifier: ^7.27.4
-        version: 7.27.4
+        version: 7.27.6
       '@fortawesome/fontawesome-svg-core':
         specifier: ^6.7.2
         version: 6.7.2
@@ -81,8 +81,8 @@ importers:
         specifier: ^8.1.1
         version: 8.1.1(postcss@8.5.4)(typescript@5.6.3)(webpack@5.99.9)
       postcss-preset-env:
-        specifier: ^10.2.0
-        version: 10.2.0(postcss@8.5.4)
+        specifier: ^10.2.1
+        version: 10.2.1(postcss@8.5.4)
       resolve-url-loader:
         specifier: ^5.0.0
         version: 5.0.0
@@ -94,7 +94,7 @@ importers:
         version: 16.0.5(sass@1.89.1)(webpack@5.99.9)
       shakapacker:
         specifier: 8.3.0
-        version: 8.3.0(@babel/core@7.27.4)(@babel/plugin-transform-runtime@7.27.4(@babel/core@7.27.4))(@babel/preset-env@7.27.2(@babel/core@7.27.4))(@babel/runtime@7.27.4)(babel-loader@10.0.0(@babel/core@7.27.4)(webpack@5.99.9))(compression-webpack-plugin@11.1.0(webpack@5.99.9))(terser-webpack-plugin@5.3.14(webpack@5.99.9))(webpack-assets-manifest@6.1.0(webpack@5.99.9))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-merge@6.0.1)(webpack@5.99.9)
+        version: 8.3.0(@babel/core@7.27.4)(@babel/plugin-transform-runtime@7.27.4(@babel/core@7.27.4))(@babel/preset-env@7.27.2(@babel/core@7.27.4))(@babel/runtime@7.27.6)(babel-loader@10.0.0(@babel/core@7.27.4)(webpack@5.99.9))(compression-webpack-plugin@11.1.0(webpack@5.99.9))(terser-webpack-plugin@5.3.14(webpack@5.99.9))(webpack-assets-manifest@6.1.0(webpack@5.99.9))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-merge@6.0.1)(webpack@5.99.9)
       style-loader:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.99.9)
@@ -639,8 +639,8 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0 || ^8.0.0-0 <8.0.0
 
-  '@babel/runtime@7.27.4':
-    resolution: {integrity: sha512-t3yaEOuGu9NlIZ+hIeGbBjFtZT7j2cb2tg0fuaJKeGotchRjjLfrBA9Kwf8quhpP1EUuxModQg04q/mBwyg8uA==}
+  '@babel/runtime@7.27.6':
+    resolution: {integrity: sha512-vbavdySgbTTrmFE+EsiqUTzlOr5bzlnJtUv9PynGCAKvfQqjIXbvFdumPM/GxMDfyuGMJaJAU6TO4zc1Jf1i8Q==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.27.2':
@@ -1765,8 +1765,8 @@ packages:
   caniuse-api@3.0.0:
     resolution: {integrity: sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==}
 
-  caniuse-lite@1.0.30001720:
-    resolution: {integrity: sha512-Ec/2yV2nNPwb4DnTANEV99ZWwm3ZWfdlfkQbWSDDt+PsXEVYwlhPH8tdMaPunYTKKmz7AnHi2oNEi1GcmKCD8g==}
+  caniuse-lite@1.0.30001721:
+    resolution: {integrity: sha512-cOuvmUVtKrtEaoKiO0rSc29jcjwMwX5tOHDy4MgVFEWiUXj4uBMJkwI8MDySkgXidpMiHUcviogAvFi4pA2hDQ==}
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -2115,8 +2115,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.5.161:
-    resolution: {integrity: sha512-hwtetwfKNZo/UlwHIVBlKZVdy7o8bIZxxKs0Mv/ROPiQQQmDgdm5a+KvKtBsxM8ZjFzTaCeLoodZ8jiBE3o9rA==}
+  electron-to-chromium@1.5.165:
+    resolution: {integrity: sha512-naiMx1Z6Nb2TxPU6fiFrUrDTjyPMLdTtaOd2oLmG8zVSg2hCWGkhPyxwk+qRmZ1ytwVqUv0u7ZcDA5+ALhaUtw==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -3329,8 +3329,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  postcss-custom-properties@14.0.5:
-    resolution: {integrity: sha512-UWf/vhMapZatv+zOuqlfLmYXeOhhHLh8U8HAKGI2VJ00xLRYoAJh4xv8iX6FB6+TLXeDnm0DBLMi00E0hodbQw==}
+  postcss-custom-properties@14.0.6:
+    resolution: {integrity: sha512-fTYSp3xuk4BUeVhxCSJdIPhDLpJfNakZKoiTDx7yRGCdlZrSJR7mWKVOBS4sBF+5poPQFMj2YdXx1VHItBGihQ==}
     engines: {node: '>=18'}
     peerDependencies:
       postcss: ^8.4
@@ -3594,8 +3594,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  postcss-preset-env@10.2.0:
-    resolution: {integrity: sha512-cl13sPBbSqo1Q7Ryb19oT5NZO5IHFolRbIMdgDq4f9w1MHYiL6uZS7uSsjXJ1KzRIcX5BMjEeyxmAevVXENa3Q==}
+  postcss-preset-env@10.2.1:
+    resolution: {integrity: sha512-mDInnlm4mYhmR0S79hNLzseW9nx4Ihd8s15K99iu6u6QhoSQgqWX9Oj6nTd/8Dz3b0T7v2JSrfnXsDfv9TFvDg==}
     engines: {node: '>=18'}
     peerDependencies:
       postcss: ^8.4
@@ -5103,7 +5103,7 @@ snapshots:
       '@babel/types': 7.27.3
       esutils: 2.0.3
 
-  '@babel/runtime@7.27.4': {}
+  '@babel/runtime@7.27.6': {}
 
   '@babel/template@7.27.2':
     dependencies:
@@ -6199,7 +6199,7 @@ snapshots:
   autoprefixer@10.4.21(postcss@8.5.4):
     dependencies:
       browserslist: 4.25.0
-      caniuse-lite: 1.0.30001720
+      caniuse-lite: 1.0.30001721
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.1.1
@@ -6218,7 +6218,7 @@ snapshots:
 
   babel-plugin-macros@3.1.0:
     dependencies:
-      '@babel/runtime': 7.27.4
+      '@babel/runtime': 7.27.6
       cosmiconfig: 7.1.0
       resolve: 1.22.10
 
@@ -6301,8 +6301,8 @@ snapshots:
 
   browserslist@4.25.0:
     dependencies:
-      caniuse-lite: 1.0.30001720
-      electron-to-chromium: 1.5.161
+      caniuse-lite: 1.0.30001721
+      electron-to-chromium: 1.5.165
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.25.0)
 
@@ -6346,11 +6346,11 @@ snapshots:
   caniuse-api@3.0.0:
     dependencies:
       browserslist: 4.25.0
-      caniuse-lite: 1.0.30001720
+      caniuse-lite: 1.0.30001721
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
 
-  caniuse-lite@1.0.30001720: {}
+  caniuse-lite@1.0.30001721: {}
 
   chalk@4.1.2:
     dependencies:
@@ -6697,7 +6697,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.5.161: {}
+  electron-to-chromium@1.5.165: {}
 
   emoji-regex@8.0.0: {}
 
@@ -8016,7 +8016,7 @@ snapshots:
       '@csstools/media-query-list-parser': 4.0.3(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)
       postcss: 8.5.4
 
-  postcss-custom-properties@14.0.5(postcss@8.5.4):
+  postcss-custom-properties@14.0.6(postcss@8.5.4):
     dependencies:
       '@csstools/cascade-layer-name-parser': 2.0.5(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)
       '@csstools/css-parser-algorithms': 3.0.5(@csstools/css-tokenizer@3.0.4)
@@ -8260,7 +8260,7 @@ snapshots:
       postcss: 8.5.4
       postcss-value-parser: 4.2.0
 
-  postcss-preset-env@10.2.0(postcss@8.5.4):
+  postcss-preset-env@10.2.1(postcss@8.5.4):
     dependencies:
       '@csstools/postcss-cascade-layers': 5.0.1(postcss@8.5.4)
       '@csstools/postcss-color-function': 4.0.10(postcss@8.5.4)
@@ -8308,7 +8308,7 @@ snapshots:
       postcss-color-hex-alpha: 10.0.0(postcss@8.5.4)
       postcss-color-rebeccapurple: 10.0.0(postcss@8.5.4)
       postcss-custom-media: 11.0.6(postcss@8.5.4)
-      postcss-custom-properties: 14.0.5(postcss@8.5.4)
+      postcss-custom-properties: 14.0.6(postcss@8.5.4)
       postcss-custom-selectors: 8.0.5(postcss@8.5.4)
       postcss-dir-pseudo-class: 9.0.1(postcss@8.5.4)
       postcss-double-position-gradients: 6.0.2(postcss@8.5.4)
@@ -8678,12 +8678,12 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  shakapacker@8.3.0(@babel/core@7.27.4)(@babel/plugin-transform-runtime@7.27.4(@babel/core@7.27.4))(@babel/preset-env@7.27.2(@babel/core@7.27.4))(@babel/runtime@7.27.4)(babel-loader@10.0.0(@babel/core@7.27.4)(webpack@5.99.9))(compression-webpack-plugin@11.1.0(webpack@5.99.9))(terser-webpack-plugin@5.3.14(webpack@5.99.9))(webpack-assets-manifest@6.1.0(webpack@5.99.9))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-merge@6.0.1)(webpack@5.99.9):
+  shakapacker@8.3.0(@babel/core@7.27.4)(@babel/plugin-transform-runtime@7.27.4(@babel/core@7.27.4))(@babel/preset-env@7.27.2(@babel/core@7.27.4))(@babel/runtime@7.27.6)(babel-loader@10.0.0(@babel/core@7.27.4)(webpack@5.99.9))(compression-webpack-plugin@11.1.0(webpack@5.99.9))(terser-webpack-plugin@5.3.14(webpack@5.99.9))(webpack-assets-manifest@6.1.0(webpack@5.99.9))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-merge@6.0.1)(webpack@5.99.9):
     dependencies:
       '@babel/core': 7.27.4
       '@babel/plugin-transform-runtime': 7.27.4(@babel/core@7.27.4)
       '@babel/preset-env': 7.27.2(@babel/core@7.27.4)
-      '@babel/runtime': 7.27.4
+      '@babel/runtime': 7.27.6
       babel-loader: 10.0.0(@babel/core@7.27.4)(webpack@5.99.9)
       compression-webpack-plugin: 11.1.0(webpack@5.99.9)
       js-yaml: 4.1.0
