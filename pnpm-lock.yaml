@@ -94,7 +94,7 @@ importers:
         version: 16.0.5(sass@1.89.1)(webpack@5.99.9)
       shakapacker:
         specifier: 8.3.0
-        version: 8.3.0(@babel/core@7.27.4)(@babel/plugin-transform-runtime@7.27.4(@babel/core@7.27.4))(@babel/preset-env@7.27.2(@babel/core@7.27.4))(@babel/runtime@7.27.6)(babel-loader@10.0.0(@babel/core@7.27.4)(webpack@5.99.9))(compression-webpack-plugin@11.1.0(webpack@5.99.9))(terser-webpack-plugin@5.3.14(webpack@5.99.9))(webpack-assets-manifest@6.1.0(webpack@5.99.9))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-merge@6.0.1)(webpack@5.99.9)
+        version: 8.3.0(@babel/core@7.27.4)(@babel/plugin-transform-runtime@7.27.4(@babel/core@7.27.4))(@babel/preset-env@7.27.2(@babel/core@7.27.4))(@babel/runtime@7.27.6)(babel-loader@10.0.0(@babel/core@7.27.4)(webpack@5.99.9))(compression-webpack-plugin@11.1.0(webpack@5.99.9))(terser-webpack-plugin@5.3.14(webpack@5.99.9))(webpack-assets-manifest@6.2.1(webpack@5.99.9))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-merge@6.0.1)(webpack@5.99.9)
       style-loader:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.99.9)
@@ -105,8 +105,8 @@ importers:
         specifier: ^5.99.9
         version: 5.99.9(webpack-cli@6.0.1)
       webpack-assets-manifest:
-        specifier: ^6.1.0
-        version: 6.1.0(webpack@5.99.9)
+        specifier: ^6.2.1
+        version: 6.2.1(webpack@5.99.9)
       webpack-cli:
         specifier: ^6.0.1
         version: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.99.9)
@@ -119,7 +119,7 @@ importers:
         version: 7.27.5(@babel/core@7.27.4)(eslint@9.28.0(jiti@1.21.7))
       '@types/express':
         specifier: ^5.0.2
-        version: 5.0.2
+        version: 5.0.3
       '@webpack-cli/serve':
         specifier: ^3.0.1
         version: 3.0.1(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack@5.99.9)
@@ -1248,11 +1248,11 @@ packages:
   '@types/express-serve-static-core@5.0.6':
     resolution: {integrity: sha512-3xhRnjJPkULekpSzgtoNYYcTWgEZkp4myc+Saevii5JPnHNvHMRlBSHDbs7Bh1iPPoVTERHEZXyhyLbMEsExsA==}
 
-  '@types/express@4.17.22':
-    resolution: {integrity: sha512-eZUmSnhRX9YRSkplpz0N+k6NljUUn5l3EWZIKZvYzhvMphEuNiyyy1viH/ejgt66JWgALwC/gtSUAeQKtSwW/w==}
+  '@types/express@4.17.23':
+    resolution: {integrity: sha512-Crp6WY9aTYP3qPi2wGDo9iUe/rceX01UMhnF1jmwDcKCFM6cx7YhGP/Mpr3y9AASpfHixIG0E6azCcL5OcDHsQ==}
 
-  '@types/express@5.0.2':
-    resolution: {integrity: sha512-BtjL3ZwbCQriyb0DGw+Rt12qAXPiBTPs815lsUvtt1Grk0vLRMZNMUZ741d5rjk+UQOxfDiBZ3dxpX00vSkK3g==}
+  '@types/express@5.0.3':
+    resolution: {integrity: sha512-wGA0NX93b19/dZC1J18tKWVIYWyyF2ZjT9vin/NRu0qzzvfVzWjs04iq2rQ3H65vCTQYlRqs3YHfY7zjdV+9Kw==}
 
   '@types/http-errors@2.0.4':
     resolution: {integrity: sha512-D0CFMMtydbJAegzOyHjtiKPLlvnm3iTZyZRSZoLq2mRhDdmLfIWOCYPfQJ4cu2erKghU++QvjcUjp/5h7hESpA==}
@@ -4337,8 +4337,8 @@ packages:
   wbuf@1.7.3:
     resolution: {integrity: sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==}
 
-  webpack-assets-manifest@6.1.0:
-    resolution: {integrity: sha512-ZkuTdncJAmWrjt1IXMLePv+HGQPuVsYfvyaas4FmJiON2gX7ApP46DrqnU5Vm/PXcWbO3CyX2O9VuVdwAGVH8Q==}
+  webpack-assets-manifest@6.2.1:
+    resolution: {integrity: sha512-TwmenV4Yn6RHfeL29WhGcnGLauoldsHo4HyqMAibSGmWkgoGmZfnV1SgLOhMrRP7z8IsGwrmtf1j/DJt8XlhKg==}
     engines: {node: '>=20.10.0'}
     peerDependencies:
       webpack: ^5.61.0
@@ -5733,14 +5733,14 @@ snapshots:
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
 
-  '@types/express@4.17.22':
+  '@types/express@4.17.23':
     dependencies:
       '@types/body-parser': 1.19.5
       '@types/express-serve-static-core': 4.19.6
       '@types/qs': 6.14.0
       '@types/serve-static': 1.15.7
 
-  '@types/express@5.0.2':
+  '@types/express@5.0.3':
     dependencies:
       '@types/body-parser': 1.19.5
       '@types/express-serve-static-core': 5.0.6
@@ -5792,7 +5792,7 @@ snapshots:
 
   '@types/serve-index@1.9.4':
     dependencies:
-      '@types/express': 5.0.2
+      '@types/express': 5.0.3
 
   '@types/serve-static@1.15.7':
     dependencies:
@@ -7347,7 +7347,7 @@ snapshots:
 
   http-parser-js@0.5.10: {}
 
-  http-proxy-middleware@2.0.9(@types/express@4.17.22):
+  http-proxy-middleware@2.0.9(@types/express@4.17.23):
     dependencies:
       '@types/http-proxy': 1.17.16
       http-proxy: 1.18.1
@@ -7355,7 +7355,7 @@ snapshots:
       is-plain-obj: 3.0.0
       micromatch: 4.0.8
     optionalDependencies:
-      '@types/express': 4.17.22
+      '@types/express': 4.17.23
     transitivePeerDependencies:
       - debug
 
@@ -8678,7 +8678,7 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  shakapacker@8.3.0(@babel/core@7.27.4)(@babel/plugin-transform-runtime@7.27.4(@babel/core@7.27.4))(@babel/preset-env@7.27.2(@babel/core@7.27.4))(@babel/runtime@7.27.6)(babel-loader@10.0.0(@babel/core@7.27.4)(webpack@5.99.9))(compression-webpack-plugin@11.1.0(webpack@5.99.9))(terser-webpack-plugin@5.3.14(webpack@5.99.9))(webpack-assets-manifest@6.1.0(webpack@5.99.9))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-merge@6.0.1)(webpack@5.99.9):
+  shakapacker@8.3.0(@babel/core@7.27.4)(@babel/plugin-transform-runtime@7.27.4(@babel/core@7.27.4))(@babel/preset-env@7.27.2(@babel/core@7.27.4))(@babel/runtime@7.27.6)(babel-loader@10.0.0(@babel/core@7.27.4)(webpack@5.99.9))(compression-webpack-plugin@11.1.0(webpack@5.99.9))(terser-webpack-plugin@5.3.14(webpack@5.99.9))(webpack-assets-manifest@6.2.1(webpack@5.99.9))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-merge@6.0.1)(webpack@5.99.9):
     dependencies:
       '@babel/core': 7.27.4
       '@babel/plugin-transform-runtime': 7.27.4(@babel/core@7.27.4)
@@ -8690,7 +8690,7 @@ snapshots:
       path-complete-extname: 1.0.0
       terser-webpack-plugin: 5.3.14(webpack@5.99.9)
       webpack: 5.99.9(webpack-cli@6.0.1)
-      webpack-assets-manifest: 6.1.0(webpack@5.99.9)
+      webpack-assets-manifest: 6.2.1(webpack@5.99.9)
       webpack-cli: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.99.9)
       webpack-dev-server: 5.2.2(webpack-cli@6.0.1)(webpack@5.99.9)
       webpack-merge: 6.0.1
@@ -9203,7 +9203,7 @@ snapshots:
     dependencies:
       minimalistic-assert: 1.0.1
 
-  webpack-assets-manifest@6.1.0(webpack@5.99.9):
+  webpack-assets-manifest@6.2.1(webpack@5.99.9):
     dependencies:
       deepmerge: 4.3.1
       lockfile: 1.0.4
@@ -9245,7 +9245,7 @@ snapshots:
     dependencies:
       '@types/bonjour': 3.5.13
       '@types/connect-history-api-fallback': 1.5.4
-      '@types/express': 4.17.22
+      '@types/express': 4.17.23
       '@types/express-serve-static-core': 4.19.6
       '@types/serve-index': 1.9.4
       '@types/serve-static': 1.15.7
@@ -9259,7 +9259,7 @@ snapshots:
       connect-history-api-fallback: 2.0.0
       express: 4.21.2
       graceful-fs: 4.2.11
-      http-proxy-middleware: 2.0.9(@types/express@4.17.22)
+      http-proxy-middleware: 2.0.9(@types/express@4.17.23)
       ipaddr.js: 2.2.0
       launch-editor: 2.10.0
       open: 10.1.2
