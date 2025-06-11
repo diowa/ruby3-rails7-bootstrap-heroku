@@ -81,8 +81,8 @@ importers:
         specifier: ^8.1.1
         version: 8.1.1(postcss@8.5.4)(typescript@5.6.3)(webpack@5.99.9)
       postcss-preset-env:
-        specifier: ^10.2.1
-        version: 10.2.1(postcss@8.5.4)
+        specifier: ^10.2.2
+        version: 10.2.2(postcss@8.5.4)
       resolve-url-loader:
         specifier: ^5.0.0
         version: 5.0.0
@@ -128,7 +128,7 @@ importers:
         version: 9.28.0(jiti@1.21.7)
       eslint-webpack-plugin:
         specifier: ^5.0.1
-        version: 5.0.1(eslint@9.28.0(jiti@1.21.7))(webpack@5.99.9)
+        version: 5.0.2(eslint@9.28.0(jiti@1.21.7))(webpack@5.99.9)
       neostandard:
         specifier: ^0.12.1
         version: 0.12.1(@typescript-eslint/utils@8.33.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.33.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.6.3))(eslint@9.28.0(jiti@1.21.7)))(eslint@9.28.0(jiti@1.21.7))(typescript@5.6.3)
@@ -143,7 +143,7 @@ importers:
         version: 6.0.4(stylelint@16.20.0(typescript@5.6.3))
       stylelint-scss:
         specifier: ^6.12.0
-        version: 6.12.0(stylelint@16.20.0(typescript@5.6.3))
+        version: 6.12.1(stylelint@16.20.0(typescript@5.6.3))
       stylelint-webpack-plugin:
         specifier: ^5.0.1
         version: 5.0.1(stylelint@16.20.0(typescript@5.6.3))(webpack@5.99.9)
@@ -776,8 +776,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  '@csstools/postcss-is-pseudo-class@5.0.1':
-    resolution: {integrity: sha512-JLp3POui4S1auhDR0n8wHd/zTOWmMsmK3nQd3hhL6FhWPaox5W7j1se6zXOG/aP07wV2ww0lxbKYGwbBszOtfQ==}
+  '@csstools/postcss-is-pseudo-class@5.0.2':
+    resolution: {integrity: sha512-ksUGH8Untwzo/qUwHlFZf2+vGi8sDe1WYDZrCFNVg8EvENhWQvtoPEbRTBmNzGzTJebmHIvaOH8s3B3QKUJV3g==}
     engines: {node: '>=18'}
     peerDependencies:
       postcss: ^8.4
@@ -902,8 +902,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  '@csstools/selector-resolve-nested@3.0.0':
-    resolution: {integrity: sha512-ZoK24Yku6VJU1gS79a5PFmC8yn3wIapiKmPgun0hZgEI5AOqgH2kiPRsPz1qkGv4HL+wuDLH83yQyk6inMYrJQ==}
+  '@csstools/selector-resolve-nested@3.1.0':
+    resolution: {integrity: sha512-mf1LEW0tJLKfWyvn5KdDrhpxHyuxpbNwTIwOYLIvsTffeyOf85j5oIzfG0yosxDgx/sswlqBnESYUcQH0vgZ0g==}
     engines: {node: '>=18'}
     peerDependencies:
       postcss-selector-parser: ^7.0.0
@@ -2127,8 +2127,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.5.165:
-    resolution: {integrity: sha512-naiMx1Z6Nb2TxPU6fiFrUrDTjyPMLdTtaOd2oLmG8zVSg2hCWGkhPyxwk+qRmZ1ytwVqUv0u7ZcDA5+ALhaUtw==}
+  electron-to-chromium@1.5.166:
+    resolution: {integrity: sha512-QPWqHL0BglzPYyJJ1zSSmwFFL6MFXhbACOCcsCdUMCkzPdS9/OIBVxg516X/Ado2qwAq8k0nJJ7phQPCqiaFAw==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -2330,8 +2330,8 @@ packages:
     resolution: {integrity: sha512-UyLnSehNt62FFhSwjZlHmeokpRK59rcz29j+F1/aDgbkbRTk7wIc9XzdoasMUbRNKDM0qQt/+BJ4BrpFeABemw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  eslint-webpack-plugin@5.0.1:
-    resolution: {integrity: sha512-Ur100Vi+z0uP7j4Z8Ccah0pXmNHhl3f7P2hCYZj3mZCOSc33G5c1R/vZ4KCapwWikPgRyD4dkangx6JW3KaVFQ==}
+  eslint-webpack-plugin@5.0.2:
+    resolution: {integrity: sha512-cB7EO2o+4gPUzK6zxgegSet8uu/hHwzOiG+2976MHWiwWFj9mmPbTrzlW0InFl6hl89S1D9MPKK5F7vNFpZc4g==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
       eslint: ^8.0.0 || ^9.0.0
@@ -3517,8 +3517,8 @@ packages:
     peerDependencies:
       postcss: ^8.1.0
 
-  postcss-nesting@13.0.1:
-    resolution: {integrity: sha512-VbqqHkOBOt4Uu3G8Dm8n6lU5+9cJFxiuty9+4rcoyRPO9zZS1JIs6td49VIoix3qYqELHlJIn46Oih9SAKo+yQ==}
+  postcss-nesting@13.0.2:
+    resolution: {integrity: sha512-1YCI290TX+VP0U/K/aFxzHzQWHWURL+CtHMSbex1lCdpXD1SoR2sYuxDu5aNI9lPoXpKTCggFZiDJbwylU0LEQ==}
     engines: {node: '>=18'}
     peerDependencies:
       postcss: ^8.4
@@ -3606,8 +3606,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  postcss-preset-env@10.2.1:
-    resolution: {integrity: sha512-mDInnlm4mYhmR0S79hNLzseW9nx4Ihd8s15K99iu6u6QhoSQgqWX9Oj6nTd/8Dz3b0T7v2JSrfnXsDfv9TFvDg==}
+  postcss-preset-env@10.2.2:
+    resolution: {integrity: sha512-0w90xwitx3xQOkP1z0TPdt+8vhSAIkcOGmwZUywcWjBH/xI7ekJjZ0DYX1g6/fcpUEUsL7tCILUx4iYbwafxGQ==}
     engines: {node: '>=18'}
     peerDependencies:
       postcss: ^8.4
@@ -4142,8 +4142,8 @@ packages:
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0 || ^16.0.1
 
-  stylelint-scss@6.12.0:
-    resolution: {integrity: sha512-U7CKhi1YNkM1pXUXl/GMUXi8xKdhl4Ayxdyceie1nZ1XNIdaUgMV6OArpooWcDzEggwgYD0HP/xIgVJo9a655w==}
+  stylelint-scss@6.12.1:
+    resolution: {integrity: sha512-UJUfBFIvXfly8WKIgmqfmkGKPilKB4L5j38JfsDd+OCg2GBdU0vGUV08Uw82tsRZzd4TbsUURVVNGeOhJVF7pA==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       stylelint: ^16.0.2
@@ -5265,7 +5265,7 @@ snapshots:
     dependencies:
       postcss: 8.5.4
 
-  '@csstools/postcss-is-pseudo-class@5.0.1(postcss@8.5.4)':
+  '@csstools/postcss-is-pseudo-class@5.0.2(postcss@8.5.4)':
     dependencies:
       '@csstools/selector-specificity': 5.0.0(postcss-selector-parser@7.1.0)
       postcss: 8.5.4
@@ -5394,7 +5394,7 @@ snapshots:
     dependencies:
       postcss: 8.5.4
 
-  '@csstools/selector-resolve-nested@3.0.0(postcss-selector-parser@7.1.0)':
+  '@csstools/selector-resolve-nested@3.1.0(postcss-selector-parser@7.1.0)':
     dependencies:
       postcss-selector-parser: 7.1.0
 
@@ -6331,7 +6331,7 @@ snapshots:
   browserslist@4.25.0:
     dependencies:
       caniuse-lite: 1.0.30001721
-      electron-to-chromium: 1.5.165
+      electron-to-chromium: 1.5.166
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.25.0)
 
@@ -6726,7 +6726,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.5.165: {}
+  electron-to-chromium@1.5.166: {}
 
   emoji-regex@8.0.0: {}
 
@@ -7018,10 +7018,11 @@ snapshots:
 
   eslint-visitor-keys@4.2.0: {}
 
-  eslint-webpack-plugin@5.0.1(eslint@9.28.0(jiti@1.21.7))(webpack@5.99.9):
+  eslint-webpack-plugin@5.0.2(eslint@9.28.0(jiti@1.21.7))(webpack@5.99.9):
     dependencies:
       '@types/eslint': 9.6.1
       eslint: 9.28.0(jiti@1.21.7)
+      flatted: 3.3.3
       jest-worker: 29.7.0
       micromatch: 4.0.8
       normalize-path: 3.0.0
@@ -8213,9 +8214,9 @@ snapshots:
       icss-utils: 5.1.0(postcss@8.5.4)
       postcss: 8.5.4
 
-  postcss-nesting@13.0.1(postcss@8.5.4):
+  postcss-nesting@13.0.2(postcss@8.5.4):
     dependencies:
-      '@csstools/selector-resolve-nested': 3.0.0(postcss-selector-parser@7.1.0)
+      '@csstools/selector-resolve-nested': 3.1.0(postcss-selector-parser@7.1.0)
       '@csstools/selector-specificity': 5.0.0(postcss-selector-parser@7.1.0)
       postcss: 8.5.4
       postcss-selector-parser: 7.1.0
@@ -8289,7 +8290,7 @@ snapshots:
       postcss: 8.5.4
       postcss-value-parser: 4.2.0
 
-  postcss-preset-env@10.2.1(postcss@8.5.4):
+  postcss-preset-env@10.2.2(postcss@8.5.4):
     dependencies:
       '@csstools/postcss-cascade-layers': 5.0.1(postcss@8.5.4)
       '@csstools/postcss-color-function': 4.0.10(postcss@8.5.4)
@@ -8303,7 +8304,7 @@ snapshots:
       '@csstools/postcss-hwb-function': 4.0.10(postcss@8.5.4)
       '@csstools/postcss-ic-unit': 4.0.2(postcss@8.5.4)
       '@csstools/postcss-initial': 2.0.1(postcss@8.5.4)
-      '@csstools/postcss-is-pseudo-class': 5.0.1(postcss@8.5.4)
+      '@csstools/postcss-is-pseudo-class': 5.0.2(postcss@8.5.4)
       '@csstools/postcss-light-dark-function': 2.0.9(postcss@8.5.4)
       '@csstools/postcss-logical-float-and-clear': 3.0.0(postcss@8.5.4)
       '@csstools/postcss-logical-overflow': 2.0.0(postcss@8.5.4)
@@ -8348,7 +8349,7 @@ snapshots:
       postcss-image-set-function: 7.0.0(postcss@8.5.4)
       postcss-lab-function: 7.0.10(postcss@8.5.4)
       postcss-logical: 8.1.0(postcss@8.5.4)
-      postcss-nesting: 13.0.1(postcss@8.5.4)
+      postcss-nesting: 13.0.2(postcss@8.5.4)
       postcss-opacity-percentage: 3.0.0(postcss@8.5.4)
       postcss-overflow-shorthand: 6.0.0(postcss@8.5.4)
       postcss-page-break: 3.0.4(postcss@8.5.4)
@@ -8914,7 +8915,7 @@ snapshots:
       postcss-scss: 4.0.9(postcss@8.5.4)
       stylelint: 16.20.0(typescript@5.6.3)
       stylelint-config-recommended: 14.0.1(stylelint@16.20.0(typescript@5.6.3))
-      stylelint-scss: 6.12.0(stylelint@16.20.0(typescript@5.6.3))
+      stylelint-scss: 6.12.1(stylelint@16.20.0(typescript@5.6.3))
     optionalDependencies:
       postcss: 8.5.4
 
@@ -8943,7 +8944,7 @@ snapshots:
       stylelint-config-recess-order: 5.1.1(stylelint@16.20.0(typescript@5.6.3))
       stylelint-config-standard: 36.0.1(stylelint@16.20.0(typescript@5.6.3))
       stylelint-config-standard-scss: 14.0.0(postcss@8.5.4)(stylelint@16.20.0(typescript@5.6.3))
-      stylelint-scss: 6.12.0(stylelint@16.20.0(typescript@5.6.3))
+      stylelint-scss: 6.12.1(stylelint@16.20.0(typescript@5.6.3))
     transitivePeerDependencies:
       - postcss
 
@@ -8953,7 +8954,7 @@ snapshots:
       postcss-sorting: 8.0.2(postcss@8.5.4)
       stylelint: 16.20.0(typescript@5.6.3)
 
-  stylelint-scss@6.12.0(stylelint@16.20.0(typescript@5.6.3)):
+  stylelint-scss@6.12.1(stylelint@16.20.0(typescript@5.6.3)):
     dependencies:
       css-tree: 3.1.0
       is-plain-object: 5.0.0
