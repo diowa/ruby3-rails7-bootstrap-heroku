@@ -2,6 +2,9 @@
 en:
   app_name: Rails 7 Starter App
   meta_description: An opinionated starter application based on Ruby 3.3, Rails 7.2, Webpack 5, Yarn, and Bootstrap 5
+  pages:
+    hello_world:
+      title: Hello World
   shared:
     navbar:
       toggle_navigation: Toggle Navigation
