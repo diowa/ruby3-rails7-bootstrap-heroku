@@ -52,7 +52,7 @@ importers:
         version: 3.1.0
       bootstrap:
         specifier: ^5.3.6
-        version: 5.3.6(@popperjs/core@2.11.8)
+        version: 5.3.7(@popperjs/core@2.11.8)
       compression-webpack-plugin:
         specifier: ^11.1.0
         version: 11.1.0(webpack@5.99.9)
@@ -75,8 +75,8 @@ importers:
         specifier: ^5.0.2
         version: 5.0.2(postcss@8.5.6)
       postcss-import:
-        specifier: ^16.1.0
-        version: 16.1.0(postcss@8.5.6)
+        specifier: ^16.1.1
+        version: 16.1.1(postcss@8.5.6)
       postcss-loader:
         specifier: ^8.1.1
         version: 8.1.1(postcss@8.5.6)(typescript@5.6.3)(webpack@5.99.9)
@@ -1725,8 +1725,8 @@ packages:
   boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
 
-  bootstrap@5.3.6:
-    resolution: {integrity: sha512-jX0GAcRzvdwISuvArXn3m7KZscWWFAf1MKBcnzaN02qWMb3jpMoUX4/qgeiGzqyIb4ojulRzs89UCUmGcFSzTA==}
+  bootstrap@5.3.7:
+    resolution: {integrity: sha512-7KgiD8UHjfcPBHEpDNg+zGz8L3LqR3GVwqZiBRFX04a1BCArZOz1r2kjly2HQ0WokqTO0v1nF+QAt8dsW4lKlw==}
     peerDependencies:
       '@popperjs/core': ^2.11.8
 
@@ -3431,8 +3431,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  postcss-import@16.1.0:
-    resolution: {integrity: sha512-7hsAZ4xGXl4MW+OKEWCnF6T5jqBw80/EE9aXg1r2yyn1RsVEU8EtKXbijEODa+rg7iih4bKf7vlvTGYR4CnPNg==}
+  postcss-import@16.1.1:
+    resolution: {integrity: sha512-2xVS1NCZAfjtVdvXiyegxzJ447GyqCeEI5V7ApgQVOWnros1p5lGNovJNapwPpMombyFBfqDwt7AD3n2l0KOfQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       postcss: ^8.0.0
@@ -6324,7 +6324,7 @@ snapshots:
 
   boolbase@1.0.0: {}
 
-  bootstrap@5.3.6(@popperjs/core@2.11.8):
+  bootstrap@5.3.7(@popperjs/core@2.11.8):
     dependencies:
       '@popperjs/core': 2.11.8
 
@@ -8142,7 +8142,7 @@ snapshots:
       postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-import@16.1.0(postcss@8.5.6):
+  postcss-import@16.1.1(postcss@8.5.6):
     dependencies:
       postcss: 8.5.6
       postcss-value-parser: 4.2.0
