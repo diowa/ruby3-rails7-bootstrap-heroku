@@ -12,11 +12,11 @@ gem 'puma', '~> 6.6'
 gem 'shakapacker', '8.3.0'
 gem 'slim-rails', '~> 3.7'
 gem 'turbo-rails', '~> 2.0'
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'tzinfo-data', platforms: %i[windows jruby]
 
 group :development, :test do
   gem 'brakeman', require: false
-  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'byebug', platforms: %i[mri windows]
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'i18n-tasks', require: false
