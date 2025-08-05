@@ -66,8 +66,8 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0(webpack@5.101.0)
       mini-css-extract-plugin:
-        specifier: ^2.9.2
-        version: 2.9.2(webpack@5.101.0)
+        specifier: ^2.9.3
+        version: 2.9.3(webpack@5.101.0)
       postcss:
         specifier: ^8.5.6
         version: 8.5.6
@@ -3072,8 +3072,8 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  mini-css-extract-plugin@2.9.2:
-    resolution: {integrity: sha512-GJuACcS//jtq4kCtd5ii/M0SZf7OZRH+BxdqXZHaJfb8TJiVl+NgQRPwiYt2EuqeSkNydn/7vP+bcE27C5mb9w==}
+  mini-css-extract-plugin@2.9.3:
+    resolution: {integrity: sha512-tRA0+PsS4kLVijnN1w9jUu5lkxBwUk9E8SbgEB5dBJqchE6pVYdawROG6uQtpmAri7tdCK9i7b1bULeVWqS6Ag==}
     engines: {node: '>= 12.13.0'}
     peerDependencies:
       webpack: ^5.0.0
@@ -7806,7 +7806,7 @@ snapshots:
 
   mime@1.6.0: {}
 
-  mini-css-extract-plugin@2.9.2(webpack@5.101.0):
+  mini-css-extract-plugin@2.9.3(webpack@5.101.0):
     dependencies:
       schema-utils: 4.3.2
       tapable: 2.2.2
