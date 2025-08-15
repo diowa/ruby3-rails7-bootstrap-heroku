@@ -129,37 +129,32 @@ bundle exec bin/shakapacker
 
 Follow these conventions for commit messages to maintain a clean and informative git history:
 
-**Format**:
+**Branch Naming Conventions**:
+Use descriptive branch prefixes to categorize work:
+- `feature/` - New features and enhancements
+- `bugfix/` - Bug fixes and corrections  
+- `chore/` - Maintenance, refactoring, CI/CD, dependency updates
+
+**Commit Message Format**:
 ```
-<type>(<scope>): <subject>
+Short descriptive message under 50 characters
 
-<body>
+Optional body explaining what and why for complex changes
 
-<footer>
+Reference issue numbers when applicable (e.g., Fixes #1234)
 ```
-
-**Types**:
-- `feat`: New features
-- `fix`: Bug fixes
-- `docs`: Documentation changes
-- `style`: Code style changes (formatting, semicolons, etc.)
-- `refactor`: Code refactoring without feature changes
-- `test`: Adding or updating tests
-- `chore`: Maintenance tasks (dependency updates, build changes)
-- `perf`: Performance improvements
-- `ci`: CI/CD pipeline changes
 
 **Examples**:
 ```
-feat(auth): add user registration with email verification
+Add user registration with email verification
 
-fix(ui): resolve navbar collapse issue on mobile devices
+Resolve navbar collapse issue on mobile devices
 
-docs: update installation instructions for Ruby 3.4.5
+Update installation instructions for Ruby 3.4.5
 
-style: fix rubocop violations in user model
+Fix rubocop violations in user model
 
-test(integration): add comprehensive homepage navigation tests
+Add comprehensive homepage navigation tests
 ```
 
 **Guidelines**:
