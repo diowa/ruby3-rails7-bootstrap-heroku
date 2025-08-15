@@ -126,45 +126,41 @@ bundle exec bin/shakapacker
 4. **Asset loading**: Verify CSS styles and JavaScript functionality work correctly
 
 ## Commit Message Guidelines
+Follow the project's commit message standards as outlined in [CONTRIBUTING.md](../CONTRIBUTING.md):
 
-Follow these conventions for commit messages to maintain a clean and informative git history:
+- **Reference**: Follow [How to Write a Git Commit Message](https://cbea.ms/git-commit/#seven-rules)
+- **Format**: Use imperative mood ("Add feature" not "Added feature")
+- **Length**: Limit subject line to 50 characters, body lines to 72 characters
+- **Structure**: 
+  ```
+  Short summary (50 chars max)
+  
+  Detailed explanation if needed (72 chars per line)
+  
+  - Use bullet points for multiple changes
+  - Reference issues with "Fixes #123" or "Closes #456"
+  ```
+- **Examples**:
+  ```
+  Fix temporal query performance regression
+  
+  Add support for Rails 8.0 compatibility
+  
+  Update dependencies for security patches
+  
+  Fixes #123
+  ```
+- **Best Practices**:
+  - Keep commits atomic (one logical change per commit)
+  - Write clear, descriptive commit messages
+  - Reference related issues and pull requests
+  - Avoid generic messages like "Fix bug" or "Update code"
 
 **Branch Naming Conventions**:
 Use descriptive branch prefixes to categorize work:
 - `feature/` - New features and enhancements
 - `bugfix/` - Bug fixes and corrections  
 - `chore/` - Maintenance, refactoring, CI/CD, dependency updates
-
-**Commit Message Format**:
-```
-Short descriptive message under 50 characters
-
-Optional body explaining what and why for complex changes
-
-Reference issue numbers when applicable (e.g., Fixes #1234)
-```
-
-**Examples**:
-```
-Add user registration with email verification
-
-Resolve navbar collapse issue on mobile devices
-
-Update installation instructions for Ruby 3.4.5
-
-Fix rubocop violations in user model
-
-Add comprehensive homepage navigation tests
-```
-
-**Guidelines**:
-- Use present tense ("add" not "added")
-- Keep subject line under 50 characters
-- Capitalize the subject line
-- Do not end subject line with a period
-- Use imperative mood ("fix bug" not "fixes bug")
-- Include body for complex changes explaining what and why
-- Reference issue numbers in footer when applicable
 
 ## Key File Locations
 
