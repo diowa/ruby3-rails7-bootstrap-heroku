@@ -1,16 +1,16 @@
 # Rails 7 Starter App - Copilot Instructions
 
-This is a Ruby on Rails 7.2.2.2 web application with Bootstrap 5, Font Awesome, PostgreSQL, and comprehensive tooling for linting, testing, and deployment to Heroku/Render.
+This is a Ruby on Rails 7 web application with Bootstrap 5, Font Awesome, PostgreSQL, and comprehensive tooling for linting, testing, and deployment to Heroku/Render.
 
 Always reference these instructions first and fallback to search or bash commands only when you encounter unexpected information that does not match the info here.
 
 ## Prerequisites
 
 Install these dependencies on the system before starting:
-- Ruby 3.2.3 (or compatible)
-- Node.js 20+ (package.json specifies >= 22.0 but works with 20.19.4)
+- Ruby 3.4.5 (specified in .ruby-version)
+- Node.js >= 22.0 (specified in package.json)
 - PostgreSQL
-- pnpm 10.9.0+
+- pnpm ^10.9.0 (specified in package.json)
 - bundler gem
 
 ## Bootstrap and Setup
@@ -32,7 +32,7 @@ bundle config set --local path vendor/bundle
 # Install Ruby dependencies (NEVER CANCEL: takes ~1 minute)
 bundle install
 
-# Install JavaScript dependencies (NEVER CANCEL: takes ~2 minutes, may show Node version warnings)
+# Install JavaScript dependencies (NEVER CANCEL: takes ~2 minutes)
 pnpm install
 
 # Set up database (NEVER CANCEL: takes ~2 seconds)
@@ -125,6 +125,52 @@ bundle exec bin/shakapacker
 3. **Responsive layout**: Test on different screen sizes to ensure Bootstrap responsive design works
 4. **Asset loading**: Verify CSS styles and JavaScript functionality work correctly
 
+## Commit Message Guidelines
+
+Follow these conventions for commit messages to maintain a clean and informative git history:
+
+**Format**:
+```
+<type>(<scope>): <subject>
+
+<body>
+
+<footer>
+```
+
+**Types**:
+- `feat`: New features
+- `fix`: Bug fixes
+- `docs`: Documentation changes
+- `style`: Code style changes (formatting, semicolons, etc.)
+- `refactor`: Code refactoring without feature changes
+- `test`: Adding or updating tests
+- `chore`: Maintenance tasks (dependency updates, build changes)
+- `perf`: Performance improvements
+- `ci`: CI/CD pipeline changes
+
+**Examples**:
+```
+feat(auth): add user registration with email verification
+
+fix(ui): resolve navbar collapse issue on mobile devices
+
+docs: update installation instructions for Ruby 3.4.5
+
+style: fix rubocop violations in user model
+
+test(integration): add comprehensive homepage navigation tests
+```
+
+**Guidelines**:
+- Use present tense ("add" not "added")
+- Keep subject line under 50 characters
+- Capitalize the subject line
+- Do not end subject line with a period
+- Use imperative mood ("fix bug" not "fixes bug")
+- Include body for complex changes explaining what and why
+- Reference issue numbers in footer when applicable
+
 ## Key File Locations
 
 **Application Structure**:
@@ -183,11 +229,11 @@ The Rails master key for development is: `02a9ea770b4985659e8ce92699f218dc`
 
 ## Environment Requirements
 
-- Ruby: 3.2.3 (specified in .ruby-version)
-- Node.js: 20.19.4+ (package.json prefers 22.0+)  
-- pnpm: 10.9.0
+- Ruby: 3.4.5 (specified in .ruby-version)
+- Node.js: >= 22.0 (specified in package.json)  
+- pnpm: ^10.9.0 (specified in package.json)
 - PostgreSQL: Any recent version
-- Rails: 7.2.2.2
+- Rails: 7 (latest within major version)
 - Bootstrap: 5.3.7
 - Font Awesome: 7.0.0
 
@@ -204,8 +250,6 @@ bundle install
 sudo service postgresql start
 sudo -u postgres createuser -s $USER
 ```
-
-**Node Version Warnings**: The app works with Node 20.19.4 despite package.json preferring 22.0+. Warnings are safe to ignore.
 
 **Asset Compilation Failures**: Clear compiled assets and rebuild:
 ```bash
