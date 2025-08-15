@@ -44,7 +44,7 @@ This is an opinionated starter web application based on the following technology
 [:stylelint-url]: https://stylelint.io
 [:webpack-url]: https://webpack.js.org
 
-Starter App is deployable on [Heroku](https://www.heroku.com/). Demo: https://ruby3-rails7-bootstrap-heroku.herokuapp.com/
+Starter App is deployable on [Heroku](https://www.heroku.com/) and [Render](https://render.com/). Demo: https://ruby3-rails7-bootstrap-render.onrender.com/
 
 ```Gemfile``` also contains a set of useful gems for performance, security, api building...
 
