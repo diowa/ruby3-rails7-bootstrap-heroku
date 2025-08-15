@@ -44,7 +44,7 @@ This is an opinionated starter web application based on the following technology
 [:stylelint-url]: https://stylelint.io
 [:webpack-url]: https://webpack.js.org
 
-Starter App is deployable on [Heroku](https://www.heroku.com/). Demo: https://ruby3-rails7-bootstrap-heroku.herokuapp.com/
+Starter App is deployable on [Heroku](https://www.heroku.com/) and [Render](https://render.com/). Demo: https://ruby3-rails7-bootstrap-heroku.herokuapp.com/
 
 ```Gemfile``` also contains a set of useful gems for performance, security, api building...
 
@@ -102,3 +102,14 @@ $ heroku config:set RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR=1.3
 ```
 
 More information: [Change the full GC timing](https://bugs.ruby-lang.org/issues/9607)
+
+### Deploying to Render
+
+This application can be deployed to [Render](https://render.com/) using the included `render.yaml` configuration file.
+
+**Note:** The `date` gem is explicitly pinned to version `~> 3.3.0` in the Gemfile to avoid native extension compatibility issues that can occur when deploying to Render with Ruby 3.4.x. If you encounter linking errors related to the date gem, ensure you're using a compatible version.
+
+To deploy to Render:
+1. Connect your GitHub repository to Render
+2. Use the included `render.yaml` file for automatic configuration
+3. Set your `RAILS_MASTER_KEY` environment variable (you can generate a new one with `rails credentials:edit`)

@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: ruby3-rails7-bootstrap-app
+    env: ruby
+    plan: starter
+    buildCommand: |
+      bundle install
+      yarn install
+      bundle exec rails assets:precompile
+      bundle exec rails db:migrate
+    startCommand: bundle exec rails server -p $PORT -e $RAILS_ENV
+    envVars:
+      - key: RAILS_ENV
+        value: production
+      - key: RAILS_SERVE_STATIC_FILES
+        value: true
+      - key: RAILS_LOG_TO_STDOUT
+        value: true
+      - key: RAILS_MASTER_KEY
+        generateValue: true
+    autoDeploy: false
