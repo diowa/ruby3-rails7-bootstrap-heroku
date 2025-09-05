@@ -124,7 +124,6 @@ jobs:
       uses: actions/setup-node@v5
       with:
         node-version: '22'
-        cache: 'pnpm'
     - name: Install node dependencies
       run: pnpm install
     - name: Run ESLint
@@ -155,7 +154,6 @@ jobs:
       uses: actions/setup-node@v5
       with:
         node-version: '22'
-        cache: 'pnpm'
     - name: Install node dependencies
       run: pnpm install
     - name: Install stylelint GitHub formatter

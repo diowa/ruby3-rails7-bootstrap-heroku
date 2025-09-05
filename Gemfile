@@ -7,7 +7,7 @@ gem 'rails', '7.2.2.2'
 
 gem 'bootsnap', require: false
 gem 'newrelic_rpm', '~> 9.21'
-gem 'pg', '~> 1.5'
+gem 'pg', '~> 1.6'
 gem 'puma', '~> 7.0'
 gem 'shakapacker', '8.3.0'
 gem 'slim-rails', '~> 3.7'
