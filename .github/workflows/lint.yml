@@ -119,12 +119,14 @@ jobs:
           .github/workflows/lint.yml
           app/**/*.js
     - uses: pnpm/action-setup@v4
+      if: steps.changed-files.outputs.any_changed == 'true'
     - name: Set up Node
       if: steps.changed-files.outputs.any_changed == 'true'
       uses: actions/setup-node@v5
       with:
         node-version: '22'
     - name: Install node dependencies
+      if: steps.changed-files.outputs.any_changed == 'true'
       run: pnpm install
     - name: Run ESLint
       if: steps.changed-files.outputs.any_changed == 'true'
@@ -149,15 +151,22 @@ jobs:
           .stylelintrc
           app/**/*.{scss,css}
     - uses: pnpm/action-setup@v4
+      if: steps.changed-files.outputs.any_changed == 'true'
     - name: Set up Node
       if: steps.changed-files.outputs.any_changed == 'true'
       uses: actions/setup-node@v5
       with:
         node-version: '22'
     - name: Install node dependencies
+      if: steps.changed-files.outputs.any_changed == 'true'
       run: pnpm install
+    # Install the GitHub Stylelint formatter only for this CI run, without
+    # modifying package.json and the lockfile.
+    # This avoids accidental lockfile changes in CI environments.
+    # See: pnpm/pnpm#2020
     - name: Install stylelint GitHub formatter
-      run: pnpm install @csstools/stylelint-formatter-github
+      if: steps.changed-files.outputs.any_changed == 'true'
+      run: NPM_CONFIG_SAVE=false NPM_CONFIG_LOCKFILE=false pnpm install @csstools/stylelint-formatter-github
     - name: Run Stylelint
       if: steps.changed-files.outputs.any_changed == 'true'
       run: pnpm stylelint app/**/*.{scss,css} --custom-formatter @csstools/stylelint-formatter-github
