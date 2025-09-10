@@ -40,10 +40,10 @@ importers:
         version: 2.11.8
       '@rails/actioncable':
         specifier: 7.2.202
-        version: 8.0.201
+        version: 7.2.202
       '@rails/activestorage':
         specifier: 7.2.202
-        version: 8.0.201
+        version: 7.2.202
       babel-loader:
         specifier: ^10.0.0
         version: 10.0.0(@babel/core@7.28.3)(webpack@5.101.3)
@@ -93,8 +93,8 @@ importers:
         specifier: ^16.0.5
         version: 16.0.5(sass@1.92.0)(webpack@5.101.3)
       shakapacker:
-        specifier: 8.3.0
-        version: 8.3.0(@babel/core@7.28.3)(@babel/plugin-transform-runtime@7.28.3(@babel/core@7.28.3))(@babel/preset-env@7.28.3(@babel/core@7.28.3))(@babel/runtime@7.28.3)(babel-loader@10.0.0(@babel/core@7.28.3)(webpack@5.101.3))(compression-webpack-plugin@11.1.0(webpack@5.101.3))(terser-webpack-plugin@5.3.14(webpack@5.101.3))(webpack-assets-manifest@6.2.2(webpack@5.101.3))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-merge@6.0.1)(webpack@5.101.3)
+        specifier: 8.4.0
+        version: 8.4.0(@babel/core@7.28.3)(@babel/plugin-transform-runtime@7.28.3(@babel/core@7.28.3))(@babel/preset-env@7.28.3(@babel/core@7.28.3))(@babel/runtime@7.28.3)(babel-loader@10.0.0(@babel/core@7.28.3)(webpack@5.101.3))(compression-webpack-plugin@11.1.0(webpack@5.101.3))(terser-webpack-plugin@5.3.14(webpack@5.101.3))(webpack-assets-manifest@6.2.2(webpack@5.101.3))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-merge@6.0.1)(webpack@5.101.3)
       style-loader:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.101.3)
@@ -1223,11 +1223,11 @@ packages:
   '@popperjs/core@2.11.8':
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
 
-  '@rails/actioncable@8.0.201':
-    resolution: {integrity: sha512-WiXZodvnK7u+wlu72DZydfV75x14HhzXI84sto9xcdsW1DMOHK+jYwQuuE/Wh/hKH5yajFIw/3DUP6MHDeGrbA==}
+  '@rails/actioncable@7.2.202':
+    resolution: {integrity: sha512-fJs7s2AsVdGFMYSIWe8OtMipSpoGVNw9XJJFi9SsdykDOQxLR9p5GMHdwWrg45he6WDU4ptIJsZini2xxv7G6g==}
 
-  '@rails/activestorage@8.0.201':
-    resolution: {integrity: sha512-nwc2UnffHA3lgStYP01JUF9ni9dZTPX7YJESj5qRjrox4Q3oA7bDErKySP6bS9fOTcwtrPvTHBH95gKpLEic6Q==}
+  '@rails/activestorage@7.2.202':
+    resolution: {integrity: sha512-VGC7MimZsM65ac2u3kQulonGnD0BRfULNe8xCsr86ONCefC50td6GdNgpdDPoCQFnakx4Yvnj9Ni2Q+y3KpHww==}
 
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
@@ -3907,8 +3907,8 @@ packages:
   setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
 
-  shakapacker@8.3.0:
-    resolution: {integrity: sha512-eJsSSZDMbwmzVzM+Bn2QxAFhdLfcP5prUiDNPrQBGkFazCKjG4b6ZzpUg3rXQGt2l7SPLHQ8BA78QRvPBeBeFA==}
+  shakapacker@8.4.0:
+    resolution: {integrity: sha512-ZfuxfHxy5tdjv7tCdRZHJKJQLDFwvFXOVBVUj150zgNuRKUlOAyXzOBp9/G5hUhu4MLzuPAif/fuKOdjnZeVtw==}
     engines: {node: '>= 14', yarn: '>=1 <5'}
     peerDependencies:
       '@babel/core': ^7.17.9
@@ -3923,12 +3923,15 @@ packages:
       webpack: ^5.76.0
       webpack-assets-manifest: ^5.0.6 || ^6.0.0
       webpack-cli: ^4.9.2 || ^5.0.0 || ^6.0.0
-      webpack-dev-server: ^4.9.0 || ^5.0.0
+      webpack-dev-server: ^4.15.2 || ^5.2.2
       webpack-merge: ^5.8.0 || ^6.0.0
+      webpack-subresource-integrity: ^5.1.0
     peerDependenciesMeta:
       '@types/babel__core':
         optional: true
       '@types/webpack':
+        optional: true
+      webpack-subresource-integrity:
         optional: true
 
   shallow-clone@3.0.1:
@@ -5517,7 +5520,7 @@ snapshots:
   '@hotwired/turbo-rails@8.0.16':
     dependencies:
       '@hotwired/turbo': 8.0.13
-      '@rails/actioncable': 8.0.201
+      '@rails/actioncable': 7.2.202
 
   '@hotwired/turbo@8.0.13': {}
 
@@ -5699,9 +5702,9 @@ snapshots:
 
   '@popperjs/core@2.11.8': {}
 
-  '@rails/actioncable@8.0.201': {}
+  '@rails/actioncable@7.2.202': {}
 
-  '@rails/activestorage@8.0.201':
+  '@rails/activestorage@7.2.202':
     dependencies:
       spark-md5: 3.0.2
 
@@ -8653,7 +8656,7 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  shakapacker@8.3.0(@babel/core@7.28.3)(@babel/plugin-transform-runtime@7.28.3(@babel/core@7.28.3))(@babel/preset-env@7.28.3(@babel/core@7.28.3))(@babel/runtime@7.28.3)(babel-loader@10.0.0(@babel/core@7.28.3)(webpack@5.101.3))(compression-webpack-plugin@11.1.0(webpack@5.101.3))(terser-webpack-plugin@5.3.14(webpack@5.101.3))(webpack-assets-manifest@6.2.2(webpack@5.101.3))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-merge@6.0.1)(webpack@5.101.3):
+  shakapacker@8.4.0(@babel/core@7.28.3)(@babel/plugin-transform-runtime@7.28.3(@babel/core@7.28.3))(@babel/preset-env@7.28.3(@babel/core@7.28.3))(@babel/runtime@7.28.3)(babel-loader@10.0.0(@babel/core@7.28.3)(webpack@5.101.3))(compression-webpack-plugin@11.1.0(webpack@5.101.3))(terser-webpack-plugin@5.3.14(webpack@5.101.3))(webpack-assets-manifest@6.2.2(webpack@5.101.3))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-merge@6.0.1)(webpack@5.101.3):
     dependencies:
       '@babel/core': 7.28.3
       '@babel/plugin-transform-runtime': 7.28.3(@babel/core@7.28.3)
