@@ -7,10 +7,10 @@ Always reference these instructions first and fallback to search or bash command
 ## Prerequisites
 
 Install these dependencies on the system before starting:
-- Ruby 3.4.5 (specified in .ruby-version)
-- Node.js >= 22.0 (specified in package.json)
+- Ruby (version specified in .ruby-version)
+- Node.js (version specified in package.json)
 - PostgreSQL
-- pnpm ^10.9.0 (specified in package.json)
+- pnpm (version specified in package.json)
 - bundler gem
 
 ## Bootstrap and Setup
@@ -39,9 +39,9 @@ pnpm install
 bundle exec rails db:prepare
 ```
 
-**CRITICAL TIMING NOTE**: 
+**CRITICAL TIMING NOTE**:
 - First-time bundle install takes approximately 45 seconds to 1 minute
-- First-time pnpm install takes approximately 1.5-2 minutes  
+- First-time pnpm install takes approximately 1.5-2 minutes
 - Subsequent installs are much faster (cached dependencies)
 - NEVER CANCEL these operations as they are downloading and compiling dependencies
 
@@ -74,7 +74,7 @@ bundle exec rake lint
 
 This command runs:
 - RuboCop (Ruby style and quality)
-- slim-lint (Slim template linting) 
+- slim-lint (Slim template linting)
 - i18n-tasks (translation validation)
 - eslint via pnpm (JavaScript linting)
 - stylelint via pnpm (CSS/SCSS linting)
@@ -131,23 +131,23 @@ Follow the project's commit message standards as outlined in [CONTRIBUTING.md](.
 - **Reference**: Follow [How to Write a Git Commit Message](https://cbea.ms/git-commit/#seven-rules)
 - **Format**: Use imperative mood ("Add feature" not "Added feature")
 - **Length**: Limit subject line to 50 characters, body lines to 72 characters
-- **Structure**: 
+- **Structure**:
   ```
   Short summary (50 chars max)
-  
+
   Detailed explanation if needed (72 chars per line)
-  
+
   - Use bullet points for multiple changes
   - Reference issues with "Fixes #123" or "Closes #456"
   ```
 - **Examples**:
   ```
   Fix temporal query performance regression
-  
+
   Add support for Rails 8.0 compatibility
-  
+
   Update dependencies for security patches
-  
+
   Fixes #123
   ```
 - **Best Practices**:
@@ -159,21 +159,21 @@ Follow the project's commit message standards as outlined in [CONTRIBUTING.md](.
 **Branch Naming Conventions**:
 Use descriptive branch prefixes to categorize work:
 - `feature/` - New features and enhancements
-- `bugfix/` - Bug fixes and corrections  
+- `bugfix/` - Bug fixes and corrections
 - `chore/` - Maintenance, refactoring, CI/CD, dependency updates
 
 ## Key File Locations
 
 **Application Structure**:
 - `app/controllers/` - Rails controllers
-- `app/views/` - Slim template files 
+- `app/views/` - Slim template files
 - `app/models/` - ActiveRecord models
 - `app/javascript/` - JavaScript source files and Webpack entry points
 - `app/assets/` - Static assets (images, etc.)
 
 **Configuration**:
 - `config/routes.rb` - Application routes
-- `config/database.yml` - Database configuration  
+- `config/database.yml` - Database configuration
 - `config/shakapacker.yml` - Webpack configuration
 - `package.json` - Node.js dependencies and scripts
 - `Gemfile` - Ruby gem dependencies
@@ -194,7 +194,7 @@ Use descriptive branch prefixes to categorize work:
 | Command | Purpose | Time | Notes |
 |---------|---------|------|-------|
 | `bundle install` | Install Ruby gems | ~45s first, ~5s cached | NEVER CANCEL |
-| `pnpm install` | Install Node packages | ~1.5-2m first, ~2s cached | NEVER CANCEL |  
+| `pnpm install` | Install Node packages | ~1.5-2m first, ~2s cached | NEVER CANCEL |
 | `bundle exec rails db:prepare` | Set up database | ~2 sec | Creates dev/test DBs |
 | `bundle exec rails server` | Start dev server | instant | Runs on port 3000 |
 | `bundle exec rake lint` | Run all linters | ~8-9 sec | Must pass before commit |
@@ -220,13 +220,11 @@ The Rails master key for development is: `02a9ea770b4985659e8ce92699f218dc`
 
 ## Environment Requirements
 
-- Ruby: 3.4.5 (specified in .ruby-version)
-- Node.js: >= 22.0 (specified in package.json)  
-- pnpm: ^10.9.0 (specified in package.json)
+- Ruby: version specified in .ruby-version
+- Node.js: version specified in package.json
+- pnpm: version specified in package.json
 - PostgreSQL: Any recent version
-- Rails: 7 (latest within major version)
-- Bootstrap: 5.3.7
-- Font Awesome: 7.0.0
+- Rails: 7.2
 
 ## Troubleshooting
 
