@@ -6,7 +6,7 @@ const webpackConfig = generateWebpackConfig()
 const customConfig = {
   module: {
     rules: [{
-      test: /\.scss$/,
+      test: /\.(scss|sass)(\.erb)?$/i,
       use: [{
         loader: 'sass-loader',
         options: {
