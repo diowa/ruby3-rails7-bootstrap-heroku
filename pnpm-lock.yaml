@@ -81,8 +81,8 @@ importers:
         specifier: ^8.2.0
         version: 8.2.0(postcss@8.5.6)(typescript@5.9.2)(webpack@5.104.1)
       postcss-preset-env:
-        specifier: ^10.6.0
-        version: 10.6.0(postcss@8.5.6)
+        specifier: ^10.6.1
+        version: 10.6.1(postcss@8.5.6)
       resolve-url-loader:
         specifier: ^5.0.0
         version: 5.0.0
@@ -93,8 +93,8 @@ importers:
         specifier: ^16.0.6
         version: 16.0.6(sass@1.77.6)(webpack@5.104.1)
       shakapacker:
-        specifier: 9.4.0
-        version: 9.4.0(@babel/core@7.28.5)(@babel/plugin-transform-runtime@7.28.5(@babel/core@7.28.5))(@babel/preset-env@7.28.5(@babel/core@7.28.5))(@babel/runtime@7.28.4)(babel-loader@10.0.0(@babel/core@7.28.5)(webpack@5.104.1))(compression-webpack-plugin@11.1.0(webpack@5.104.1))(css-loader@7.1.2(webpack@5.104.1))(mini-css-extract-plugin@2.9.4(webpack@5.104.1))(sass-loader@16.0.6(sass@1.77.6)(webpack@5.104.1))(sass@1.77.6)(terser-webpack-plugin@5.3.16(webpack@5.104.1))(webpack-assets-manifest@6.5.0(webpack@5.104.1))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-subresource-integrity@5.2.0-rc.1(webpack@5.104.1))(webpack@5.104.1)
+        specifier: 9.5.0
+        version: 9.5.0(@babel/core@7.28.5)(@babel/plugin-transform-runtime@7.28.5(@babel/core@7.28.5))(@babel/preset-env@7.28.5(@babel/core@7.28.5))(@babel/runtime@7.28.4)(babel-loader@10.0.0(@babel/core@7.28.5)(webpack@5.104.1))(compression-webpack-plugin@11.1.0(webpack@5.104.1))(css-loader@7.1.2(webpack@5.104.1))(mini-css-extract-plugin@2.9.4(webpack@5.104.1))(sass-loader@16.0.6(sass@1.77.6)(webpack@5.104.1))(sass@1.77.6)(terser-webpack-plugin@5.3.16(webpack@5.104.1))(webpack-assets-manifest@6.5.0(webpack@5.104.1))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-subresource-integrity@5.2.0-rc.1(webpack@5.104.1))(webpack@5.104.1)
       style-loader:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.104.1)
@@ -873,8 +873,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  '@csstools/postcss-normalize-display-values@4.0.0':
-    resolution: {integrity: sha512-HlEoG0IDRoHXzXnkV4in47dzsxdsjdz6+j7MLjaACABX2NfvjFS6XVAnpaDyGesz9gK2SC7MbNwdCHusObKJ9Q==}
+  '@csstools/postcss-normalize-display-values@4.0.1':
+    resolution: {integrity: sha512-TQUGBuRvxdc7TgNSTevYqrL8oItxiwPDixk20qCB5me/W8uF7BPbhRrAvFuhEoywQp/woRsUZ6SJ+sU5idZAIA==}
     engines: {node: '>=18'}
     peerDependencies:
       postcss: ^8.4
@@ -1794,6 +1794,9 @@ packages:
 
   caniuse-lite@1.0.30001762:
     resolution: {integrity: sha512-PxZwGNvH7Ak8WX5iXzoK1KPZttBXNPuaOvI2ZYU7NrlM+d9Ov+TUvlLOBNGzVXAntMSMMlJPd+jY6ovrVjSmUw==}
+
+  caniuse-lite@1.0.30001764:
+    resolution: {integrity: sha512-9JGuzl2M+vPL+pz70gtMF9sHdMFbY9FJaQBi186cHKH3pSzDvzoUJUPV6fqiKIMyXbud9ZLg4F3Yza1vJ1+93g==}
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -3568,8 +3571,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  postcss-preset-env@10.6.0:
-    resolution: {integrity: sha512-+LzpUSLCGHUdlZ1YZP7lp7w1MjxInJRSG0uaLyk/V/BM17iU2B7xTO7I8x3uk0WQAcLLh/ffqKzOzfaBvG7Fdw==}
+  postcss-preset-env@10.6.1:
+    resolution: {integrity: sha512-yrk74d9EvY+W7+lO9Aj1QmjWY9q5NsKjK2V9drkOPZB/X6KZ0B3igKsHUYakb7oYVhnioWypQX3xGuePf89f3g==}
     engines: {node: '>=18'}
     peerDependencies:
       postcss: ^8.4
@@ -3909,8 +3912,8 @@ packages:
   setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
 
-  shakapacker@9.4.0:
-    resolution: {integrity: sha512-Kf5+LADw5kkaPHqXDA6NknGt6p8MK9jjWuiudM+ESHcF/POxFZ1S5p7lMsyezvuMRMm0HrltQCM/NPadGEEnVg==}
+  shakapacker@9.5.0:
+    resolution: {integrity: sha512-pTGHzHCc74CIoXeg8otCoBa8DjGWZUoYVKu9eyWwpdO9Jq6yHxSD9u5Qp36nXjC9jupd9gnfhCY5YHqkJHpfLA==}
     engines: {node: '>= 20', yarn: '>=1 <5'}
     peerDependencies:
       '@babel/core': ^7.17.9
@@ -5459,7 +5462,7 @@ snapshots:
       postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  '@csstools/postcss-normalize-display-values@4.0.0(postcss@8.5.6)':
+  '@csstools/postcss-normalize-display-values@4.0.1(postcss@8.5.6)':
     dependencies:
       postcss: 8.5.6
       postcss-value-parser: 4.2.0
@@ -6352,7 +6355,7 @@ snapshots:
   autoprefixer@10.4.23(postcss@8.5.6):
     dependencies:
       browserslist: 4.28.1
-      caniuse-lite: 1.0.30001762
+      caniuse-lite: 1.0.30001764
       fraction.js: 5.3.4
       picocolors: 1.1.1
       postcss: 8.5.6
@@ -6502,6 +6505,8 @@ snapshots:
       lodash.uniq: 4.5.0
 
   caniuse-lite@1.0.30001762: {}
+
+  caniuse-lite@1.0.30001764: {}
 
   chalk@4.1.2:
     dependencies:
@@ -8357,7 +8362,7 @@ snapshots:
       postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-preset-env@10.6.0(postcss@8.5.6):
+  postcss-preset-env@10.6.1(postcss@8.5.6):
     dependencies:
       '@csstools/postcss-alpha-function': 1.0.1(postcss@8.5.6)
       '@csstools/postcss-cascade-layers': 5.0.2(postcss@8.5.6)
@@ -8384,7 +8389,7 @@ snapshots:
       '@csstools/postcss-media-minmax': 2.0.9(postcss@8.5.6)
       '@csstools/postcss-media-queries-aspect-ratio-number-values': 3.0.5(postcss@8.5.6)
       '@csstools/postcss-nested-calc': 4.0.0(postcss@8.5.6)
-      '@csstools/postcss-normalize-display-values': 4.0.0(postcss@8.5.6)
+      '@csstools/postcss-normalize-display-values': 4.0.1(postcss@8.5.6)
       '@csstools/postcss-oklab-function': 4.0.12(postcss@8.5.6)
       '@csstools/postcss-position-area-property': 1.0.0(postcss@8.5.6)
       '@csstools/postcss-progressive-custom-properties': 4.2.1(postcss@8.5.6)
@@ -8798,7 +8803,7 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  shakapacker@9.4.0(@babel/core@7.28.5)(@babel/plugin-transform-runtime@7.28.5(@babel/core@7.28.5))(@babel/preset-env@7.28.5(@babel/core@7.28.5))(@babel/runtime@7.28.4)(babel-loader@10.0.0(@babel/core@7.28.5)(webpack@5.104.1))(compression-webpack-plugin@11.1.0(webpack@5.104.1))(css-loader@7.1.2(webpack@5.104.1))(mini-css-extract-plugin@2.9.4(webpack@5.104.1))(sass-loader@16.0.6(sass@1.77.6)(webpack@5.104.1))(sass@1.77.6)(terser-webpack-plugin@5.3.16(webpack@5.104.1))(webpack-assets-manifest@6.5.0(webpack@5.104.1))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-subresource-integrity@5.2.0-rc.1(webpack@5.104.1))(webpack@5.104.1):
+  shakapacker@9.5.0(@babel/core@7.28.5)(@babel/plugin-transform-runtime@7.28.5(@babel/core@7.28.5))(@babel/preset-env@7.28.5(@babel/core@7.28.5))(@babel/runtime@7.28.4)(babel-loader@10.0.0(@babel/core@7.28.5)(webpack@5.104.1))(compression-webpack-plugin@11.1.0(webpack@5.104.1))(css-loader@7.1.2(webpack@5.104.1))(mini-css-extract-plugin@2.9.4(webpack@5.104.1))(sass-loader@16.0.6(sass@1.77.6)(webpack@5.104.1))(sass@1.77.6)(terser-webpack-plugin@5.3.16(webpack@5.104.1))(webpack-assets-manifest@6.5.0(webpack@5.104.1))(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack-subresource-integrity@5.2.0-rc.1(webpack@5.104.1))(webpack@5.104.1):
     dependencies:
       js-yaml: 4.1.1
       path-complete-extname: 1.0.0
