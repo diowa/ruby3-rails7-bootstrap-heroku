@@ -16,7 +16,7 @@
     "@fortawesome/free-brands-svg-icons": "^7.1.0",
     "@fortawesome/free-regular-svg-icons": "^7.1.0",
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
-    "@hotwired/turbo-rails": "^8.0.21",
+    "@hotwired/turbo-rails": "^8.0.22",
     "@popperjs/core": "^2.11.8",
     "@rails/actioncable": "7.2.300",
     "@rails/activestorage": "7.2.300",
