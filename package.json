@@ -56,7 +56,7 @@
     "stylelint-config-twbs-bootstrap": "^16.1.0",
     "stylelint-order": "^7.0.1",
     "stylelint-scss": "^7.0.0",
-    "stylelint-webpack-plugin": "^5.0.1",
+    "stylelint-webpack-plugin": "^5.1.0",
     "webpack-dev-server": "^5.2.3"
   },
   "babel": {
