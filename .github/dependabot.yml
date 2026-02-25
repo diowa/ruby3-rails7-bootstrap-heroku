@@ -18,6 +18,8 @@ updates:
     ignore:
       - dependency-name: rails
         versions: ">= 8.0.0"
+      - dependency-name: web-console
+        versions: ">= 4.3.0"
   - package-ecosystem: npm
     directory: "/"
     schedule:
