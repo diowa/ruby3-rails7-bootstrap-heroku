@@ -4,6 +4,7 @@ multi-ecosystem-groups:
     schedule:
       interval: daily
       time: "04:00"
+    open-pull-requests-limit: 10
 updates:
   - package-ecosystem: github-actions
     directory: /
@@ -15,7 +16,6 @@ updates:
     schedule:
       interval: daily
       time: "04:00"
-    open-pull-requests-limit: 10
     groups:
       rubocop:
         patterns:
@@ -33,7 +33,6 @@ updates:
     schedule:
       interval: daily
       time: "04:00"
-    open-pull-requests-limit: 10
     groups:
       babel:
         patterns:
