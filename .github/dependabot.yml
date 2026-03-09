@@ -1,4 +1,9 @@
 version: 2
+multi-ecosystem-groups:
+  shakapacker:
+    schedule:
+      interval: daily
+      time: "04:00"
 updates:
   - package-ecosystem: github-actions
     directory: /
@@ -20,6 +25,9 @@ updates:
         versions: ">= 8.0.0"
       - dependency-name: web-console
         versions: ">= 4.3.0"
+    patterns:
+      - "shakapacker"
+    multi-ecosystem-group: shakapacker
   - package-ecosystem: npm
     directory: "/"
     schedule:
@@ -42,3 +50,6 @@ updates:
     ignore:
       - dependency-name: "@rails/*"
         versions: ">= 8.0.0"
+    patterns:
+      - "shakapacker"
+    multi-ecosystem-group: shakapacker
