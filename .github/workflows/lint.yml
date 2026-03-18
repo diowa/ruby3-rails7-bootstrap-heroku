@@ -118,7 +118,7 @@ jobs:
           .eslintrc.cjs
           .github/workflows/lint.yml
           app/**/*.js
-    - uses: pnpm/action-setup@v4
+    - uses: pnpm/action-setup@v5
       if: steps.changed-files.outputs.any_changed == 'true'
     - name: Set up Node
       if: steps.changed-files.outputs.any_changed == 'true'
@@ -151,7 +151,7 @@ jobs:
           .github/workflows/lint.yml
           .stylelintrc
           app/**/*.{scss,css}
-    - uses: pnpm/action-setup@v4
+    - uses: pnpm/action-setup@v5
       if: steps.changed-files.outputs.any_changed == 'true'
     - name: Set up Node
       if: steps.changed-files.outputs.any_changed == 'true'
