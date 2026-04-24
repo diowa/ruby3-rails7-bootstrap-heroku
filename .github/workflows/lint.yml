@@ -122,7 +122,7 @@ jobs:
       if: steps.changed-files.outputs.any_changed == 'true'
     - name: Set up Node
       if: steps.changed-files.outputs.any_changed == 'true'
-      uses: actions/setup-node@v6.3.0
+      uses: actions/setup-node@v6.4.0
       with:
         node-version-file: .node-version
         cache: 'pnpm'
@@ -155,7 +155,7 @@ jobs:
       if: steps.changed-files.outputs.any_changed == 'true'
     - name: Set up Node
       if: steps.changed-files.outputs.any_changed == 'true'
-      uses: actions/setup-node@v6.3.0
+      uses: actions/setup-node@v6.4.0
       with:
         node-version-file: .node-version
         cache: 'pnpm'
