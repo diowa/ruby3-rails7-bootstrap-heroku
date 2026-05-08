@@ -2,27 +2,27 @@ version: 2
 multi-ecosystem-groups:
   shakapacker:
     schedule:
-      interval: daily
-      time: "04:00"
+      interval: weekly
+      day: wednesday
+      time: "12:00"
     open-pull-requests-limit: 10
 updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: daily
-      time: "04:00"
+      interval: weekly
+      day: wednesday
+      time: "12:00"
     cooldown:
       default-days: 5
   - package-ecosystem: bundler
     directory: "/"
     schedule:
-      interval: daily
-      time: "04:00"
+      interval: weekly
+      day: wednesday
+      time: "12:00"
     cooldown:
       default-days: 5
-      semver-patch-days: 5
-      semver-minor-days: 10
-      semver-major-days: 15
     groups:
       rubocop:
         patterns:
@@ -38,13 +38,11 @@ updates:
   - package-ecosystem: npm
     directory: "/"
     schedule:
-      interval: daily
-      time: "04:00"
+      interval: weekly
+      day: wednesday
+      time: "12:00"
     cooldown:
       default-days: 5
-      semver-patch-days: 5
-      semver-minor-days: 10
-      semver-major-days: 15
     groups:
       babel:
         patterns:
