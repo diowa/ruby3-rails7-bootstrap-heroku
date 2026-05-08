@@ -10,7 +10,7 @@
   "dependencies": {
     "@babel/core": "^7.29.0",
     "@babel/plugin-transform-runtime": "^7.29.0",
-    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-env": "^7.29.5",
     "@babel/runtime": "^7.29.2",
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
     "@fortawesome/free-brands-svg-icons": "^7.2.0",
@@ -28,7 +28,7 @@
     "css-minimizer-webpack-plugin": "^8.0.0",
     "exports-loader": "^5.0.0",
     "mini-css-extract-plugin": "^2.10.2",
-    "postcss": "^8.5.10",
+    "postcss": "^8.5.14",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^16.1.1",
     "postcss-loader": "^8.2.1",
