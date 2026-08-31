@@ -22,6 +22,7 @@ Capybara.register_driver :custom_chrome do |app|
     'AcceptCHFrame', # crbug.com/1348106
     'MediaRouter',
     'OptimizationHints',
+    'DeferRendererTasksAfterInput', # teamcapybara/capybara#2800
     'ProcessPerSiteUpToMainFrameThreshold', # crbug.com/1492053
     'IsolateSandboxedIframes', # https://github.com/puppeteer/puppeteer/issues/10715
   ]
