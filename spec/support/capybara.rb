@@ -22,6 +22,9 @@ Capybara.register_driver :custom_chrome do |app|
     'AcceptCHFrame', # crbug.com/1348106
     'MediaRouter',
     'OptimizationHints',
+    'WebUIReloadButton', # https://github.com/puppeteer/puppeteer/pull/14925
+    'WebUIOmniboxPopup', # https://github.com/puppeteer/puppeteer/pull/15278
+    'WebUIOmniboxAimPopup', # https://github.com/puppeteer/puppeteer/pull/15278
     'DeferRendererTasksAfterInput', # teamcapybara/capybara#2800
     'ProcessPerSiteUpToMainFrameThreshold', # crbug.com/1492053
     'IsolateSandboxedIframes', # https://github.com/puppeteer/puppeteer/issues/10715
